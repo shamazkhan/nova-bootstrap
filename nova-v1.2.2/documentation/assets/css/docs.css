@@ -1,0 +1,227 @@
+/*------------------------------------
+  Markup
+------------------------------------*/
+.code-toolbar {
+  position: relative
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  padding: 1.5rem;
+  font-size: 13px;
+  background: #f9f9f9;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #212529;
+  text-shadow: none;
+  white-space: pre-wrap;
+}
+.token.punctuation,
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #2f6f9f;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #4f9fcf;
+}
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #d44950;
+}
+
+div.code-toolbar > .toolbar {
+  top: 10px;
+  right: 10px;
+  opacity: 1;
+}
+div.code-toolbar > .toolbar a {
+  padding: .3rem .7rem !important;
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  transition: all .2s ease-in-out;
+}
+div.code-toolbar > .toolbar a:hover {
+  background-color: #8069f2;
+  color: #fff !important;
+}
+
+/*------------------------------------
+  AnchorJS Link
+------------------------------------*/
+.hs-docs-content h2.h4::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+  visibility: hidden;
+  margin-top: -100px;
+}
+[data-anchorjs-icon]::after {
+  content: attr(data-anchorjs-icon);
+}
+.anchorjs-link {
+  padding-left: .5rem;
+  font-size: 90%;
+  color: rgba(128,105,242, .5) !important;
+  transition: color .16s linear;
+  opacity: 0;
+}
+.anchorjs-link:hover {
+  color: rgba(128,105,242, 1) !important;
+}
+h2:hover .anchorjs-link,
+h3:hover .anchorjs-link {
+  opacity: 1;
+}
+
+/*------------------------------------
+  Header Starter
+------------------------------------*/
+.hd-doc-header-contact {
+  position: relative;
+  top: 3px;
+  font-size: 1.125rem;
+}
+
+/*------------------------------------
+  Content
+------------------------------------*/
+.hs-docs-content {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .hs-docs-content {
+    padding-right: 4rem;
+    padding-left: 21rem;
+  }
+}
+
+/*------------------------------------
+  Malihu Scrollbar
+------------------------------------*/
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: rgba(255,255,255, .2);
+}
+
+/*------------------------------------
+  jQuery UI
+------------------------------------*/
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 1px;
+  z-index: 91199;
+}
+.ui-autocomplete .left {
+  float: left;
+}
+.ui-autocomplete .right {
+  float: right;
+}
+.ui-autocomplete .ui-menu-item {
+  padding: 0;
+}
+.ui-autocomplete .ui-menu-item-wrapper {
+  display: block;
+  color: inherit;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 7px 15px;
+}
+.ui-autocomplete .ui-menu-item-wrapper.ui-state-active, .ui-autocomplete .ui-menu-item-wrapper:hover {
+  color: #fff;
+  background-color: #8069f2;
+  text-decoration: none;
+}
+.ui-autocomplete .ui-menu-item-wrapper.ui-state-active .text-muted,
+.ui-autocomplete .ui-menu-item-wrapper:hover .text-muted {
+  color: rgba(255,255,255, .5) !important;
+}
+.ui-autocomplete .ui-menu-item:hover {
+  color: #fff;
+  background-color: #8069f2;
+}
+.ui-autocomplete .ui-menu-item:hover .ui-menu-item-wrapper {
+  background-color: transparent;
+  border-color: transparent;
+}
+.ui-autocomplete-category {
+  padding: 5px 15px;
+  margin: 0;
+  font-weight: bold;
+}
+.jvectormap-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------------
+  Tab
+------------------------------------*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: #f9f9f9;
+}
+.tab-wrapper {
+  box-shadow: 0 0 35px rgba(140, 152, 163, .125);
+  border-radius: .25rem;
+}
+
+.tab-pane {
+  max-height: 700px;
+  overflow: auto;
+}
+.tab-pane pre {
+  margin-bottom: 0;
+}
+
+/*------------------------------------
+  Scrollbar
+------------------------------------*/
+.mCustomScrollbar:not(.hs-docs-sidebar--dark) .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCustomScrollbar:not(.hs-docs-sidebar--dark) .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: rgba(0,0,0, .2);
+}
+
+/*------------------------------------
+  Section Nav
+------------------------------------*/
+.hs-docs-content-nav {
+  position: sticky;
+  top: 6.5rem;
+  border-left: 1px solid #e7eaf3;
+  padding-left: 1.5rem;
+  overflow-y: auto;
+  list-style: none;
+}
+.hs-docs-content-nav ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+.hs-docs-content-nav-item {
+  font-size: .8175rem;
+}
+.hs-docs-content-nav-item > a {
+  display: block;
+  color: #8f95a0;
+  padding-top: .15rem;
+  padding-bottom: .15rem;
+}
+.hs-docs-content-nav-item.active > a,
+.hs-docs-content-nav-item > a:hover {
+  color: #8069f2;
+}

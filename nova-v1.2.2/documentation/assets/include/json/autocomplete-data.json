@@ -1,0 +1,348 @@
+[
+  {
+    "label": "Introduction",
+    "category": "Getting Started",
+    "url": "index.html"
+  },
+  {
+    "label": "File Structures",
+    "category": "Getting Started",
+    "url": "getting-started/file-structures.html"
+  },
+  {
+    "label": "Approach",
+    "category": "Getting Started",
+    "url": "getting-started/approach.html"
+  },
+  {
+    "label": "Gulp",
+    "category": "Getting Started",
+    "url": "getting-started/gulp.html"
+  },
+  {
+    "label": "Customization",
+    "category": "Getting Started",
+    "url": "getting-started/customization.html"
+  },
+  {
+    "label": "Credits",
+    "category": "Getting Started",
+    "url": "getting-started/credits.html"
+  },
+  {
+    "label": "Changelog",
+    "category": "Getting Started",
+    "url": "getting-started/changelog.html"
+  },
+
+
+
+  {
+    "label": "Typography",
+    "category": "Components",
+    "url": "components/typography.html"
+  },
+  {
+    "label": "Alerts",
+    "category": "Components",
+    "url": "components/alerts.html"
+  },
+  {
+    "label": "Avatars",
+    "category": "Components",
+    "url": "components/avatars.html"
+  },
+  {
+    "label": "Badges &amp; Indicators",
+    "category": "Components",
+    "url": "components/badges-indicators.html"
+  },
+  {
+    "label": "Breadcrumb",
+    "category": "Components",
+    "url": "components/breadcrumb.html"
+  },
+  {
+    "label": "Buttons",
+    "category": "Components",
+    "url": "components/buttons.html"
+  },
+  {
+    "label": "Cards",
+    "category": "Components",
+    "url": "components/cards.html"
+  },
+  {
+    "label": "Collapse",
+    "category": "Components",
+    "url": "components/collapse.html"
+  },
+  {
+    "label": "Accordion",
+    "category": "Components",
+    "url": "components/collapse.html"
+  },
+  {
+    "label": "Dropdowns",
+    "category": "Components",
+    "url": "components/dropdowns.html"
+  },
+  {
+    "label": "Forms",
+    "category": "Components",
+    "url": "components/forms.html"
+  },
+  {
+    "label": "Forms controls",
+    "category": "Components",
+    "url": "components/forms.html"
+  },
+  {
+    "label": "Custom form",
+    "category": "Components",
+    "url": "components/forms.html"
+  },
+  {
+    "label": "Checkbox and radios",
+    "category": "Components",
+    "url": "components/forms.html"
+  },
+  {
+    "label": "Switches",
+    "category": "Components",
+    "url": "components/forms.html"
+  },
+  {
+    "label": "Icons",
+    "category": "Components",
+    "url": "components/icons.html"
+  },
+  {
+    "label": "Modal",
+    "category": "Libraries",
+    "url": "components/modal.html"
+  },
+  {
+    "label": "Navs",
+    "category": "Components",
+    "url": "components/navs.html"
+  },
+  {
+    "label": "Navbar",
+    "category": "Components",
+    "url": "components/navbar.html"
+  },
+  {
+    "label": "Pagination",
+    "category": "Components",
+    "url": "components/pagination.html"
+  },
+  {
+    "label": "Progress",
+    "category": "Components",
+    "url": "components/progress.html"
+  },
+  {
+    "label": "Spinners",
+    "category": "Components",
+    "url": "components/spinners.html"
+  },
+  {
+    "label": "Table",
+    "category": "Components",
+    "url": "components/tables.html"
+  },
+  {
+    "label": "Toasts",
+    "category": "Components",
+    "url": "components/toasts.html"
+  },
+  {
+    "label": "Animations",
+    "category": "Libraries",
+    "url": "libraries/animations.html"
+  },
+  {
+    "label": "Autocomplete",
+    "category": "Libraries",
+    "url": "libraries/autocomplete.html"
+  },
+  {
+    "label": "Tagify Input Tags",
+    "category": "Libraries",
+    "url": "libraries/tagsinput.html"
+  },
+  {
+    "label": "Chartist.js",
+    "category": "Libraries",
+    "url": "libraries/chartist.html"
+  },
+  {
+    "label": "Clipboard",
+    "category": "Libraries",
+    "url": "libraries/clipboard.html"
+  },
+  {
+    "label": "Datatables",
+    "category": "Libraries",
+    "url": "libraries/datatables.html"
+  },
+  {
+    "label": "Editable Rows",
+    "category": "Libraries",
+    "url": "libraries/editable-rows.html"
+  },
+  {
+    "label": "Date Range Picker",
+    "category": "Libraries",
+    "url": "libraries/date-range-picker.html"
+  },
+  {
+    "label": "Dropzone",
+    "category": "Libraries",
+    "url": "libraries/dropzone.html"
+  },
+  {
+    "label": "File Attach",
+    "category": "Libraries",
+    "url": "libraries/file-attach.html"
+  },
+  {
+    "label": "Flatpickr",
+    "category": "Libraries",
+    "url": "libraries/flatpickr.html"
+  },
+  {
+    "label": "Google Geo Chart",
+    "category": "Libraries",
+    "url": "libraries/google-geo-chart.html"
+  },
+  {
+    "label": "Header Search",
+    "category": "Libraries",
+    "url": "libraries/header-search.html"
+  },
+  {
+    "label": "Malihu Scrollbar",
+    "category": "Libraries",
+    "url": "libraries/malihu-scrollbar.html"
+  },
+  {
+    "label": "Masked Input",
+    "category": "Libraries",
+    "url": "libraries/masked-input.html"
+  },
+  {
+    "label": "Google reCAPTCHA",
+    "category": "Libraries",
+    "url": "libraries/google-recaptcha.html"
+  },
+  {
+    "label": "Range Slider",
+    "category": "Libraries",
+    "url": "libraries/range-slider.html"
+  },
+  {
+    "label": "Select2",
+    "category": "Libraries",
+    "url": "libraries/select2.html"
+  },
+  {
+    "label": "Sidebar Navigation",
+    "category": "Libraries",
+    "url": "libraries/side-nav.html"
+  },
+  {
+    "label": "Summernote",
+    "category": "Libraries",
+    "url": "libraries/summernote.html"
+  },
+  {
+    "label": "Tabs",
+    "category": "Libraries",
+    "url": "libraries/tabs.html"
+  },
+  {
+    "label": "Unfold (Dropdown and others)",
+    "category": "Libraries",
+    "url": "libraries/unfold.html"
+  },
+  {
+    "label": "Validation",
+    "category": "Libraries",
+    "url": "libraries/validation.html"
+  },
+  {
+    "label": "Visavail Timeline",
+    "category": "Libraries",
+    "url": "libraries/visavail-timeline.html"
+  },
+
+
+  {
+    "label": "Background",
+    "category": "Utilities",
+    "url": "utilities/background.html"
+  },
+  {
+    "label": "Borders",
+    "category": "Utilities",
+    "url": "utilities/borders.html"
+  },
+  {
+    "label": "Colors",
+    "category": "Utilities",
+    "url": "utilities/colors.html"
+  },
+  {
+    "label": "Links",
+    "category": "Utilities",
+    "url": "utilities/links.html"
+  },
+  {
+    "label": "Positions",
+    "category": "Utilities",
+    "url": "utilities/positions.html"
+  },
+  {
+    "label": "Spacing",
+    "category": "Utilities",
+    "url": "utilities/spacing.html"
+  },
+  {
+    "label": "Transitions",
+    "category": "Utilities",
+    "url": "utilities/transitions.html"
+  },
+
+  {
+    "label": "Animation Spin",
+    "category": "Utilities",
+    "url": "utilities/others.html"
+  },
+  {
+    "label": "Cursor",
+    "category": "Utilities",
+    "url": "utilities/others.html"
+  },
+  {
+    "label": "Opacity",
+    "category": "Utilities",
+    "url": "utilities/others.html"
+  },
+  {
+    "label": "Overflow",
+    "category": "Utilities",
+    "url": "utilities/others.html"
+  },
+  {
+    "label": "Font sizes",
+    "category": "Utilities",
+    "url": "utilities/others.html"
+  },
+  {
+    "label": "Font weight",
+    "category": "Utilities",
+    "url": "utilities/others.html"
+  }
+]

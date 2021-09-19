@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Badges & Indicators | Nova - Responsive WebApp UI Kit</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="../../assets/vendor/nova-icons/nova-icons.css" rel="stylesheet">
+
+  <!-- CSS Implementing Libraries -->
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+  <!-- CSS Nova Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header header-light bg-white">
+  <nav class="navbar flex-nowrap p-0">
+    <div class="navbar-brand-wrapper bg-dark-v1 d-flex align-items-center col-auto">
+      <!-- Logo For Mobile View -->
+      <a class="navbar-brand navbar-brand-mobile" href="../widgets.html">
+        <img class="img-fluid w-100" src="../../assets/img/logo-mini.png" alt="Nova">
+      </a>
+      <!-- End Logo For Mobile View -->
+
+      <!-- Logo For Desktop View -->
+      <a class="navbar-brand navbar-brand-desktop" href="../widgets.html">
+      <img class="side-nav-show-on-closed" src="../../assets/img/logo-mini.png" alt="Nova" style="width: 41px; height: 33px;">
+      <img class="side-nav-hide-on-closed" src="../../assets/img/logo.png" alt="Nova" style="width: 130px; height: 33px;">
+      </a>
+      <!-- End Logo For Desktop View -->
+    </div>
+
+    <div class="header-content col px-md-3">
+      <div class="d-flex align-items-center">
+        <!-- Side Nav Toggle -->
+        <a class="js-side-nav header-invoker d-flex mr-md-2" href="#"
+           data-close-invoker="#sidebarClose" data-target="#sidebar" data-target-wrapper="body">
+          <i class="nova-align-left"></i>
+        </a>
+        <!-- End Side Nav Toggle -->
+
+        <!-- Header Search -->
+        <div class="js-header-search position-relative"
+             data-search-mobile-invoker="#headerSearchMobileInvoker"
+             data-search-form="#headerSearchForm"
+             data-search-field="#headerSearchField">
+          <a id="headerSearchMobileInvoker" class="header-search-invoker header-invoker" href="#">
+            <i class="nova-search"></i>
+          </a>
+
+           <form id="headerSearchForm" class="header-search input-group input-group-merge w-xl-31_25rem mr-2" action="#">
+           <input type="text" class="js-autocomplete header-search-input form-control form-control-append-icon" placeholder="Search..."
+                  data-url="../../assets/include/ajax/autocomplete-data.json">
+            <div class="input-group-append-merge">
+              <i class="nova-search icon-text"></i>
+            </div>
+          </form>
+        </div>
+        <!-- End Header Search -->
+
+        <a class="link-dark ml-auto mr-3 mr-sm-0" href="../../demo-crypto/dashboards/index.html">
+          Crypto Demo
+        </a>
+        <a class="link-dark position-relative mx-3 pr-3 d-none d-sm-block" href="../../documentation/getting-started/changelog.html">
+          Changelog (v1.2.2) <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-secondary rounded-circle"></span>
+        </a>
+        <a class="btn btn-primary mr-2" href="../../documentation/">Documentation</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+  <!-- Sidebar Nav -->
+  <aside id="sidebar" class="js-custom-scroll side-nav">
+    <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+      <!-- Title -->
+      <li class="sidebar-heading h6">Widgets & Layouts</li>
+      <!-- End Title -->
+
+      <!-- Widgets -->
+      <li class="side-nav-menu-item">
+        <a class="side-nav-menu-link media align-items-center" href="../widgets.html">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pulse"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Widgets</span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+      </li>
+      <!-- End Widgets -->
+
+      <!-- Layouts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subLayouts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Layouts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subLayouts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static.html">Static</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/fixed-header-sidebar.html">Fixed Header & Sidebar</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static-mini-nav-mobi.html">Mini Nav</a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Layouts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Forms & Tables</li>
+      <!-- End Title -->
+
+      <!-- Form Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pencil-alt"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Forms</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/form-layouts.html">
+              Form Layouts
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/basic-inputs.html">
+              Basic
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/input-groups.html">
+              Input Groups
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/checkboxes.html">
+              Checkboxes & Switches
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Elements -->
+
+      <!-- Form Extentions -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormExtentions">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-ruler-pencil"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Form Extentions</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormExtentions" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/validation.html">
+              Validation
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/flatpickr.html">
+              Datepicker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/date-range-picker.html">
+              Date Range Picker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/select2.html">
+              Select 2
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/tagsinput.html">
+              Input Tags
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/clipboard.html">
+              Clipboard
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/summernote.html">
+              Form Editor
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/masked-inputs.html">
+              Input Masks
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/dropzone.html">
+              Dropzone
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/range-sliders.html">
+              Range Slider
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/google-recaptcha.html">
+              Google reCAPTCHA
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Extentions -->
+
+      <!-- Tables -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subTables">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-grid-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Tables</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Tables: subTables -->
+        <ul id="subTables" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/basic-tables.html">Basic Tables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/datatables.html">Datatables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/editable-rows.html">Editable Rows</a>
+          </li>
+        </ul>
+        <!-- End Tables: subTables -->
+      </li>
+      <!-- End Tables -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">UI Kit Components</li>
+      <!-- End Title -->
+
+      <!-- UI Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu side-nav-opened active">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subUiElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-package"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">UI Elements</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Elements: subUiElements -->
+        <ul id="subUiElements" class="side-nav-menu side-nav-menu-second-level mb-0" style="display: block;">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/accordions.html">Accordions</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/alerts.html">Alerts</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/buttons.html">Buttons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link active" href="../ui-elements/badges-indicators.html">Badges & Indicators</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/progress.html">Progress</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/dropdowns.html">Dropdowns</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/icons.html">Icons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/typography.html">Typography</a>
+          </li>
+        </ul>
+        <!-- End UI Elements: subUiElements -->
+      </li>
+      <!-- End UI Elements -->
+
+      <!-- Cards -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCards">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-media-overlay-alt-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Cards</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Cards: subCards -->
+        <ul id="subCards" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-variations.html">Card Variations</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-options.html">Card Options</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-designs.html">Card Designs</a>
+          </li>
+        </ul>
+        <!-- End Cards: subCards -->
+      </li>
+      <!-- End Cards -->
+
+      <!-- Charts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCharts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pie-chart"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Charts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Charts: subCharts -->
+        <ul id="subCharts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/chartist.html">Chartist</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/google-geo-chart.html">Google Geo Chart</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/timeline-chart.html">Timeline Chart</a>
+          </li>
+        </ul>
+        <!-- End Charts: subCharts -->
+      </li>
+      <!-- End Charts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Pages</li>
+      <!-- End Title -->
+
+      <!-- Authentication -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subAuthentication">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-user"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Authentication</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Authentication: subMenu -->
+        <ul id="subAuthentication" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/login.html">Login</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/registration.html">Registration</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/forgot-password.html">Passowrd Recovery</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/lock-screen.html">Lock Screen</a>
+          </li>
+        </ul>
+        <!-- End Authentication: subMenu -->
+      </li>
+      <!-- End Authentication -->
+    </ul>
+  </aside>
+  <!-- End Sidebar Nav -->
+
+  <div class="content">
+    <div class="py-4 px-3 px-md-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h4 mb-3">Badges &amp; Indicators</h1>
+
+        <!-- Breadcrumb -->
+        <nav class="d-none d-md-block" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">UI Kit Components</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">UI Elements</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Badges &amp; Indicators</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+
+      <div class="alert alert-light alert-left-bordered border-primary d-flex align-items-basline mb-4" role="alert">
+        <i class="nova-info-alt icon-text text-primary mt-1 mr-2"></i>
+        <p class="mb-0">You may find how to use examples by clicking the <a class="alert-link" href="../../documentation/components/badges-indicators.html">badges indicators documentation page</a>. In addition, you may use any form examples from the official Bootstrap Badges page.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header">
+              <h5 class="font-weight-semi-bold mb-0">Variations</h5>
+            </div>
+            <div class="card-body pt-0">
+              <!-- Badges: Pills -->
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Pills</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-pill badge-primary mb-2 mr-2">2,264</span>
+                <span class="badge badge-pill badge-secondary mb-2 mr-2">2,264</span>
+                <span class="badge badge-pill badge-success mb-2 mr-2">2,264</span>
+                <span class="badge badge-pill badge-danger mb-2 mr-2">2,264</span>
+                <span class="badge badge-pill badge-warning mb-2 mr-2">2,264</span>
+                <span class="badge badge-pill badge-primary-darker mb-2 mr-2">2,264</span>
+                <span class="badge badge-pill badge-light mb-2 mr-2">2,264</span>
+                <span class="badge badge-pill badge-dark mb-2">2,264</span>
+              </div>
+              <!-- End Badges: Pills -->
+
+              <!-- Badges: Border Radius -->
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Border Radius</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-primary mb-2 mr-2">2,264</span>
+                <span class="badge badge-secondary mb-2 mr-2">2,264</span>
+                <span class="badge badge-success mb-2 mr-2">2,264</span>
+                <span class="badge badge-danger mb-2 mr-2">2,264</span>
+                <span class="badge badge-warning mb-2 mr-2">2,264</span>
+                <span class="badge badge-primary-darker mb-2 mr-2">2,264</span>
+                <span class="badge badge-light mb-2 mr-2">2,264</span>
+                <span class="badge badge-dark mb-2">2,264</span>
+              </div>
+              <!-- End Badges: Border Radius -->
+
+              <!-- Badges: Circles -->
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Circles</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-primary badge-sm rounded-circle mb-2 mr-2">26</span>
+                <span class="badge badge-secondary badge-sm rounded-circle mb-2 mr-2">26</span>
+                <span class="badge badge-success badge-sm rounded-circle mb-2 mr-2">26</span>
+                <span class="badge badge-danger badge-sm rounded-circle mb-2 mr-2">26</span>
+                <span class="badge badge-warning badge-sm rounded-circle mb-2 mr-2">26</span>
+                <span class="badge badge-primary badge-sm darker rounded-circle mb-2 mr-2">26</span>
+                <span class="badge badge-light badge-sm rounded-circle mb-2 mr-2">26</span>
+                <span class="badge badge-dark badge-sm rounded-circle mb-2">26</span>
+              </div>
+              <!-- End Badges: Circles -->
+
+              <!-- Badges: Initials -->
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Initials</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-primary badge-sm rounded-circle mb-2 mr-2">MB</span>
+                <span class="badge badge-secondary badge-sm rounded-circle mb-2 mr-2">MB</span>
+                <span class="badge badge-success badge-sm rounded-circle mb-2 mr-2">MB</span>
+                <span class="badge badge-danger badge-sm rounded-circle mb-2 mr-2">MB</span>
+                <span class="badge badge-warning badge-sm rounded-circle mb-2 mr-2">MB</span>
+                <span class="badge badge-primary badge-sm darker rounded-circle mb-2 mr-2">MB</span>
+                <span class="badge badge-light badge-sm rounded-circle mb-2 mr-2">MB</span>
+                <span class="badge badge-dark badge-sm rounded-circle mb-2">MB</span>
+              </div>
+              <!-- End Badges: Initials -->
+
+              <!-- Indicators: Notifications -->
+              <h6 class="card-title font-weight-semi-bold mb-3">Indicators: Notifications</h6>
+              <div class="d-flex flex-wrap">
+                <div class="position-relative p-2 mb-2 mr-2">
+                  <span class="indicator indicator-primary indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+
+                <div class="position-relative p-2 mb-2 mr-2">
+                  <span class="indicator indicator-secondary indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+
+                <div class="position-relative p-2 mb-2 mr-2">
+                  <span class="indicator indicator-success indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+
+                <div class="position-relative p-2 mb-2 mr-2">
+                  <span class="indicator indicator-danger indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+
+                <div class="position-relative p-2 mb-2 mr-2">
+                  <span class="indicator indicator-warning indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+
+                <div class="position-relative p-2 mb-2 mr-2">
+                  <span class="indicator indicator-primary indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+
+                <div class="position-relative p-2 mb-2 mr-2">
+                  <span class="indicator indicator-light indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+
+                <div class="position-relative p-2 mb-2">
+                  <span class="indicator indicator-dark indicator-bordered indicator-top-right rounded-circle"></span>
+                  <i class="nova-bell icon-text text-dark"></i>
+                </div>
+              </div>
+              <!-- End Indicators: Notifications -->
+            </div>
+          </div>
+
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header">
+              <h5 class="font-weight-semi-bold mb-0">Project</h5>
+            </div>
+            <div class="card-body pt-0">
+              <!-- Indicators: Notification -->
+              <h6 class="card-title font-weight-semi-bold mb-3">Indicators: Notification</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-lg bg-soft-primary position-relative font-weight-semi-bold text-primary p-0 mb-2 mr-4">
+                  <span class="indicator indicator-primary indicator-bordered indicator-outside indicator-top-right rounded-circle"></span>
+                  PN
+                </span>
+
+                <span class="badge badge-lg bg-soft-secondary position-relative font-weight-semi-bold text-secondary p-0 mb-2 mr-4">
+                  <span class="indicator indicator-secondary indicator-bordered indicator-outside indicator-top-right rounded-circle"></span>
+                  DM
+                </span>
+
+                <span class="badge badge-lg bg-soft-primary-darker position-relative font-weight-semi-bold text-primary-darker p-0 mb-2 mr-4">
+                  <span class="indicator indicator-danger indicator-bordered indicator-outside indicator-top-right rounded-circle"></span>
+                  DM
+                </span>
+
+                <span class="badge badge-lg bg-soft-warning position-relative font-weight-semi-bold text-warning p-0 mb-2 mr-4">
+                  <span class="indicator indicator-warning indicator-bordered indicator-outside indicator-top-right rounded-circle"></span>
+                  DM
+                </span>
+
+                <span class="badge badge-lg bg-soft-light position-relative font-weight-semi-bold text-light p-0 mb-2">
+                  <span class="indicator indicator-secondary indicator-bordered indicator-outside indicator-top-right rounded-circle"></span>
+                  DM
+                </span>
+              </div>
+              <!-- End Indicators: Notification -->
+
+              <!-- Badges: User -->
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: User</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-lg bg-soft-primary position-relative font-weight-semi-bold text-primary p-0 mb-2 mr-4">
+                  <span class="badge-md badge-bordered-reverse badge-bottom-right badge-outside d-flex rounded-circle">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img4.jpg"
+                         alt="Image description">
+                  </span>
+                  PN
+                </span>
+
+                <span class="badge badge-lg bg-soft-secondary position-relative font-weight-semi-bold text-secondary p-0 mb-2 mr-4">
+                  <span class="badge-md badge-bordered-reverse badge-bottom-right badge-outside d-flex rounded-circle">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img5.jpg"
+                         alt="Image description">
+                  </span>
+                  DM
+                </span>
+
+                <span class="badge badge-lg bg-soft-primary-darker position-relative font-weight-semi-bold text-primary-darker p-0 mb-2 mr-4">
+                  <span class="badge-md badge-bordered-reverse badge-bottom-right badge-outside d-flex rounded-circle">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img6.jpg"
+                         alt="Image description">
+                  </span>
+                  DM
+                </span>
+
+                <span class="badge badge-lg bg-soft-warning position-relative font-weight-semi-bold text-warning p-0 mb-2 mr-4">
+                  <span class="badge-md badge-bordered-reverse badge-bottom-right badge-outside d-flex rounded-circle">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img7.jpg"
+                         alt="Image description">
+                  </span>
+                  DM
+                </span>
+
+                <span class="badge badge-lg bg-soft-light position-relative font-weight-semi-bold text-light p-0 mb-2">
+                  <span class="badge-md badge-bordered-reverse badge-bottom-right badge-outside d-flex rounded-circle">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img9.jpg"
+                         alt="Image description">
+                  </span>
+                  DM
+                </span>
+              </div>
+              <!-- End Badges: User -->
+
+              <!-- Badges: Circle -->
+              <h6 class="card-title font-weight-semi-bold mb-3 mb-md-4">Badges: Circle</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <div class="badge badge-lg bg-soft-primary position-relative font-weight-semi-bold text-primary p-0 mb-2 mr-4">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-primary rounded-circle">26</span>
+                  PN
+                </div>
+
+                <div class="badge badge-lg bg-soft-secondary position-relative font-weight-semi-bold text-secondary p-0 mb-2 mr-4">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-secondary rounded-circle">26</span>
+                  DM
+                </div>
+
+                <div class="badge badge-lg bg-soft-primary-darker position-relative font-weight-semi-bold text-primary-darker p-0 mb-2 mr-4">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-primary-darker rounded-circle">26</span>
+                  DM
+                </div>
+
+                <div class="badge badge-lg bg-soft-warning position-relative font-weight-semi-bold text-warning p-0 mb-2 mr-4">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-warning rounded-circle">26</span>
+                  DM
+                </div>
+
+                <div class="badge badge-lg bg-soft-light position-relative font-weight-semi-bold text-light p-0 mb-2">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-light rounded-circle">26</span>
+                  DM
+                </div>
+              </div>
+              <!-- End Badges: Circle -->
+
+              <!-- Badges: Pill (soft background) -->
+              <h6 class="card-title font-weight-semi-bold mb-3 mb-md-4">Badges: Pill (soft background)</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-pill badge-complex bg-semi-soft-primary d-flex align-items-center text-white mb-2 mr-2">
+                  <span class="badge badge-sm badge-primary rounded-circle mr-2">DM</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex bg-semi-soft-secondary d-flex align-items-center text-white mb-2 mr-2">
+                  <span class="badge badge-sm badge-secondary rounded-circle mr-2">MS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex bg-semi-soft-primary-darker d-flex align-items-center text-white mb-2 mr-2">
+                  <span class="badge badge-sm badge-primary-darker rounded-circle mr-2">BS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex bg-semi-soft-warning d-flex align-items-center text-white mb-2 mr-2">
+                  <span class="badge badge-sm badge-warning rounded-circle mr-2">BS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex bg-semi-soft-light d-flex align-items-center text-white mb-2 mr-2">
+                  <span class="badge badge-sm badge-light rounded-circle mr-2">GM</span>
+                  <span>2,264</span>
+                </span>
+              </div>
+              <!-- End Badges: Pill (soft background) -->
+
+              <!-- Badges: Pill (normal background) -->
+              <h6 class="card-title font-weight-semi-bold mb-3 mb-md-4">Badges: Pill (normal background)</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="badge badge-pill badge-complex badge-primary d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-primary bg-white rounded-circle mr-2">DM</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex badge-secondary d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-secondary bg-white rounded-circle mr-2">MS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex badge-primary-darker d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-primary-darker bg-white rounded-circle mr-2">BS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex badge-warning d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-warning bg-white rounded-circle mr-2">BS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-pill badge-complex badge-light d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-light bg-white rounded-circle mr-2">GM</span>
+                  <span>2,264</span>
+                </span>
+              </div>
+              <!-- End Badges: Pill (normal background) -->
+
+              <!-- Badges: Border radius -->
+              <h6 class="card-title font-weight-semi-bold mb-3 mb-md-4">Badges: Border radius</h6>
+              <div class="d-flex flex-wrap">
+                <span class="badge badge-complex badge-primary d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-primary bg-white mr-2">DM</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-secondary d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-secondary bg-white mr-2">MS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-primary-darker d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-primary-darker bg-white mr-2">BS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-warning d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-warning bg-white mr-2">BS</span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-light d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm text-light bg-white mr-2">GM</span>
+                  <span>2,264</span>
+                </span>
+              </div>
+              <!-- End Badges: Border radius -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6">
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header">
+              <h5 class="font-weight-semi-bold mb-0">Avatar</h5>
+            </div>
+            <div class="card-body pt-0">
+              <h6 class="card-title font-weight-semi-bold mb-3">Indicators: Status</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <div class="position-relative mb-2 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-left indicator-secondary rounded-circle"></span>
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img4.jpg" alt="Image description">
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-left indicator-primary-darker rounded-circle"></span>
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img5.jpg" alt="Image description">
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-left indicator-danger rounded-circle"></span>
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img6.jpg" alt="Image description">
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-left indicator-warning rounded-circle"></span>
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img7.jpg" alt="Image description">
+                </div>
+
+                <div class="position-relative mb-2">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-left bg-light rounded-circle"></span>
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img8.jpg" alt="Image description">
+                </div>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Project</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img9.jpg" alt="Image description">
+                  <span class="badge badge-sm badge-bottom-right badge-outside badge-primary rounded-circle">DM</span>
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img10.jpg"
+                       alt="Image description">
+                  <span class="badge badge-sm badge-bottom-right badge-outside badge-secondary rounded-circle">MS</span>
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img11.jpg"
+                       alt="Image description">
+                  <span class="badge badge-sm badge-bottom-right badge-outside badge-primary-darker rounded-circle">BS</span>
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img12.jpg"
+                       alt="Image description">
+                  <span class="badge badge-sm badge-bottom-right badge-outside badge-warning rounded-circle">BS</span>
+                </div>
+
+                <div class="position-relative mb-2">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img4.jpg" alt="Image description">
+                  <span class="badge badge-sm badge-bottom-right badge-outside bg-light text-white rounded-circle">GM</span>
+                </div>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Circle</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img5.jpg" alt="Image description">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-primary rounded-circle">26</span>
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img6.jpg" alt="Image description">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-secondary rounded-circle">26</span>
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img7.jpg" alt="Image description">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-primary-darker rounded-circle">26</span>
+                </div>
+
+                <div class="position-relative mb-2 mr-4">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img8.jpg" alt="Image description">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-warning rounded-circle">26</span>
+                </div>
+
+                <div class="position-relative mb-2">
+                  <img class="avatar-lg rounded-circle" src="../../assets/img/100x100/img9.jpg" alt="Image description">
+                  <span class="badge badge-sm badge-top-right badge-outside bg-light text-white rounded-circle">26</span>
+                </div>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Pill</h6>
+              <div class="d-flex flex-wrap">
+                <span class="badge badge-complex badge-pill badge-primary d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm d-flex text-primary bg-white rounded-circle mr-2">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img10.jpg"
+                         alt="Image description">
+                  </span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-pill badge-secondary d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm d-flex text-secondary bg-white rounded-circle mr-2">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img11.jpg"
+                         alt="Image description">
+                  </span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-pill badge-primary-darker d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm d-flex text-primary-darker bg-white rounded-circle mr-2">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img12.jpg"
+                         alt="Image description">
+                  </span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-pill badge-warning d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm d-flex text-warning bg-white rounded-circle mr-2">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img4.jpg"
+                         alt="Image description">
+                  </span>
+                  <span>2,264</span>
+                </span>
+                <span class="badge badge-complex badge-pill badge-light d-flex align-items-center mb-2 mr-2">
+                  <span class="badge badge-sm d-flex text-light bg-white rounded-circle mr-2">
+                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img5.jpg"
+                         alt="Image description">
+                  </span>
+                  <span>2,264</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header">
+              <h5 class="font-weight-semi-bold mb-0">Button</h5>
+            </div>
+            <div class="card-body pt-0">
+              <h6 class="card-title font-weight-semi-bold mb-3">Indicators: Status</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-outside indicator-secondary rounded-circle"></span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-outside indicator-primary-darker rounded-circle"></span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-outside indicator-danger rounded-circle"></span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3" href="#">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-outside indicator-warning rounded-circle"></span>
+                  Account
+                </a>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Indicators: Notification</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-outside indicator-secondary rounded-circle"></span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-outside indicator-primary-darker rounded-circle"></span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-outside indicator-danger rounded-circle"></span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3" href="#">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-outside indicator-warning rounded-circle"></span>
+                  Account
+                </a>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Circle</h6>
+              <div class="d-flex flex-wrap">
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-danger rounded-circle">26</span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-secondary rounded-circle">26</span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3 mr-3" href="#">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-primary-darker rounded-circle">26</span>
+                  Account
+                </a>
+                <a class="btn btn-outline-primary position-relative mb-3" href="#">
+                  <span class="badge badge-sm badge-top-right badge-outside badge-warning rounded-circle">26</span>
+                  Account
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header">
+              <h5 class="font-weight-semi-bold mb-0">Text</h5>
+            </div>
+            <div class="card-body pt-0">
+              <h6 class="card-title font-weight-semi-bold mb-3">Indicators: Status</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-secondary rounded-circle"></span>
+                  Notifications
+                </span>
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-primary-darker rounded-circle"></span>
+                  Notifications
+                </span>
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-danger rounded-circle"></span>
+                  Notifications
+                </span>
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-warning rounded-circle"></span>
+                  Notifications
+                </span>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Indicators: Notification</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-secondary rounded-circle"></span>
+                  Notifications
+                </span>
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-primary-darker rounded-circle"></span>
+                  Notifications
+                </span>
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-danger rounded-circle"></span>
+                  Notifications
+                </span>
+                <span class="d-inline-block position-relative pr-3 mb-3 mr-4">
+                  <span class="indicator indicator-bordered indicator-top-right indicator-warning rounded-circle"></span>
+                  Notifications
+                </span>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Circle</h6>
+              <div class="d-flex flex-wrap mb-3 mb-md-4">
+                <span class="d-flex align-items-center position-relative mb-3 mr-4">
+                  Notifications
+                  <span class="badge badge-sm badge-danger rounded-circle ml-2">26</span>
+                </span>
+                <span class="d-flex align-items-center position-relative mb-3 mr-4">
+                  Notifications
+                  <span class="badge badge-sm badge-secondary rounded-circle ml-2">26</span>
+                </span>
+                <span class="d-flex align-items-center position-relative mb-3 mr-4">
+                  Notifications
+                  <span class="badge badge-sm badge-primary-darker rounded-circle ml-2">26</span>
+                </span>
+              </div>
+
+              <h6 class="card-title font-weight-semi-bold mb-3">Badges: Pill</h6>
+              <div class="d-flex flex-wrap">
+                <span class="d-flex align-items-center position-relative mb-3 mr-4">
+                  Notifications
+                  <span class="badge badge-pill badge-primary ml-2">2,264</span>
+                </span>
+                <span class="d-flex align-items-center position-relative mb-3 mr-4">
+                  Notifications
+                  <span class="badge badge-pill badge-secondary ml-2">2,264</span>
+                </span>
+                <span class="d-flex align-items-center position-relative mb-3 mr-4">
+                  Notifications
+                  <span class="badge badge-pill badge-danger ml-2">2,264</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="small bg-white p-3 px-md-4 mt-auto">
+      <div class="row justify-content-between">
+        <div class="col-lg text-center text-lg-left mb-3 mb-lg-0">
+          <ul class="list-dot list-inline mb-0">
+            <li class="list-dot-item list-dot-item-not list-inline-item mr-lg-2"><a class="link-dark" href="#">FAQ</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Support</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center mb-3 mb-lg-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-vimeo-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-github"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center text-lg-right">
+          &copy; 2019 Htmlstream. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+</main>
+
+<!-- JS Global Compulsory -->
+<script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Libraries -->
+<script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../assets/vendor/resize-sensor/dist/resizeSensor.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+<!-- JS Nova -->
+<script src="../../assets/js/hs.core.js"></script>
+<script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="../../assets/js/components/hs.side-nav.js"></script>
+<script src="../../assets/js/components/hs.unfold.js"></script>
+<script src="../../assets/js/components/hs.header-search.js"></script>
+<script src="../../assets/js/components/hs.autocomplete.js"></script>
+
+<!-- JS Libraries Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scroll
+    $.HSCore.components.HSMalihuScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of dropdown component
+    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+    // initialization of show on type module
+    $.HSCore.components.HSHeaderSearch.init('.js-header-search');
+
+    // initialization of autocomplete
+    $.HSCore.components.HSAutocomplete.init('.js-autocomplete');
+  });
+</script>
+</body>
+</html>

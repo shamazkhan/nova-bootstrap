@@ -1,0 +1,50 @@
+{
+  "name": "Nova",
+  "version": "1.2.2",
+  "description": "Nova - Responsive WebApp UI Kit",
+  "main": "gulpfile.js",
+  "author": "htmlstream",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  },
+  "dependencies": {
+    "@yaireo/tagify": "^3.3.1",
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "chartist": "^0.11.4",
+    "clipboard": "^2.0.4",
+    "datatables": "^1.10.18",
+    "datatables.net-buttons": "^1.6.1",
+    "daterangepicker": "^3.0.5",
+    "flatpickr": "^4.6.3",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery-migrate": "^3.1.0",
+    "jquery-validation": "^1.19.1",
+    "jszip": "^3.2.2",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "pdfmake": "^0.1.64",
+    "popper.js": "^1.16.1",
+    "select2": "^4.0.13",
+    "table-edits": "^0.0.3"
+  }
+}

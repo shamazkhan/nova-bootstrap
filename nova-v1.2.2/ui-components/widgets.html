@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Widgets | Nova - Responsive WebApp UI Kit</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="../assets/vendor/nova-icons/nova-icons.css" rel="stylesheet">
+
+  <!-- CSS Implementing Libraries -->
+  <link rel="stylesheet" href="../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../assets/vendor/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="../assets/vendor/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="../assets/vendor/chartist/dist/chartist.min.css">
+  <link rel="stylesheet" href="../assets/vendor/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+  <link rel="stylesheet" href="../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+  <!-- CSS Nova Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header header-light bg-white">
+  <nav class="navbar flex-nowrap p-0">
+    <div class="navbar-brand-wrapper bg-dark-v1 d-flex align-items-center col-auto">
+      <!-- Logo For Mobile View -->
+      <a class="navbar-brand navbar-brand-mobile" href="./widgets.html">
+        <img class="img-fluid w-100" src="../assets/img/logo-mini.png" alt="Nova">
+      </a>
+      <!-- End Logo For Mobile View -->
+
+      <!-- Logo For Desktop View -->
+      <a class="navbar-brand navbar-brand-desktop" href="./widgets.html">
+        <img class="side-nav-show-on-closed" src="../assets/img/logo-mini.png" alt="Nova" style="width: 41px; height: 33px;">
+        <img class="side-nav-hide-on-closed" src="../assets/img/logo.png" alt="Nova" style="width: 130px; height: 33px;">
+      </a>
+      <!-- End Logo For Desktop View -->
+    </div>
+
+    <div class="header-content col px-md-3">
+      <div class="d-flex align-items-center">
+        <!-- Side Nav Toggle -->
+        <a class="js-side-nav header-invoker d-flex mr-md-2" href="#"
+           data-close-invoker="#sidebarClose" data-target="#sidebar" data-target-wrapper="body">
+          <i class="nova-align-left"></i>
+        </a>
+        <!-- End Side Nav Toggle -->
+
+        <!-- Header Search -->
+        <div class="js-header-search position-relative"
+             data-search-mobile-invoker="#headerSearchMobileInvoker"
+             data-search-form="#headerSearchForm"
+             data-search-field="#headerSearchField">
+          <a id="headerSearchMobileInvoker" class="header-search-invoker header-invoker" href="#">
+            <i class="nova-search"></i>
+          </a>
+
+          <form id="headerSearchForm" class="header-search input-group input-group-merge w-xl-31_25rem mr-2" action="#">
+            <input type="text" class="js-autocomplete header-search-input form-control form-control-append-icon" placeholder="Search..."
+                   data-url="../assets/include/ajax/autocomplete-data.json">
+            <div class="input-group-append-merge">
+              <i class="nova-search icon-text"></i>
+            </div>
+          </form>
+        </div>
+        <!-- End Header Search -->
+
+        <a class="link-dark ml-auto mr-3 mr-sm-0" href="../demo-crypto/dashboards/index.html">
+          Crypto Demo
+        </a>
+        <a class="link-dark position-relative mx-3 pr-3 d-none d-sm-block" href="../documentation/getting-started/changelog.html">
+          Changelog (v1.2.2) <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-secondary rounded-circle"></span>
+        </a>
+        <a class="btn btn-primary mr-2" href="../documentation/">Documentation</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+  <!-- Sidebar Nav -->
+  <aside id="sidebar" class="js-custom-scroll side-nav">
+    <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+      <!-- Title -->
+      <li class="sidebar-heading h6">Widgets & Layouts</li>
+      <!-- End Title -->
+
+      <!-- Widgets -->
+      <li class="side-nav-menu-item">
+        <a class="side-nav-menu-link media align-items-center active" href="./widgets.html">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pulse"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Widgets</span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+      </li>
+      <!-- End Widgets -->
+
+      <!-- Layouts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subLayouts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Layouts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subLayouts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./layouts/static.html">Static</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./layouts/fixed-header-sidebar.html">Fixed Header & Sidebar</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./layouts/static-mini-nav-mobi.html">Mini Nav</a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Layouts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Forms & Tables</li>
+      <!-- End Title -->
+
+      <!-- Form Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pencil-alt"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Forms</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./forms/form-layouts.html">
+              Form Layouts
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./forms/basic-inputs.html">
+              Basic
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./forms/input-groups.html">
+              Input Groups
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./forms/checkboxes.html">
+              Checkboxes & Switches
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Elements -->
+
+      <!-- Form Extentions -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormExtentions">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-ruler-pencil"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Form Extentions</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormExtentions" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/validation.html">
+              Validation
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/flatpickr.html">
+              Datepicker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/date-range-picker.html">
+              Date Range Picker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/select2.html">
+              Select 2
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/tagsinput.html">
+              Input Tags
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/clipboard.html">
+              Clipboard
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/summernote.html">
+              Form Editor
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/masked-inputs.html">
+              Input Masks
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/dropzone.html">
+              Dropzone
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/range-sliders.html">
+              Range Slider
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./advanced-forms/google-recaptcha.html">
+              Google reCAPTCHA
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Extentions -->
+
+      <!-- Tables -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subTables">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-grid-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Tables</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Tables: subTables -->
+        <ul id="subTables" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./tables/basic-tables.html">Basic Tables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./tables/datatables.html">Datatables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./tables/editable-rows.html">Editable Rows</a>
+          </li>
+        </ul>
+        <!-- End Tables: subTables -->
+      </li>
+      <!-- End Tables -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">UI Kit Components</li>
+      <!-- End Title -->
+
+      <!-- UI Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subUiElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-package"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">UI Elements</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Elements: subUiElements -->
+        <ul id="subUiElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/accordions.html">Accordions</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/alerts.html">Alerts</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/buttons.html">Buttons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/badges-indicators.html">Badges & Indicators</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/progress.html">Progress</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/dropdowns.html">Dropdowns</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/icons.html">Icons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./ui-elements/typography.html">Typography</a>
+          </li>
+        </ul>
+        <!-- End UI Elements: subUiElements -->
+      </li>
+      <!-- End UI Elements -->
+
+      <!-- Cards -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCards">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-media-overlay-alt-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Cards</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Cards: subCards -->
+        <ul id="subCards" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./cards/card-variations.html">Card Variations</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./cards/card-options.html">Card Options</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./cards/card-designs.html">Card Designs</a>
+          </li>
+        </ul>
+        <!-- End Cards: subCards -->
+      </li>
+      <!-- End Cards -->
+
+      <!-- Charts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCharts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pie-chart"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Charts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Charts: subCharts -->
+        <ul id="subCharts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./charts/chartist.html">Chartist</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./charts/google-geo-chart.html">Google Geo Chart</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./charts/timeline-chart.html">Timeline Chart</a>
+          </li>
+        </ul>
+        <!-- End Charts: subCharts -->
+      </li>
+      <!-- End Charts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Pages</li>
+      <!-- End Title -->
+
+      <!-- Authentication -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subAuthentication">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-user"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Authentication</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Authentication: subMenu -->
+        <ul id="subAuthentication" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./authentication/login.html">Login</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./authentication/registration.html">Registration</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./authentication/forgot-password.html">Passowrd Recovery</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="./authentication/lock-screen.html">Lock Screen</a>
+          </li>
+        </ul>
+        <!-- End Authentication: subMenu -->
+      </li>
+      <!-- End Authentication -->
+    </ul>
+  </aside>
+  <!-- End Sidebar Nav -->
+
+  <div class="content">
+    <div class="py-4 px-3 px-md-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h4 mb-3">Widgets</h1>
+
+        <!-- Breadcrumb -->
+        <nav class="d-none d-md-block" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">UI Kit Components</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Widgets</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card flex-row align-items-center p-3 p-md-4">
+            <div class="icon icon-lg bg-soft-primary rounded-circle mr-3">
+              <i class="nova-direction-alt icon-text d-inline-block text-primary"></i>
+            </div>
+            <div>
+              <h4 class="lh-1 mb-1">83.1%</h4>
+              <h6 class="mb-0">Projects Done</h6>
+            </div>
+            <i class="nova-arrow-up icon-text d-flex text-success ml-auto"></i>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card flex-row align-items-center p-3 p-md-4">
+            <div class="icon icon-lg bg-soft-secondary rounded-circle mr-3">
+              <i class="nova-align-left icon-text d-inline-block text-secondary"></i>
+            </div>
+            <div>
+              <h4 class="lh-1 mb-1">43.2%</h4>
+              <h6 class="mb-0">Total Tasks Done</h6>
+            </div>
+            <i class="nova-arrow-down icon-text d-flex text-danger ml-auto"></i>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card flex-row align-items-center p-3 p-md-4">
+            <div class="icon icon-lg bg-soft-danger rounded-circle mr-3">
+              <i class="nova-unlink icon-text d-inline-block text-danger"></i>
+            </div>
+            <div>
+              <h4 class="lh-1 mb-1">20.9%</h4>
+              <h6 class="mb-0">Unlocked Items</h6>
+            </div>
+            <i class="nova-arrow-up icon-text d-flex text-success ml-auto"></i>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card text-white bg-secondary h-100">
+            <div class="card-header d-flex">
+              <h5 class="font-weight-semi-bold mb-0">Online store visits</h5>
+
+              <div class="position-relative ml-auto">
+                <a id="dropDown1Invoker" class="unfold-invoker text-white d-flex" href="#" aria-controls="dropDown1" aria-haspopup="true" aria-expanded="false"
+                   data-unfold-target="#dropDown1"
+                   data-unfold-event="click"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-animation-in="fadeIn"
+                   data-unfold-animation-out="fadeOut">
+                  <i class="nova-more"></i>
+                </a>
+
+                <ul id="dropDown1" class="unfold unfold-light unfold-top unfold-right position-absolute py-3 mt-3" aria-labelledby="dropDown1Invoker" style="min-width: 150px;">
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-plus unfold-item-icon mr-3"></i>
+                      <span class="media-body">Add</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-pencil unfold-item-icon mr-3"></i>
+                      <span class="media-body">Edit</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                      <span class="media-body">Rename</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-close unfold-item-icon mr-3"></i>
+                      <span class="media-body">Delete</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center px-3 px-md-4 mb-3 mb-md-4">
+                <div class="h3 font-weight-bold mb-0">2,264</div>
+                <i class="nova-stats-up icon-text ml-2"></i>
+              </div>
+
+              <div class="js-area-chart chart--points-invisible position-relative d-flex rounded-bottom chart--labels-hidden"
+                data-series='[
+                              [
+                               {"meta":"Bitcoin","value":"150"},
+                               {"meta":"Bitcoin","value":"200"},
+                               {"meta":"Bitcoin","value":"150"},
+                               {"meta":"Bitcoin","value":"200"},
+                               {"meta":"Bitcoin","value":"100"},
+                               {"meta":"Bitcoin","value":"120"},
+                               {"meta":"Bitcoin","value":"70"}
+                             ]
+                           ]'
+                data-height="98"
+                data-high="300"
+                data-chart-padding='{"top": 5}'
+                data-is-line-smooth="[false]"
+                data-line-colors='["#fff"]'
+                data-line-width='["2px"]'
+                data-fill-opacity="1"
+                data-fill-colors='["#4BE7FF"]'
+                data-is-show-tooltips="true"
+                data-is-tooltips-append-to-body="true"
+                data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                data-tooltip-currency="USD "
+                data-is-show-points="true"
+                data-point-custom-class='chart__point--donut chart__point--border-xs border-secondary rounded-circle'
+                data-point-dimensions='{"width":15,"height":15}'></div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card text-white bg-primary-darker h-100">
+            <div class="card-header d-flex">
+              <h5 class="font-weight-semi-bold mb-0">Average order value</h5>
+
+              <div class="position-relative ml-auto">
+                <a id="dropDown2Invoker" class="unfold-invoker text-white d-flex" href="#" aria-controls="dropDown2" aria-haspopup="true" aria-expanded="false"
+                   data-unfold-target="#dropDown2"
+                   data-unfold-event="click"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-animation-in="fadeIn"
+                   data-unfold-animation-out="fadeOut">
+                  <i class="nova-more"></i>
+                </a>
+
+                <ul id="dropDown2" class="unfold unfold-light unfold-top unfold-right position-absolute py-3 mt-3" aria-labelledby="dropDown2Invoker" style="min-width: 150px;">
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-plus unfold-item-icon mr-3"></i>
+                      <span class="media-body">Add</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-pencil unfold-item-icon mr-3"></i>
+                      <span class="media-body">Edit</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                      <span class="media-body">Rename</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-close unfold-item-icon mr-3"></i>
+                      <span class="media-body">Delete</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center px-3 px-md-4 mb-3 mb-md-4">
+                <div class="h3 font-weight-bold mb-0">$133.00</div>
+                <i class="nova-stats-up icon-text ml-2"></i>
+              </div>
+
+              <div class="js-area-chart chart--points-invisible position-relative d-flex rounded-bottom chart--labels-hidden"
+                data-series='[
+                            [
+                             {"meta":"Bitcoin","value":"200"},
+                             {"meta":"Bitcoin","value":"100"},
+                             {"meta":"Bitcoin","value":"150"},
+                             {"meta":"Bitcoin","value":"100"},
+                             {"meta":"Bitcoin","value":"130"},
+                             {"meta":"Bitcoin","value":"90"},
+                             {"meta":"Bitcoin","value":"130"}
+                           ]
+                         ]'
+                data-height="98"
+                data-high="300"
+                data-chart-padding='{"top": 5}'
+                data-is-line-smooth="[false]"
+                data-line-colors='["#fff"]'
+                data-line-width='["2px"]'
+                data-fill-opacity="1"
+                data-fill-colors='["#5032ED"]'
+                data-is-show-tooltips="true"
+                data-is-tooltips-append-to-body="true"
+                data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                data-tooltip-currency="USD "
+                data-is-show-points="true"
+                data-point-custom-class='chart__point--donut chart__point--border-xs border-primary-darker rounded-circle'
+                data-point-dimensions='{"width":15,"height":15}'></div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card text-white bg-primary h-100">
+            <div class="card-header d-flex">
+              <h5 class="font-weight-semi-bold mb-0">Total sales</h5>
+
+              <div class="position-relative ml-auto">
+                <a id="dropDown3Invoker" class="unfold-invoker text-white d-flex" href="#" aria-controls="dropDown3" aria-haspopup="true" aria-expanded="false"
+                   data-unfold-target="#dropDown3"
+                   data-unfold-event="click"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-animation-in="fadeIn"
+                   data-unfold-animation-out="fadeOut">
+                  <i class="nova-more"></i>
+                </a>
+
+                <ul id="dropDown3" class="unfold unfold-light unfold-top unfold-right position-absolute py-3 mt-3" aria-labelledby="dropDown3Invoker" style="min-width: 150px;">
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-plus unfold-item-icon mr-3"></i>
+                      <span class="media-body">Add</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-pencil unfold-item-icon mr-3"></i>
+                      <span class="media-body">Edit</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                      <span class="media-body">Rename</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-close unfold-item-icon mr-3"></i>
+                      <span class="media-body">Delete</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="d-flex align-items-center px-3 px-md-4 mb-3 mb-md-4">
+                <div class="h3 font-weight-bold mb-0">350</div>
+                <i class="nova-stats-up icon-text ml-2"></i>
+              </div>
+
+              <div class="js-area-chart chart--points-invisible position-relative d-flex rounded-bottom chart--labels-hidden"
+                data-series='[
+                            [
+                             {"meta":"Bitcoin","value":"250"},
+                             {"meta":"Bitcoin","value":"300"},
+                             {"meta":"Bitcoin","value":"250"},
+                             {"meta":"Bitcoin","value":"300"},
+                             {"meta":"Bitcoin","value":"220"},
+                             {"meta":"Bitcoin","value":"240"},
+                             {"meta":"Bitcoin","value":"190"}
+                           ]
+                         ]'
+                data-height="98"
+                data-high="300"
+                data-chart-padding='{"top": 5}'
+                data-is-line-smooth="[false]"
+                data-line-colors='["#fff"]'
+                data-line-width='["2px"]'
+                data-fill-opacity="1"
+                data-fill-colors='["#A897FD"]'
+                data-is-show-tooltips="true"
+                data-is-tooltips-append-to-body="true"
+                data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                data-tooltip-currency="USD "
+                data-is-show-points="true"
+                data-point-custom-class='chart__point--donut chart__point--border-xs border-primary rounded-circle'
+                data-point-dimensions='{"width":15,"height":15}'></div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-xl-8 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card h-100">
+            <div class="card-header d-flex">
+              <h5 class="font-weight-semi-bold mb-0">Total online store visits</h5>
+              <div class="position-relative ml-auto">
+                <a id="dropDown4Invoker" class="unfold-invoker d-flex" href="#" aria-controls="dropDown4" aria-haspopup="true" aria-expanded="false"
+                   data-unfold-target="#dropDown4"
+                   data-unfold-event="click"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-animation-in="fadeIn"
+                   data-unfold-animation-out="fadeOut">
+                  <i class="nova-more"></i>
+                </a>
+
+                <ul id="dropDown4" class="unfold unfold-light unfold-top unfold-right position-absolute py-3 mt-3" aria-labelledby="dropDown4Invoker" style="min-width: 150px;">
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-plus unfold-item-icon mr-3"></i>
+                      <span class="media-body">Add</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-pencil unfold-item-icon mr-3"></i>
+                      <span class="media-body">Edit</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                      <span class="media-body">Rename</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-close unfold-item-icon mr-3"></i>
+                      <span class="media-body">Delete</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body pt-0">
+              <div class="d-flex align-items-center mb-3 mb-md-4">
+                <span class="d-flex align-items-center mr-2 mr-md-3">
+                  <span class="indicator indicator-lg indicator-primary rounded-circle mr-2"></span>
+                  <small>Sales over time</small>
+                </span>
+                <span class="d-flex align-items-center">
+                  <span class="indicator indicator-lg bg-semi-lighter rounded-circle mr-2"></span>
+                  <small>Sales over time</small>
+                </span>
+              </div>
+
+              <div class="js-area-chart chart chart--axis-x chart--labels-with-helper chart--points-invisible position-relative pb-1"
+                data-series='[
+                             [
+                               {"meta":"Bitcoin: ","value":"20"},
+                               {"meta":"Bitcoin: ","value":"30"},
+                               {"meta":"Bitcoin: ","value":"60"},
+                               {"meta":"Bitcoin: ","value":"30"},
+                               {"meta":"Bitcoin: ","value":"60"},
+                               {"meta":"Bitcoin: ","value":"50"},
+                               {"meta":"Bitcoin: ","value":"70"}
+                             ],
+                             [
+                               {"meta":"Bitcoin: ","value":"20"},
+                               {"meta":"Bitcoin: ","value":"60"},
+                               {"meta":"Bitcoin: ","value":"20"},
+                               {"meta":"Bitcoin: ","value":"90"},
+                               {"meta":"Bitcoin: ","value":"30"},
+                               {"meta":"Bitcoin: ","value":"60"},
+                               {"meta":"Bitcoin: ","value":"20"}
+                             ]
+                           ]'
+                data-labels='["Jan 01", "Jan 15", "Jan 29", "Feb 19", "Feb 26", "Mar 12", "Mar 25"]'
+                data-height="234"
+                data-mobile-height="117"
+                data-high="150"
+                data-offset-x="30"
+                data-offset-y="30"
+                data-is-hide-line="true"
+                data-is-show-axis-x="true"
+                data-is-show-axis-y="true"
+                data-is-line-smooth="true"
+                data-fill-opacity=".6"
+                data-fill-colors='["#eeeef1","#8069f2"]'
+                data-stroke-color-axis-x="#e1eaea"
+                data-stroke-dasharray-axis-x="none"
+                data-stroke-color-axis-y="#e1eaea"
+                data-stroke-dasharray-axis-y="4"
+                data-is-side-stroke-hidden-axis-x="true"
+                data-text-size-x="14px"
+                data-text-color-x="#868e96"
+                data-text-offset-top-x="10"
+                data-text-align-axis-x="center"
+                data-text-size-y="14px"
+                data-text-color-y="#868e96"
+                data-line-colors='["#eeeef1","#8069f2"]'
+                data-is-show-tooltips="true"
+                data-is-line-tooltips="false"
+                data-tooltip-custom-class="chart-tooltip chart-tooltip--custom chart-tooltip--black small text-white text-left p-2"
+                data-tooltip-currency="$ "
+                data-is-show-points="true"
+                data-point-custom-class='chart__point--donut chart__point--border-xs border-primary rounded-circle'
+                data-point-dimensions='{"width":15,"height":15}'></div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card h-100">
+            <div class="card-header d-flex">
+              <h5 class="font-weight-semi-bold mb-0">Device type</h5>
+
+              <div class="position-relative ml-auto">
+                <a id="dropDown5Invoker" class="unfold-invoker d-flex" href="#" aria-controls="dropDown5" aria-haspopup="true" aria-expanded="false"
+                   data-unfold-target="#dropDown5"
+                   data-unfold-event="click"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-animation-in="fadeIn"
+                   data-unfold-animation-out="fadeOut">
+                  <i class="nova-more"></i>
+                </a>
+
+                <ul id="dropDown5" class="unfold unfold-light unfold-top unfold-right position-absolute py-3 mt-3" aria-labelledby="dropDown5Invoker" style="min-width: 150px;">
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-plus unfold-item-icon mr-3"></i>
+                      <span class="media-body">Add</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-pencil unfold-item-icon mr-3"></i>
+                      <span class="media-body">Edit</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                      <span class="media-body">Rename</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-close unfold-item-icon mr-3"></i>
+                      <span class="media-body">Delete</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body pt-0">
+              <div class="js-bar-chart position-relative mb-3 mb-md-4"
+                   data-series="[
+                             [226,226,226,226],
+                             [134,95,100,89],
+                             [114,75,80,59],
+                             [104,65,30,49]
+                           ]"
+                   data-labels='["Mon","Tue","Wed","Thu"]'
+                   data-is-stack-bars="true"
+                   data-is-show-axis-x="false"
+                   data-is-show-axis-y="false"
+                   data-is-show-label-axis-x="true"
+                   data-is-show-label-axis-y="false"
+                   data-height="226"
+                   data-mobile-height="180"
+                   data-high="226"
+                   data-low="0"
+                   data-offset-axis-x="23"
+                   data-distance="23"
+                   data-stroke-width="60"
+                   data-mobile-stroke-width="50"
+                   data-stroke-color='["#f9f9f9","#474dee","#c2c4f4","#e6e7f7"]'
+                   data-is-grid-solid-line="true"
+                   data-grid-line-color="#eeeef1"
+                   data-label-color-axis-x="#4a4e69"
+                   data-label-font-size-axis-x="14px"
+                   data-label-color-axis-y="#868e96"
+                   data-label-font-size-axis-y="14px"
+                   data-is-show-tooltips="true"
+                   data-postfix="%"
+                   data-tooltip-custom-class="chart-tooltip small text-white px-2 py-1"></div>
+
+              <div class="d-flex align-items-center">
+                <span class="d-flex align-items-center mr-2 mr-md-3">
+                  <span class="indicator indicator-lg indicator-primary rounded-circle mr-2"></span>
+                  <small>Mobile</small>
+                </span>
+                <span class="d-flex align-items-center mr-2 mr-md-3">
+                  <span class="indicator indicator-lg bg-semi-soft-primary rounded-circle mr-2"></span>
+                  <small>Desktop</small>
+                </span>
+                <span class="d-flex align-items-center">
+                  <span class="indicator indicator-lg bg-soft-primary rounded-circle mr-2"></span>
+                  <small>Tablet</small>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card flex-row align-items-center p-3 p-md-4 mb-2">
+            <div class="js-donut-chart d-flex position-relative mr-2 mr-md-3" style="width: 50px; height: 50px;"
+                 data-series="[60,40]"
+                 data-border-width="6"
+                 data-start-angle="0"
+                 data-fill-colors='["#0cdcb9","#eeeef1"]'>
+              <i class="nova-arrow-up icon-text icon-text-xs position-centered position-absolute text-info"></i>
+            </div>
+            <div>
+              <h5 class="mb-0">Online store visits</h5>
+              <p class="mb-0">Sales over time</p>
+            </div>
+            <small class="d-flex ml-auto">+15,3%</small>
+          </div>
+          <!-- End Widget -->
+
+          <!-- Widget -->
+          <div class="card flex-row align-items-center p-3 p-md-4 mb-2">
+            <div class="js-donut-chart d-flex position-relative mr-2 mr-md-3" style="width: 50px; height: 50px;"
+                 data-series="[75,25]"
+                 data-border-width="6"
+                 data-start-angle="320"
+                 data-fill-colors='["#474dee","#eeeef1"]'>
+              <i class="nova-arrow-down icon-text icon-text-xs position-centered position-absolute text-primary-darker"></i>
+            </div>
+            <div>
+              <h5 class="mb-0">Online store visits</h5>
+              <p class="mb-0">Sales over time</p>
+            </div>
+            <small class="d-flex ml-auto">-5,3%</small>
+          </div>
+          <!-- End Widget -->
+
+          <!-- Widget -->
+          <div class="card flex-row align-items-center p-3 p-md-4 mb-2">
+            <div class="js-donut-chart d-flex position-relative mr-2 mr-md-3" style="width: 50px; height: 50px;"
+                 data-series="[80,20]"
+                 data-border-width="6"
+                 data-start-angle="0"
+                 data-fill-colors='["#fcd53b","#eeeef1"]'>
+              <i class="nova-arrow-up icon-text icon-text-xs position-centered position-absolute text-warning"></i>
+            </div>
+            <div>
+              <h5 class="mb-0">Online store visits</h5>
+              <p class="mb-0">Sales over time</p>
+            </div>
+            <small class="d-flex ml-auto">+15,3%</small>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-xl-8 mb-3 mb-md-4">
+          <!-- Widget -->
+          <div class="card">
+            <div class="card-header d-flex">
+              <h5 class="font-weight-semi-bold mb-0">Total online store visits</h5>
+              <div class="position-relative ml-auto">
+                <a id="dropDown6Invoker" class="unfold-invoker d-flex" href="#" aria-controls="dropDown6" aria-haspopup="true" aria-expanded="false"
+                   data-unfold-target="#dropDown6"
+                   data-unfold-event="click"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-animation-in="fadeIn"
+                   data-unfold-animation-out="fadeOut">
+                  <i class="nova-more"></i>
+                </a>
+
+                <ul id="dropDown6" class="unfold unfold-light unfold-top unfold-right position-absolute py-3 mt-3" aria-labelledby="dropDown6Invoker" style="min-width: 150px;">
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-plus unfold-item-icon mr-3"></i>
+                      <span class="media-body">Add</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-pencil unfold-item-icon mr-3"></i>
+                      <span class="media-body">Edit</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                      <span class="media-body">Rename</span>
+                    </a>
+                  </li>
+                  <li class="unfold-item">
+                    <a class="unfold-link media align-items-center text-nowrap" href="#">
+                      <i class="nova-close unfold-item-icon mr-3"></i>
+                      <span class="media-body">Delete</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body pt-4 pb-5">
+              <div class="js-bar-chart"
+                   data-series="[
+                           [90,60,70,100,60,20,5]
+                         ]"
+                   data-labels='["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]'
+                   data-is-show-axis-x="false"
+                   data-is-show-axis-y="true"
+                   data-is-show-label-axis-x="true"
+                   data-is-show-label-axis-y="true"
+                   data-height="218"
+                   data-high="150"
+                   data-offset-axis-x="23"
+                   data-offset-axis-y="30"
+                   data-low="0"
+                   data-distance="52"
+                   data-stroke-width="40"
+                   data-mobile-stroke-width="30"
+                   data-stroke-color='["#8069f2"]'
+                   data-is-grid-solid-line="true"
+                   data-is-show-bar-labels="true"
+                   data-grid-line-color="#eeeef1"
+                   data-label-color-axis-x="#4a4e69"
+                   data-label-font-size-axis-x="14px"
+                   data-label-color-axis-y="#868e96"
+                   data-label-font-size-axis-y="14px"></div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Device type</h5>
+              <span class="badge badge-pill badge-secondary ml-auto">2,264</span>
+            </div>
+            <div class="card-body pt-0">
+              <div class="js-donut-chart position-relative d-flex mx-auto mb-3 mb-md-4 mt-3" style="width: 120px; height: 120px;"
+                   data-series='[
+                             {"meta":"Baseline - ","value":65},
+                             {"meta":"Today - ","value":35}
+                           ]'
+                   data-border-width="8"
+                   data-start-angle="0"
+                   data-fill-colors='["#07d7f7","#eeeef1"]'
+                   data-is-show-tooltips="true"
+                   data-tooltip-currency="%"
+                   data-is-tooltip-currency-reverse="true"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle chart-tooltip--centered small text-white text-nowrap bg-secondary rounded px-2 py-1"></div>
+
+              <div class="d-flex align-items-center">
+                <span class="d-flex align-items-center mr-2 mr-md-3">
+                  <span class="indicator indicator-lg bg-semi-lighter rounded-circle mr-2"></span>
+                  <small>Baseline</small>
+                </span>
+                <span class="d-flex align-items-center">
+                  <span class="indicator indicator-lg indicator-secondary rounded-circle mr-2"></span>
+                  <small>Today</small>
+                </span>
+                <i class="nova-stats-up icon-text text-primary ml-auto"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Device type</h5>
+              <span class="badge badge-pill badge-secondary ml-auto">876</span>
+            </div>
+            <div class="card-body pt-3">
+              <div class="mb-3 mb-md-4">
+                <header class="d-flex align-items-center mb-2">
+                  <h6 class="font-weight-semi-bold mb-0">Mobile</h6>
+                  <span class="ml-auto">1,135</span>
+                </header>
+
+                <div class="progress progress-sm bg-semi-lighter">
+                  <div class="progress-bar rounded" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="mb-3 mb-md-4">
+                <header class="d-flex align-items-center mb-2">
+                  <h6 class="font-weight-semi-bold mb-0">Desktop</h6>
+                  <span class="ml-auto">1,047</span>
+                </header>
+
+                <div class="progress progress-sm bg-semi-lighter">
+                  <div class="progress-bar bg-secondary rounded" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div>
+                <header class="d-flex align-items-center mb-2">
+                  <h6 class="font-weight-semi-bold mb-0">Tablet</h6>
+                  <span class="ml-auto">81</span>
+                </header>
+
+                <div class="progress progress-sm bg-semi-lighter">
+                  <div class="progress-bar-darker rounded" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Projects Done</h5>
+              <span class="badge badge-pill badge-primary-darker ml-auto">325</span>
+            </div>
+            <div class="card-body pt-0">
+              <div class="d-flex align-items-center mb-3">
+                <div class="h3 text-primary-darker mb-0">254</div>
+                <i class="nova-arrow-up icon-text text-secondary ml-2"></i>
+              </div>
+
+              <div class="mt-3">
+                <div class="js-bar-chart position-relative"
+                     data-series="[
+                               [135,135,135,135,135,135,135,135,135,135,135,135],
+                               [77,82,105,116,82,105,39,82,76,82,94,76],
+                               [58,40,58,45,38,79,29,26,57,62,70,57]
+                             ]"
+                     data-is-stack-bars="true"
+                     data-is-show-axis-x="false"
+                     data-is-show-axis-y="false"
+                     data-is-show-label-axis-x="false"
+                     data-is-show-label-axis-y="false"
+                     data-height="135"
+                     data-high="135"
+                     data-low="0"
+                     data-distance="14"
+                     data-stroke-width="5"
+                     data-stroke-color='["#ededfe","#bbbdf9","#474dee"]'
+                     data-is-stroke-rounded="true"
+                     data-is-show-tooltips="true"
+                     data-postfix="%"
+                     data-tooltip-custom-class="chart-tooltip small text-white bg-primary-darker rounded px-2 py-1"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card bg-primary text-white h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Total Tasks</h5>
+              <span class="badge badge-pill bg-white text-primary ml-auto">86</span>
+            </div>
+            <div class="card-body pt-0">
+              <div class="d-flex align-items-center mb-3">
+                <div class="h3 mb-0">254</div>
+                <i class="nova-arrow-up icon-text ml-2"></i>
+              </div>
+
+              <div class="mt-6">
+                <div class="js-area-chart chart--points-invisible chart--labels-hidden position-relative mb-3 mb-md-4"
+                     data-series='[
+                               [
+                                 {"meta":"Bitcoin","value":"0"},
+                                 {"meta":"Bitcoin","value":"40"},
+                                 {"meta":"Bitcoin","value":"45"},
+                                 {"meta":"Bitcoin","value":"60"},
+                                 {"meta":"Bitcoin","value":"40"},
+                                 {"meta":"Bitcoin","value":"50"},
+                                 {"meta":"Bitcoin","value":"40"}
+                               ],
+                               [
+                                 {"meta":"Bitcoin","value":"30"},
+                                 {"meta":"Bitcoin","value":"40"},
+                                 {"meta":"Bitcoin","value":"30"},
+                                 {"meta":"Bitcoin","value":"40"},
+                                 {"meta":"Bitcoin","value":"50"},
+                                 {"meta":"Bitcoin","value":"40"},
+                                 {"meta":"Bitcoin","value":"50"}
+                               ]
+                             ]'
+                     data-labels='["Jan 01", "Jan 15", "Jan 29", "Feb 19", "Feb 26", "Mar 12", "Mar 25"]'
+                     data-height="60"
+                     data-high="60"
+                     data-chart-padding='{"top": 5}'
+                     data-is-hide-area="true"
+                     data-line-colors='["#9684f1","#ffffff"]'
+                     data-line-dasharrays='[10,0]'
+                     data-line-width='["3px","3px"]'
+                     data-is-line-smooth='[false,false]'
+                     data-fill-opacity=".6"
+                     data-fill-colors='["#eeeef1","#8069f2"]'
+                     data-stroke-dash-array-axis-y="4"
+                     data-is-show-tooltips="true"
+                     data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                     data-tooltip-currency="USD "
+                     data-is-show-points="true"
+                     data-point-custom-class='chart__point--donut chart__point--border-xs border-light rounded-circle'
+                     data-point-dimensions='{"width":15,"height":15}'></div>
+
+                <div class="d-flex align-items-center pt-1">
+                  <span class="d-flex align-items-center mr-2 mr-md-3">
+                    <span class="indicator indicator-lg bg-semi-soft-white rounded-circle mr-2"></span>
+                    <small>Baseline</small>
+                  </span>
+                  <span class="d-flex align-items-center">
+                    <span class="indicator indicator-lg bg-white rounded-circle mr-2"></span>
+                    <small>Today</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card bg-primary-darker text-white h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Projects Done</h5>
+              <span class="badge badge-pill bg-white text-primary-darker ml-auto">325</span>
+            </div>
+            <div class="card-body pt-0">
+              <div class="d-flex align-items-center mb-3">
+                <div class="h3 font-weight-bold text-white mb-0">254</div>
+                <i class="nova-arrow-up icon-text text-white ml-2"></i>
+              </div>
+
+              <div class="mt-3">
+                <div class="js-bar-chart position-relative"
+                     data-series="[
+                             [135,135,135,135,135,135,135,135,135,135,135,135],
+                             [77,82,105,116,82,105,39,82,76,82,94,76],
+                             [58,40,58,45,38,79,29,26,57,62,70,57]
+                           ]"
+                     data-is-stack-bars="true"
+                     data-is-show-axis-x="false"
+                     data-is-show-axis-y="false"
+                     data-is-show-label-axis-x="false"
+                     data-is-show-label-axis-y="false"
+                     data-height="135"
+                     data-high="135"
+                     data-low="0"
+                     data-distance="14"
+                     data-stroke-width="5"
+                     data-stroke-color='["#595fef","#8b8ff3","#ffffff"]'
+                     data-is-stroke-rounded="true"
+                     data-is-grid-solid-line="true"
+                     data-grid-line-color="#eeeef1"
+                     data-label-color-axis-x="#4a4e69"
+                     data-label-font-size-axis-x="14px"
+                     data-label-color-axis-y="#868e96"
+                     data-label-font-size-axis-y="14px"
+                     data-is-show-tooltips="true"
+                     data-postfix="%"
+                     data-tooltip-custom-class="chart-tooltip small text-primary bg-white rounded px-2 py-1"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card bg-secondary text-white h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Device type</h5>
+              <span class="badge badge-pill bg-white text-secondary ml-auto">2,264</span>
+            </div>
+            <div class="card-body pt-0">
+              <div class="js-donut-chart position-relative d-flex mx-auto mb-3 mb-md-4 mt-3" style="width: 120px; height: 120px;"
+                   data-series='[
+                             {"meta":"Baseline - ","value":65},
+                             {"meta":"Today - ","value":35}
+                           ]'
+                   data-border-width="8"
+                   data-start-angle="0"
+                   data-fill-colors='["#93ebfa","#ffffff"]'
+                   data-is-show-tooltips="true"
+                   data-tooltip-currency="%"
+                   data-is-tooltip-currency-reverse="true"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle chart-tooltip--centered small text-white text-nowrap bg-secondary rounded px-2 py-1"></div>
+
+              <div class="d-flex align-items-center">
+                <span class="d-flex align-items-center mr-2 mr-md-3">
+                  <span class="indicator indicator-lg bg-semi-soft-white rounded-circle mr-2"></span>
+                  <small>Baseline</small>
+                </span>
+                <span class="d-flex align-items-center">
+                  <span class="indicator indicator-lg bg-white rounded-circle mr-2"></span>
+                  <small>Today</small>
+                </span>
+                <i class="nova-stats-up icon-text text-white ml-auto"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Total Tasks</h5>
+              <span class="badge badge-pill badge-primary ml-auto">86</span>
+            </div>
+            <div class="card-body pt-0">
+              <div class="mt-6">
+                <div class="js-area-chart chart--points-invisible chart--labels-hidden position-relative mb-9"
+                     data-series='[
+                           [
+                             {"meta":"Bitcoin","value":"0"},
+                             {"meta":"Bitcoin","value":"40"},
+                             {"meta":"Bitcoin","value":"45"},
+                             {"meta":"Bitcoin","value":"60"},
+                             {"meta":"Bitcoin","value":"40"},
+                             {"meta":"Bitcoin","value":"50"},
+                             {"meta":"Bitcoin","value":"40"}
+                           ],
+                           [
+                             {"meta":"Bitcoin","value":"30"},
+                             {"meta":"Bitcoin","value":"40"},
+                             {"meta":"Bitcoin","value":"30"},
+                             {"meta":"Bitcoin","value":"40"},
+                             {"meta":"Bitcoin","value":"50"},
+                             {"meta":"Bitcoin","value":"40"},
+                             {"meta":"Bitcoin","value":"50"}
+                           ]
+                         ]'
+                     data-labels='["Jan 01", "Jan 15", "Jan 29", "Feb 19", "Feb 26", "Mar 12", "Mar 25"]'
+                     data-height="60"
+                     data-high="60"
+                     data-chart-padding='{"top": 5}'
+                     data-is-hide-area="true"
+                     data-line-colors='["#eeeef1","#8069f2"]'
+                     data-line-dasharrays='[10,0]'
+                     data-line-width='["3px","3px"]'
+                     data-is-line-smooth='[false,false]'
+                     data-fill-opacity=".6"
+                     data-fill-colors='["#eeeef1","#8069f2"]'
+                     data-stroke-dash-array-axis-y="4"
+                     data-is-show-tooltips="true"
+                     data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                     data-tooltip-currency="USD "
+                     data-is-show-points="true"
+                     data-point-custom-class='chart__point--donut chart__point--border-xs border-primary rounded-circle'
+                     data-point-dimensions='{"width":15,"height":15}'></div>
+
+                <div class="d-flex align-items-center pt-2">
+                  <span class="d-flex align-items-center mr-2 mr-md-3">
+                    <span class="indicator indicator-lg bg-semi-lighter rounded-circle mr-2"></span>
+                    <small>Baseline</small>
+                  </span>
+                  <span class="d-flex align-items-center">
+                    <span class="indicator indicator-lg indicator-primary rounded-circle mr-2"></span>
+                    <small>Today</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+        <div class="col-md-6 col-xl-3 mb-3 mb-xl-4">
+          <!-- Widget -->
+          <div class="card bg-dark-v2 text-white h-100">
+            <div class="card-header d-flex align-items-center">
+              <h5 class="font-weight-semi-bold mb-0">Device type</h5>
+              <span class="badge badge-pill bg-white text-darker ml-auto">876</span>
+            </div>
+            <div class="card-body pt-3">
+              <div class="mb-3 mb-md-4">
+                <header class="d-flex align-items-center mb-2">
+                  <h6 class="font-weight-semi-bold mb-0">Mobile</h6>
+                  <span class="ml-auto">1,135</span>
+                </header>
+
+                <div class="progress progress-sm bg-semi-darker">
+                  <div class="progress-bar bg-white rounded" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="mb-3 mb-md-4">
+                <header class="d-flex align-items-center mb-2">
+                  <h6 class="font-weight-semi-bold mb-0">Desktop</h6>
+                  <span class="ml-auto">1,047</span>
+                </header>
+
+                <div class="progress progress-sm bg-semi-darker">
+                  <div class="progress-bar bg-white rounded" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div>
+                <header class="d-flex align-items-center mb-2">
+                  <h6 class="font-weight-semi-bold mb-0">Tablet</h6>
+                  <span class="ml-auto">81</span>
+                </header>
+
+                <div class="progress progress-sm bg-semi-darker">
+                  <div class="progress-bar bg-white rounded" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="small bg-white p-3 px-md-4 mt-auto">
+      <div class="row justify-content-between">
+        <div class="col-lg text-center text-lg-left mb-3 mb-lg-0">
+          <ul class="list-dot list-inline mb-0">
+            <li class="list-dot-item list-dot-item-not list-inline-item mr-lg-2"><a class="link-dark" href="#">FAQ</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Support</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center mb-3 mb-lg-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-vimeo-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-github"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center text-lg-right">
+          &copy; 2019 Htmlstream. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+</main>
+
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Libraries -->
+<script src="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+<script src="../assets/vendor/select2/dist/js/select2.full.min.js"></script>
+<script src="../assets/vendor/chartist/dist/chartist.min.js"></script>
+<script src="../assets/vendor/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<script src="../assets/vendor/chartist-bar-labels/src/scripts/chartist-bar-labels.js"></script>
+<script src="../assets/vendor/resize-sensor/dist/resizeSensor.min.js"></script>
+<script src="../assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+<script src="../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script src="../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+<script src="../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+<!-- JS Nova -->
+<script src="../assets/js/hs.core.js"></script>
+<script src="../assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="../assets/js/components/hs.side-nav.js"></script>
+<script src="../assets/js/components/hs.unfold.js"></script>
+<script src="../assets/js/components/hs.flatpickr.js"></script>
+<script src="../assets/js/components/hs.header-search.js"></script>
+<script src="../assets/js/components/hs.select2.js"></script>
+<script src="../assets/js/components/hs.chartist-area.js"></script>
+<script src="../assets/js/components/hs.chartist-bar.js"></script>
+<script src="../assets/js/components/hs.chartist-donut.js"></script>
+<script src="../assets/js/components/hs.autocomplete.js"></script>
+
+<!-- JS Libraries Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scroll
+    $.HSCore.components.HSMalihuScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav', {
+      afterOpen: function () {
+        console.log('Opened!');
+      },
+      afterClose: function () {
+        console.log('Closed!');
+      }
+    });
+
+    // initialization of dropdown component
+    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+      unfoldHideOnScroll: false,
+      afterOpen: function () {
+        // initialization of charts
+        $.HSCore.components.HSChartistBar.init('#activity .js-bar-chart');
+
+        setTimeout(function () {
+          $('#activity .js-bar-chart').css('opacity', 1);
+        }, 100);
+
+        // help function for accordions in hidden block
+        $('#headerProjects .accordion-header').on('click', function () {
+          // vars
+          var target = $(this).data('target');
+
+          $(target).collapse('show');
+        });
+      }
+    });
+
+    // initialization of range datepicker
+    $.HSCore.components.HSFlatpickr.init('#headerRightSidebarDatepicker', {
+      locale: {
+        weekdays: {
+          shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        }
+      },
+      nextArrow: '<i class="nova-arrow-right icon-text icon-text-xs"></i>',
+      prevArrow: '<i class="nova-arrow-left icon-text icon-text-xs"></i>'
+    });
+
+    // initialization of show on type module
+    $.HSCore.components.HSHeaderSearch.init('.js-header-search');
+
+    // initialization of show on type module
+    $.HSCore.components.HSSelect2.init('.js-custom-select');
+
+    // initialization of charts
+    $.HSCore.components.HSChartistArea.init('.js-area-chart');
+    $.HSCore.components.HSChartistBar.init('.js-bar-chart');
+    $.HSCore.components.HSChartistDonut.init('.js-donut-chart');
+
+    // initialization of autocomplete
+    $.HSCore.components.HSAutocomplete.init('.js-autocomplete');
+  });
+</script>
+</body>
+</html>

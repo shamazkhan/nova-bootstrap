@@ -1,0 +1,2986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Icons | Nova - Responsive WebApp UI Kit</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="../../assets/vendor/nova-icons/nova-icons.css" rel="stylesheet">
+
+  <!-- CSS Implementing Libraries -->
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+  <!-- CSS Nova Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header header-light bg-white">
+  <nav class="navbar flex-nowrap p-0">
+    <div class="navbar-brand-wrapper bg-dark-v1 d-flex align-items-center col-auto">
+      <!-- Logo For Mobile View -->
+      <a class="navbar-brand navbar-brand-mobile" href="../widgets.html">
+        <img class="img-fluid w-100" src="../../assets/img/logo-mini.png" alt="Nova">
+      </a>
+      <!-- End Logo For Mobile View -->
+
+      <!-- Logo For Desktop View -->
+      <a class="navbar-brand navbar-brand-desktop" href="../widgets.html">
+      <img class="side-nav-show-on-closed" src="../../assets/img/logo-mini.png" alt="Nova" style="width: 41px; height: 33px;">
+      <img class="side-nav-hide-on-closed" src="../../assets/img/logo.png" alt="Nova" style="width: 130px; height: 33px;">
+      </a>
+      <!-- End Logo For Desktop View -->
+    </div>
+
+    <div class="header-content col px-md-3">
+      <div class="d-flex align-items-center">
+        <!-- Side Nav Toggle -->
+        <a class="js-side-nav header-invoker d-flex mr-md-2" href="#" data-close-invoker="#sidebarClose" data-target="#sidebar" data-target-wrapper="body">
+          <i class="nova-align-left"></i>
+        </a>
+        <!-- End Side Nav Toggle -->
+
+        <!-- Header Search -->
+        <div class="js-header-search position-relative"
+             data-search-mobile-invoker="#headerSearchMobileInvoker"
+             data-search-form="#headerSearchForm"
+             data-search-field="#headerSearchField">
+          <a id="headerSearchMobileInvoker" class="header-search-invoker header-invoker" href="#">
+            <i class="nova-search"></i>
+          </a>
+
+           <form id="headerSearchForm" class="header-search input-group input-group-merge w-xl-31_25rem mr-2" action="#">
+           <input type="text" class="js-autocomplete header-search-input form-control form-control-append-icon" placeholder="Search..."
+                  data-url="../../assets/include/ajax/autocomplete-data.json">
+            <div class="input-group-append-merge">
+              <i class="nova-search icon-text"></i>
+            </div>
+          </form>
+        </div>
+        <!-- End Header Search -->
+
+        <a class="link-dark ml-auto mr-3 mr-sm-0" href="../../demo-crypto/dashboards/index.html">
+          Crypto Demo
+        </a>
+        <a class="link-dark position-relative mx-3 pr-3 d-none d-sm-block" href="../../documentation/getting-started/changelog.html">
+          Changelog (v1.2.2) <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-secondary rounded-circle"></span>
+        </a>
+        <a class="btn btn-primary mr-2" href="../../documentation/">Documentation</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+  <!-- Sidebar Nav -->
+  <aside id="sidebar" class="js-custom-scroll side-nav">
+    <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+      <!-- Title -->
+      <li class="sidebar-heading h6">Widgets & Layouts</li>
+      <!-- End Title -->
+
+      <!-- Widgets -->
+      <li class="side-nav-menu-item">
+        <a class="side-nav-menu-link media align-items-center" href="../widgets.html">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pulse"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Widgets</span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+      </li>
+      <!-- End Widgets -->
+
+      <!-- Layouts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subLayouts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Layouts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subLayouts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static.html">Static</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/fixed-header-sidebar.html">Fixed Header & Sidebar</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static-mini-nav-mobi.html">Mini Nav</a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Layouts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Forms & Tables</li>
+      <!-- End Title -->
+
+      <!-- Form Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pencil-alt"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Forms</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/form-layouts.html">
+              Form Layouts
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/basic-inputs.html">
+              Basic
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/input-groups.html">
+              Input Groups
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/checkboxes.html">
+              Checkboxes & Switches
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Elements -->
+
+      <!-- Form Extentions -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormExtentions">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-ruler-pencil"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Form Extentions</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormExtentions" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/validation.html">
+              Validation
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/flatpickr.html">
+              Datepicker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/date-range-picker.html">
+              Date Range Picker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/select2.html">
+              Select 2
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/tagsinput.html">
+              Input Tags
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/clipboard.html">
+              Clipboard
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/summernote.html">
+              Form Editor
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/masked-inputs.html">
+              Input Masks
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/dropzone.html">
+              Dropzone
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/range-sliders.html">
+              Range Slider
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/google-recaptcha.html">
+              Google reCAPTCHA
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Extentions -->
+
+      <!-- Tables -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subTables">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-grid-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Tables</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Tables: subTables -->
+        <ul id="subTables" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/basic-tables.html">Basic Tables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/datatables.html">Datatables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/editable-rows.html">Editable Rows</a>
+          </li>
+        </ul>
+        <!-- End Tables: subTables -->
+      </li>
+      <!-- End Tables -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">UI Kit Components</li>
+      <!-- End Title -->
+
+      <!-- UI Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu side-nav-opened active">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subUiElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-package"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">UI Elements</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Elements: subUiElements -->
+        <ul id="subUiElements" class="side-nav-menu side-nav-menu-second-level mb-0" style="display: block;">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/accordions.html">Accordions</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/alerts.html">Alerts</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/buttons.html">Buttons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/badges-indicators.html">Badges & Indicators</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/progress.html">Progress</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/dropdowns.html">Dropdowns</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link active" href="../ui-elements/icons.html">Icons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/typography.html">Typography</a>
+          </li>
+        </ul>
+        <!-- End UI Elements: subUiElements -->
+      </li>
+      <!-- End UI Elements -->
+
+      <!-- Cards -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCards">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-media-overlay-alt-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Cards</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Cards: subCards -->
+        <ul id="subCards" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-variations.html">Card Variations</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-options.html">Card Options</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-designs.html">Card Designs</a>
+          </li>
+        </ul>
+        <!-- End Cards: subCards -->
+      </li>
+      <!-- End Cards -->
+
+      <!-- Charts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCharts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pie-chart"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Charts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Charts: subCharts -->
+        <ul id="subCharts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/chartist.html">Chartist</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/google-geo-chart.html">Google Geo Chart</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/timeline-chart.html">Timeline Chart</a>
+          </li>
+        </ul>
+        <!-- End Charts: subCharts -->
+      </li>
+      <!-- End Charts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Pages</li>
+      <!-- End Title -->
+
+      <!-- Authentication -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subAuthentication">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-user"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Authentication</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Authentication: subMenu -->
+        <ul id="subAuthentication" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/login.html">Login</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/registration.html">Registration</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/forgot-password.html">Passowrd Recovery</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/lock-screen.html">Lock Screen</a>
+          </li>
+        </ul>
+        <!-- End Authentication: subMenu -->
+      </li>
+      <!-- End Authentication -->
+    </ul>
+  </aside>
+  <!-- End Sidebar Nav -->
+
+  <div class="content">
+    <div class="py-4 px-3 px-md-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h4 mb-3">Icons</h1>
+
+        <!-- Breadcrumb -->
+        <nav class="d-none d-md-block" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">UI Kit Components</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">UI Elements</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Icons</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+
+      <div class="alert alert-light alert-left-bordered border-primary d-flex align-items-basline mb-4" role="alert">
+        <i class="nova-info-alt icon-text text-primary mt-1 mr-2"></i>
+        <p class="mb-0">You may find how to use examples by clicking the <a class="alert-link" href="../../documentation/components/icons.html">icons documentation page</a>.</p>
+      </div>
+
+      <!-- Icon Library -->
+      <div class="card mb-3 mb-md-4">
+        <div class="card-header">
+          <h5 class="font-weight-semi-bold mb-0">Icon Library</h5>
+        </div>
+        <div class="card-body py-0">
+          <div class="row text-center">
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-agenda icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-agenda</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-alarm-clock icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-alarm-clock</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-alert icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-alert</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-align-center icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-align-center</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-align-justify icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-align-justify</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-align-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-align-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-align-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-align-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-anchor icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-anchor</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-android icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-android</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-double-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-double-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-double-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-double-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-double-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-double-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-double-up icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-double-up</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-angle-up icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-angle-up</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-announcement icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-announcement</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-apple icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-apple</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-archive icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-archive</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-circle-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-circle-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-circle-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-circle-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-circle-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-circle-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-circle-up icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-circle-up</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-top-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-top-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-top-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-top-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow-up icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow-up</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrow icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrow</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrows-corner icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrows-corner</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrows-horizontal icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrows-horizontal</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-arrows-vertical icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-arrows-vertical</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-back-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-back-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-back-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-back-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bag icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bag</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bar-chart-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bar-chart-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bar-chart icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bar-chart</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-basketball icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-basketball</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bell icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bell</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-blackboard icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-blackboard</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bolt-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bolt-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bolt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bolt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-book icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-book</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bookmark-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bookmark-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-bookmark icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-bookmark</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-briefcase icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-briefcase</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-brush-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-brush-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-brush icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-brush</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-calendar icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-calendar</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-camera icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-camera</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-car icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-car</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-check-box icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-check-box</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-check icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-check</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-clip icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-clip</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-clipboard icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-clipboard</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-close icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-close</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-cloud-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-cloud-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-cloud-up icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-cloud-up</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-cloud icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-cloud</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-comment-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-comment-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-comment icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-comment</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-comments-smiley icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-comments-smiley</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-comments icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-comments</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-backward icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-backward</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-eject icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-eject</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-forward icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-forward</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-pause icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-pause</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-play icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-play</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-record icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-record</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-shuffle icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-shuffle</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-skip-backward icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-skip-backward</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-skip-forward icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-skip-forward</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-control-stop icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-control-stop</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-credit-card icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-credit-card</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-crown icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-crown</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-css-3 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-css-3</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-cup icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-cup</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-cut icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-cut</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-dashboard icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-dashboard</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-desktop icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-desktop</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-direction-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-direction-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-direction icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-direction</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-download icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-download</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-dribbble icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-dribbble</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-dropbox-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-dropbox-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-dropbox icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-dropbox</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-drupal icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-drupal</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-email icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-email</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-envelope icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-envelope</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-eraser icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-eraser</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-exchange-vertical icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-exchange-vertical</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-export icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-export</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-eye icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-eye</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-face-sad icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-face-sad</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-face-smile icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-face-smile</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-facebook icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-facebook</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-file icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-file</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-files icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-files</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-filter icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-filter</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-flag-alt-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-flag-alt-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-flag-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-flag-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-flag icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-flag</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-flickr-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-flickr-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-flickr icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-flickr</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-folder icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-folder</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-fullscreen icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-fullscreen</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-gallery icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-gallery</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-game icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-game</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-gift icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-gift</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-github icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-github</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-google icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-google</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hand-drag icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hand-drag</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hand-open icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hand-open</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hand-point-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hand-point-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hand-point-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hand-point-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hand-point-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hand-point-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hand-point-up icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hand-point-up</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hand-stop icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hand-stop</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-harddrive icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-harddrive</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-harddrives icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-harddrives</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-headphone-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-headphone-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-headphone icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-headphone</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-heart-broken icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-heart-broken</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-heart icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-heart</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-help-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-help-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-help icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-help</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-home icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-home</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-html-5 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-html-5</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-hummer icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-hummer</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-id-badge icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-id-badge</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-image icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-image</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-import icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-import</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-infinite icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-infinite</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-info-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-info-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-info icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-info</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-ink-pen icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-ink-pen</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-instagram icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-instagram</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-italic icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-italic</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-joomla icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-joomla</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-jsfiddle icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-jsfiddle</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-key icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-key</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layers-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layers-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layers icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layers</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-accordion-list icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-accordion-list</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-accordion-merged icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-accordion-merged</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-accordion-separated icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-accordion-separated</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-column-2-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-column-2-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-column-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-column-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-column-3-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-column-3-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-column-3 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-column-3</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-column-4-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-column-4-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-column-4 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-column-4</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-cta-btn-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-cta-btn-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-cta-btn-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-cta-btn-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-cta-center icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-cta-center</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-cta-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-cta-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-cta-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-cta-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-grid-2-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-grid-2-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-grid-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-grid-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-grid-3-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-grid-3-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-grid-3 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-grid-3</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-grid-4-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-grid-4-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-grid-4 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-grid-4</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-line-solid icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-line-solid</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-list-large-image icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-list-large-image</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-list-post icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-list-post</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-list-thumb-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-list-thumb-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-list-thumb icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-list-thumb</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-center-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-center-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-center icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-center</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-left-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-left-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-overlay-alt-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-overlay-alt-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-overlay-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-overlay-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-overlay icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-overlay</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-right-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-right-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-media-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-media-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-menu-full icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-menu-full</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-menu-separated icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-menu-separated</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-menu-v icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-menu-v</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-menu icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-menu</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-placeholder icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-placeholder</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-sidebar-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-sidebar-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-sidebar-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-sidebar-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-sidebar-none icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-sidebar-none</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-sidebar-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-sidebar-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-slider-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-slider-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-slider icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-slider</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-tab-min icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-tab-min</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-tab-v icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-tab-v</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-tab-window icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-tab-window</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-tab icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-tab</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-width-default-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-width-default-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-width-default icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-width-default</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout-width-full icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout-width-full</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-layout icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-layout</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-light-bulb icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-light-bulb</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-line-dashed icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-line-dashed</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-line-dotted icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-line-dotted</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-line-double icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-line-double</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-link icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-link</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-linkedin icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-linkedin</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-linux icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-linux</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-list-ol icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-list-ol</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-list icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-list</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-location-arrow icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-location-arrow</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-location-pin icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-location-pin</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-lock icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-lock</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-loop icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-loop</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-magnet icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-magnet</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-map-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-map-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-map icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-map</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-marker-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-marker-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-marker icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-marker</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-medall-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-medall-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-medall icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-medall</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-menu-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-menu-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-menu icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-menu</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-microphone-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-microphone-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-microphone icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-microphone</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-microsoft-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-microsoft-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-microsoft icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-microsoft</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-minus icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-minus</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-mobile icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-mobile</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-money icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-money</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-more-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-more-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-more icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-more</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-mouse-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-mouse-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-mouse icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-mouse</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-music-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-music-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-music icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-music</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-na icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-na</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-new-window icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-new-window</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-notepad icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-notepad</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-package icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-package</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-paint-bucket icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-paint-bucket</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-paint-roller icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-paint-roller</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-palette icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-palette</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-panel icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-panel</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-paragraph icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-paragraph</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pencil-alt-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pencil-alt-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pencil-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pencil-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pencil icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pencil</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pie-chart icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pie-chart</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pin-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pin-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pin-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pin-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pin icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pin</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pinterest-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pinterest-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pinterest icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pinterest</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-plug icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-plug</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-plus icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-plus</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-power-off icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-power-off</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-printer icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-printer</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-pulse icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-pulse</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-quote-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-quote-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-quote-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-quote-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-receipt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-receipt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-reddit icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-reddit</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-reload icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-reload</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-rocket icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-rocket</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-rss-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-rss-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-rss icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-rss</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-ruler-alt-2 icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-ruler-alt-2</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-ruler-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-ruler-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-ruler-pencil icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-ruler-pencil</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-ruler icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-ruler</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-save-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-save-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-save icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-save</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-search icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-search</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-server icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-server</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-settings icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-settings</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-share-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-share-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-share icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-share</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-sharethis-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-sharethis-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-sharethis icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-sharethis</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shield icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shield</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shift-left-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shift-left-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shift-left icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shift-left</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shift-right-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shift-right-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shift-right icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shift-right</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shine icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shine</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shopping-cart-full icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shopping-cart-full</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shopping-cart icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shopping-cart</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-shortcode icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-shortcode</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-signal icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-signal</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-skype icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-skype</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-slice icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-slice</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-smallcap icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-smallcap</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-soundcloud icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-soundcloud</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-split-h icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-split-h</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-split-v-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-split-v-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-split-v icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-split-v</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-spray icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-spray</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-stack-overflow icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-stack-overflow</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-stamp icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-stamp</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-star icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-star</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-stats-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-stats-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-stats-up icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-stats-up</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-support icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-support</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-tablet icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-tablet</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-tag icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-tag</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-target icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-target</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-text icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-text</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-themify-favnova-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-themify-favnova-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-themify-favicon icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-themify-favicon</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-themify-logo icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-themify-logo</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-thought icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-thought</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-thumb-down icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-thumb-down</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-ticket icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-ticket</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-time icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-time</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-timer icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-timer</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-trash icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-trash</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-trello icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-trello</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-truck icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-truck</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-tumblr-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-tumblr-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-tumblr icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-tumblr</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-twitter-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-twitter-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-twitter icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-twitter</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-underline icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-underline</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-unlink icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-unlink</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-unlock icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-unlock</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-upload icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-upload</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-uppercase icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-uppercase</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-user icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-user</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-vector icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-vector</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-video-camera icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-video-camera</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-video-clapper icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-video-clapper</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-view-grid icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-view-grid</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-view-list-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-view-list-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-view-list icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-view-list</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-vimeo-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-vimeo-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-vimeo icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-vimeo</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-volume icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-volume</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-wallet icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-wallet</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-wand icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-wand</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-wheelchair icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-wheelchair</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-widget-alt icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-widget-alt</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-widget icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-widget</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-widgetized icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-widgetized</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-window icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-window</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-wordpress icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-wordpress</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-world icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-world</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-write icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-write</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-yahoo icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-yahoo</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-youtube icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-youtube</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-zip icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-zip</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-zoom-in icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-zoom-in</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 mb-3 mb-md-4">
+              <div class="border border-light text-center rounded p-3 p-md-4">
+                <i class="nova-zoom-out icon-text d-inline-block text-dark mt-2 mb-3"></i>
+                <p class="text-cut mb-0">nova-zoom-out</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Icon Library -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="small bg-white p-3 px-md-4 mt-auto">
+      <div class="row justify-content-between">
+        <div class="col-lg text-center text-lg-left mb-3 mb-lg-0">
+          <ul class="list-dot list-inline mb-0">
+            <li class="list-dot-item list-dot-item-not list-inline-item mr-lg-2"><a class="link-dark" href="#">FAQ</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Support</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center mb-3 mb-lg-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-vimeo-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-github"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center text-lg-right">
+          &copy; 2019 Htmlstream. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+</main>
+
+<!-- JS Global Compulsory -->
+<script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Libraries -->
+<script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../assets/vendor/resize-sensor/dist/resizeSensor.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+<!-- JS Nova -->
+<script src="../../assets/js/hs.core.js"></script>
+<script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="../../assets/js/components/hs.side-nav.js"></script>
+<script src="../../assets/js/components/hs.unfold.js"></script>
+<script src="../../assets/js/components/hs.header-search.js"></script>
+<script src="../../assets/js/components/hs.autocomplete.js"></script>
+
+<!-- JS Libraries Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scroll
+    $.HSCore.components.HSMalihuScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of dropdown component
+    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+    // initialization of show on type module
+    $.HSCore.components.HSHeaderSearch.init('.js-header-search');
+
+    // initialization of autocomplete
+    $.HSCore.components.HSAutocomplete.init('.js-autocomplete');
+  });
+</script>
+</body>
+</html>

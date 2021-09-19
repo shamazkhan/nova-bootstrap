@@ -1,0 +1,2869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Tables | Nova - Responsive WebApp UI Kit</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="../../assets/vendor/nova-icons/nova-icons.css" rel="stylesheet">
+
+  <!-- CSS Implementing Libraries -->
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+  <!-- CSS Nova Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header header-light bg-white">
+  <nav class="navbar flex-nowrap p-0">
+    <div class="navbar-brand-wrapper bg-dark-v1 d-flex align-items-center col-auto">
+      <!-- Logo For Mobile View -->
+      <a class="navbar-brand navbar-brand-mobile" href="../widgets.html">
+        <img class="img-fluid w-100" src="../../assets/img/logo-mini.png" alt="Nova">
+      </a>
+      <!-- End Logo For Mobile View -->
+
+      <!-- Logo For Desktop View -->
+      <a class="navbar-brand navbar-brand-desktop" href="../widgets.html">
+      <img class="side-nav-show-on-closed" src="../../assets/img/logo-mini.png" alt="Nova" style="width: 41px; height: 33px;">
+      <img class="side-nav-hide-on-closed" src="../../assets/img/logo.png" alt="Nova" style="width: 130px; height: 33px;">
+      </a>
+      <!-- End Logo For Desktop View -->
+    </div>
+
+    <div class="header-content col px-md-3">
+      <div class="d-flex align-items-center">
+        <!-- Side Nav Toggle -->
+        <a class="js-side-nav header-invoker d-flex mr-md-2" href="#!"
+           data-close-invoker="#sidebarClose" data-target="#sidebar" data-target-wrapper="body">
+          <i class="nova-align-left"></i>
+        </a>
+        <!-- End Side Nav Toggle -->
+
+        <!-- Header Search -->
+        <div class="js-header-search position-relative"
+             data-search-mobile-invoker="#headerSearchMobileInvoker"
+             data-search-form="#headerSearchForm"
+             data-search-field="#headerSearchField">
+          <a id="headerSearchMobileInvoker" class="header-search-invoker header-invoker" href="#!">
+            <i class="nova-search"></i>
+          </a>
+
+           <form id="headerSearchForm" class="header-search input-group input-group-merge w-xl-31_25rem mr-2" action="#">
+           <input type="text" class="js-autocomplete header-search-input form-control form-control-append-icon" placeholder="Search..."
+                  data-url="../../assets/include/ajax/autocomplete-data.json">
+            <div class="input-group-append-merge">
+              <i class="nova-search icon-text"></i>
+            </div>
+          </form>
+        </div>
+        <!-- End Header Search -->
+
+        <a class="link-dark ml-auto mr-3 mr-sm-0" href="../../demo-crypto/dashboards/index.html">
+          Crypto Demo
+        </a>
+        <a class="link-dark position-relative mx-3 pr-3 d-none d-sm-block" href="../../documentation/getting-started/changelog.html">
+          Changelog (v1.2.2) <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-secondary rounded-circle"></span>
+        </a>
+        <a class="btn btn-primary mr-2" href="../../documentation/">Documentation</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+  <!-- Sidebar Nav -->
+  <aside id="sidebar" class="js-custom-scroll side-nav">
+    <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+      <!-- Title -->
+      <li class="sidebar-heading h6">Widgets & Layouts</li>
+      <!-- End Title -->
+
+      <!-- Widgets -->
+      <li class="side-nav-menu-item">
+        <a class="side-nav-menu-link media align-items-center" href="../widgets.html">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pulse"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Widgets</span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+      </li>
+      <!-- End Widgets -->
+
+      <!-- Layouts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#!" data-target="#subLayouts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Layouts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subLayouts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static.html">Static</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/fixed-header-sidebar.html">Fixed Header & Sidebar</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static-mini-nav-mobi.html">Mini Nav</a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Layouts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Forms & Tables</li>
+      <!-- End Title -->
+
+      <!-- Form Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#!" data-target="#subFormElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pencil-alt"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Forms</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/form-layouts.html">
+              Form Layouts
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/basic-inputs.html">
+              Basic
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/input-groups.html">
+              Input Groups
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/checkboxes.html">
+              Checkboxes & Switches
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Elements -->
+
+      <!-- Form Extentions -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#!" data-target="#subFormExtentions">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-ruler-pencil"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Form Extentions</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormExtentions" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/validation.html">
+              Validation
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/flatpickr.html">
+              Datepicker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/date-range-picker.html">
+              Date Range Picker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/select2.html">
+              Select 2
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/tagsinput.html">
+              Input Tags
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/clipboard.html">
+              Clipboard
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/summernote.html">
+              Form Editor
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/masked-inputs.html">
+              Input Masks
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/dropzone.html">
+              Dropzone
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/range-sliders.html">
+              Range Slider
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/google-recaptcha.html">
+              Google reCAPTCHA
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Extentions -->
+
+      <!-- Tables -->
+      <li class="side-nav-menu-item side-nav-has-menu side-nav-opened active">
+        <a class="side-nav-menu-link media align-items-center" href="#!" data-target="#subTables">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-grid-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Tables</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Tables: subTables -->
+        <ul id="subTables" class="side-nav-menu side-nav-menu-second-level mb-0" style="display: block;">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/basic-tables.html">Basic Tables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link active" href="../tables/datatables.html">Datatables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/editable-rows.html">Editable Rows</a>
+          </li>
+        </ul>
+        <!-- End Tables: subTables -->
+      </li>
+      <!-- End Tables -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">UI Kit Components</li>
+      <!-- End Title -->
+
+      <!-- UI Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#!" data-target="#subUiElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-package"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">UI Elements</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Elements: subUiElements -->
+        <ul id="subUiElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/accordions.html">Accordions</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/alerts.html">Alerts</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/buttons.html">Buttons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/badges-indicators.html">Badges & Indicators</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/progress.html">Progress</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/dropdowns.html">Dropdowns</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/icons.html">Icons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/typography.html">Typography</a>
+          </li>
+        </ul>
+        <!-- End UI Elements: subUiElements -->
+      </li>
+      <!-- End UI Elements -->
+
+      <!-- Cards -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#!" data-target="#subCards">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-media-overlay-alt-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Cards</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Cards: subCards -->
+        <ul id="subCards" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-variations.html">Card Variations</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-options.html">Card Options</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-designs.html">Card Designs</a>
+          </li>
+        </ul>
+        <!-- End Cards: subCards -->
+      </li>
+      <!-- End Cards -->
+
+      <!-- Charts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#!" data-target="#subCharts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pie-chart"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Charts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Charts: subCharts -->
+        <ul id="subCharts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/chartist.html">Chartist</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/google-geo-chart.html">Google Geo Chart</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/timeline-chart.html">Timeline Chart</a>
+          </li>
+        </ul>
+        <!-- End Charts: subCharts -->
+      </li>
+      <!-- End Charts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Pages</li>
+      <!-- End Title -->
+
+      <!-- Authentication -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subAuthentication">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-user"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Authentication</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Authentication: subMenu -->
+        <ul id="subAuthentication" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/login.html">Login</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/registration.html">Registration</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/forgot-password.html">Passowrd Recovery</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/lock-screen.html">Lock Screen</a>
+          </li>
+        </ul>
+        <!-- End Authentication: subMenu -->
+      </li>
+      <!-- End Authentication -->
+    </ul>
+  </aside>
+  <!-- End Sidebar Nav -->
+
+  <div class="content">
+    <div class="py-4 px-3 px-md-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h4 mb-3">Datatables</h1>
+
+        <!-- Breadcrumb -->
+        <nav class="d-none d-md-block" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#!">UI Kit Components</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#!">Tables</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Datatables</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+
+      <div class="alert alert-light alert-left-bordered border-primary d-flex align-items-basline mb-4" role="alert">
+        <i class="nova-info-alt icon-text text-primary mt-1 mr-2"></i>
+        <p class="mb-0">You may find more detailed information about how to use DataTables library on the <a class="alert-link" href="../../documentation/libraries/datatables.html">documentation page here</a>. In addition, you may find more details on official <a class="alert-link" href="https://datatables.net" target="_blank">DataTables page <i class="nova-arrow-top-right" style="font-size: 70%;"></i></a></p>
+      </div>
+
+      <!-- Table with searching -->
+      <div class="card mb-3 mb-md-4">
+        <div class="card-header">
+          <h5 class="font-weight-semi-bold mb-0">Table with searching</h5>
+        </div>
+
+        <div class="card-body py-0">
+          <div class="row align-items-center mb-3">
+            <div class="col-md-auto d-flex align-items-center">
+              <span class="text-muted mr-2">Show:</span>
+
+              <select id="datatableEntries" class="js-custom-select"
+                      data-classes="custom-select-without-bordered">
+                <option value="6" selected>6 entries</option>
+                <option value="12">12 entries</option>
+                <option value="18">18 entries</option>
+                <option value="24">24 entries</option>
+              </select>
+            </div>
+
+            <div class="col-md-auto ml-md-auto">
+              <div class="input-group input-group-merge">
+                <input id="datatableSearch" class="form-control bg-lighter border-0 pr-6" placeholder="Enter search term" type="text">
+                <div class="input-group-append-merge">
+                  <a class="text-muted" href="#!">
+                    <i class="nova-search"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-responsive-xl datatable">
+            <table class="js-search-sorting-col-disable table text-nowrap mb-0"
+                   data-dt-info="#datatableInfo"
+                   data-dt-search="#datatableSearch"
+                   data-dt-entries="#datatableEntries"
+                   data-dt-is-show-paging="true"
+                   data-dt-pagination="datatablePagination"
+                   data-dt-page-length="6"
+                   data-dt-is-responsive="false"
+                   data-dt-pagination-classes="pagination justify-content-end font-weight-semi-bold mb-0"
+                   data-dt-pagination-items-classes="page-item d-none d-md-block"
+                   data-dt-pagination-links-classes="page-link"
+                   data-dt-pagination-next-classes="page-item"
+                   data-dt-pagination-next-link-classes="page-link"
+                   data-dt-pagination-next-link-markup='<i class="nova-angle-right icon-text icon-text-xs d-inline-block"></i>'
+                   data-dt-pagination-prev-classes="page-item"
+                   data-dt-pagination-prev-link-classes="page-link"
+                   data-dt-pagination-prev-link-markup='<i class="nova-angle-left icon-text icon-text-xs d-inline-block"></i>'>
+              <thead>
+              <tr class="small">
+                <th class="font-weight-semi-bold py-2">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">Project</div>
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">User / Tasks</div>
+
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2" style="width: 190px;">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">Version</div>
+
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">Date</div>
+
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2">Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">JJ</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize impactful mindshare</h6>
+                      <p class="small text-muted mb-0">Johnson & Johnson</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Melvin Gilbert</h6>
+                  <p class="small text-muted mb-0">2268</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">16h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">25 January 2005</h6>
+                  <p class="small text-muted mb-0">16 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown11Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown11Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">OC</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize vertical interfaces</h6>
+                      <p class="small text-muted mb-0">Oracle Corporation</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Lulu Clayton</h6>
+                  <p class="small text-muted mb-0">5006</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">4h29</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">03 May 2006</h6>
+                  <p class="small text-muted mb-0">25 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown12Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown12Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">SA</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Integrate clicks-and-mortar</h6>
+                      <p class="small text-muted mb-0">Siemens AG</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Marvin Summers</h6>
+                  <p class="small text-muted mb-0">5476</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">13h20</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">30 July 1987</h6>
+                  <p class="small text-muted mb-0">30 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown13Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown13Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">PH</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Monetize B2B portals</h6>
+                      <p class="small text-muted mb-0">Pizza Hut</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Phoebe King</h6>
+                  <p class="small text-muted mb-0">3184</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">28 April 2010</h6>
+                  <p class="small text-muted mb-0">39 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown14Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown14Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">WD</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Streamline customized models</h6>
+                      <p class="small text-muted mb-0">The Walt Disney Company</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">Steve Keller</h6>
+                  <p class="small text-muted mb-0">6796</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h30</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">15 November 1986</h6>
+                  <p class="small text-muted mb-0">45 minutes ago</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="position-relative">
+                    <a id="dropDown15Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown15Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">JJ</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize impactful mindshare</h6>
+                      <p class="small text-muted mb-0">Johnson & Johnson</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Melvin Gilbert</h6>
+                  <p class="small text-muted mb-0">2268</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">16h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">25 January 2005</h6>
+                  <p class="small text-muted mb-0">16 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown16Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown16Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">OC</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize vertical interfaces</h6>
+                      <p class="small text-muted mb-0">Oracle Corporation</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Lulu Clayton</h6>
+                  <p class="small text-muted mb-0">5006</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">4h29</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">03 May 2006</h6>
+                  <p class="small text-muted mb-0">25 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown17Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown17Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">SA</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Integrate clicks-and-mortar</h6>
+                      <p class="small text-muted mb-0">Siemens AG</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Marvin Summers</h6>
+                  <p class="small text-muted mb-0">5476</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">13h20</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">30 July 1987</h6>
+                  <p class="small text-muted mb-0">30 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown18Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown18Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">PH</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Monetize B2B portals</h6>
+                      <p class="small text-muted mb-0">Pizza Hut</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Phoebe King</h6>
+                  <p class="small text-muted mb-0">3184</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">28 April 2010</h6>
+                  <p class="small text-muted mb-0">39 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown19Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown19Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">WD</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Streamline customized models</h6>
+                      <p class="small text-muted mb-0">The Walt Disney Company</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">Steve Keller</h6>
+                  <p class="small text-muted mb-0">6796</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h30</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">15 November 1986</h6>
+                  <p class="small text-muted mb-0">45 minutes ago</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="position-relative">
+                    <a id="dropDown20Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown20Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">JJ</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize impactful mindshare</h6>
+                      <p class="small text-muted mb-0">Johnson & Johnson</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Melvin Gilbert</h6>
+                  <p class="small text-muted mb-0">2268</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">16h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">25 January 2005</h6>
+                  <p class="small text-muted mb-0">16 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown21Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown21Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">OC</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize vertical interfaces</h6>
+                      <p class="small text-muted mb-0">Oracle Corporation</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Lulu Clayton</h6>
+                  <p class="small text-muted mb-0">5006</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">4h29</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">03 May 2006</h6>
+                  <p class="small text-muted mb-0">25 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown22Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown22Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">SA</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Integrate clicks-and-mortar</h6>
+                      <p class="small text-muted mb-0">Siemens AG</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Marvin Summers</h6>
+                  <p class="small text-muted mb-0">5476</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">13h20</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">30 July 1987</h6>
+                  <p class="small text-muted mb-0">30 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown23Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown23Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">PH</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Monetize B2B portals</h6>
+                      <p class="small text-muted mb-0">Pizza Hut</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Phoebe King</h6>
+                  <p class="small text-muted mb-0">3184</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">28 April 2010</h6>
+                  <p class="small text-muted mb-0">39 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown24Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown24Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">WD</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Streamline customized models</h6>
+                      <p class="small text-muted mb-0">The Walt Disney Company</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">Steve Keller</h6>
+                  <p class="small text-muted mb-0">6796</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h30</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">15 November 1986</h6>
+                  <p class="small text-muted mb-0">45 minutes ago</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="position-relative">
+                    <a id="dropDown25Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown25Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">JJ</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize impactful mindshare</h6>
+                      <p class="small text-muted mb-0">Johnson & Johnson</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Melvin Gilbert</h6>
+                  <p class="small text-muted mb-0">2268</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">16h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">25 January 2005</h6>
+                  <p class="small text-muted mb-0">16 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown26Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown26Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">OC</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Visualize vertical interfaces</h6>
+                      <p class="small text-muted mb-0">Oracle Corporation</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Lulu Clayton</h6>
+                  <p class="small text-muted mb-0">5006</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">4h29</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">03 May 2006</h6>
+                  <p class="small text-muted mb-0">25 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown27Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown27Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">SA</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Integrate clicks-and-mortar</h6>
+                      <p class="small text-muted mb-0">Siemens AG</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Marvin Summers</h6>
+                  <p class="small text-muted mb-0">5476</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">13h20</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">30 July 1987</h6>
+                  <p class="small text-muted mb-0">30 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown28Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown28Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">PH</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Monetize B2B portals</h6>
+                      <p class="small text-muted mb-0">Pizza Hut</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">Phoebe King</h6>
+                  <p class="small text-muted mb-0">3184</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h58</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle py-3">
+                  <h6 class="mb-0">28 April 2010</h6>
+                  <p class="small text-muted mb-0">39 minutes ago</p>
+                </td>
+                <td class="align-middle py-3">
+                  <div class="position-relative">
+                    <a id="dropDown29Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown29Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media align-items-center">
+                    <span class="badge badge-lg bg-soft-primary font-weight-semi-bold text-primary p-0 mr-3">WD</span>
+
+                    <div class="media-body">
+                      <h6 class="mb-0">Streamline customized models</h6>
+                      <p class="small text-muted mb-0">The Walt Disney Company</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">Steve Keller</h6>
+                  <p class="small text-muted mb-0">6796</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="media small text-muted mb-2">
+                    <div class="d-flex">19h30</div>
+
+                    <div class="d-flex ml-auto">8 / 15</div>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar bg-success rounded" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <h6 class="mb-0">15 November 1986</h6>
+                  <p class="small text-muted mb-0">45 minutes ago</p>
+                </td>
+                <td class="align-middle border-bottom py-3">
+                  <div class="position-relative">
+                    <a id="dropDown30Invoker" class="btn btn-sm btn-outline-primary d-flex align-items-center dropdown-toggle text-left" href="#!" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Actions
+                      <i class="nova-angle-down icon-text icon-text-xs ml-2 ml-lg-auto"></i>
+                    </a>
+
+                    <ul class="unfold unfold-light dropdown-menu px-0 py-3 mt-1" aria-labelledby="dropDown30Invoker" style="min-width: 150px; min-width: 150px;">
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-plus unfold-item-icon mr-3"></i>
+                          <span class="media-body">Add</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-pencil unfold-item-icon mr-3"></i>
+                          <span class="media-body">Edit</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-shortcode unfold-item-icon mr-3"></i>
+                          <span class="media-body">Rename</span>
+                        </a>
+                      </li>
+                      <li class="unfold-item">
+                        <a class="unfold-link media align-items-center text-nowrap" href="#!">
+                          <i class="nova-close unfold-item-icon mr-3"></i>
+                          <span class="media-body">Delete</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer d-block d-md-flex align-items-center">
+          <div id="datatableInfo" class="d-flex mb-2 mb-md-0"></div>
+          <nav id="datatablePagination" class="d-flex ml-md-auto d-print-none" aria-label="Pagination"></nav>
+        </div>
+      </div>
+      <!-- End Table with searching -->
+
+      <!-- Table Editable -->
+      <div class="card mb-3 mb-md-4">
+        <div class="card-header">
+          <h5 class="font-weight-semi-bold mb-0">Editable Filters</h5>
+        </div>
+
+        <div class="card-body pt-0">
+          <div class="table-responsive-xl datatable">
+            <table class="js-sorting-col-disable js-editable-table table text-nowrap mb-0"
+                   data-dt-info="#datatable2Info"
+                   data-dt-search="#datatable2Search"
+                   data-dt-entries="#datatable2Entries"
+                   data-dt-is-show-paging="true"
+                   data-dt-pagination="datatable2Pagination"
+                   data-dt-page-length="5"
+                   data-dt-is-responsive="false"
+                   data-dt-pagination-classes="pagination justify-content-end font-weight-semi-bold mb-0"
+                   data-dt-pagination-items-classes="page-item d-none d-md-block"
+                   data-dt-pagination-links-classes="page-link"
+                   data-dt-pagination-next-classes="page-item"
+                   data-dt-pagination-next-link-classes="page-link"
+                   data-dt-pagination-next-link-markup='<i class="nova-angle-right icon-text icon-text-xs d-inline-block"></i>'
+                   data-dt-pagination-prev-classes="page-item"
+                   data-dt-pagination-prev-link-classes="page-link"
+                   data-dt-pagination-prev-link-markup='<i class="nova-angle-left icon-text icon-text-xs d-inline-block"></i>'>
+              <thead>
+              <tr class="small">
+                <th class="font-weight-semi-bold py-2">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">Device</div>
+
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">Credit Card (Number)</div>
+
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">Added</div>
+
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2">
+                  <div class="media align-items-center">
+                    <div class="d-flex mr-2">URL</div>
+
+                    <a class="d-flex ml-auto link-sorting-asc" href="#!">
+                      <i class="nova-arrow-down icon-text icon-text-xs"></i>
+                    </a>
+                    <a class="d-flex link-sorting-desc" href="#!">
+                      <i class="nova-arrow-up icon-text icon-text-xs"></i>
+                    </a>
+                  </div>
+                </th>
+                <th class="font-weight-semi-bold py-2 text-center">Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="align-middle py-3" data-field="device">iPhone 7 Plus</td>
+                <td class="align-middle py-3" data-field="credit-card-number">1317 2260 0853 9799</td>
+                <td class="align-middle py-3">1 second ago</td>
+                <td class="align-middle py-3" data-field="url">http://google.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Xiaomi Redmi 4</td>
+                <td class="align-middle py-3" data-field="credit-card-number">2232 3635 8399 3373</td>
+                <td class="align-middle py-3">15 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://facebook.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Samsung Galaxy C7 Pro</td>
+                <td class="align-middle py-3" data-field="credit-card-number">9252 9171 5511 3600</td>
+                <td class="align-middle py-3">19 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://wikipedia.org</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Honor 8 Lite</td>
+                <td class="align-middle py-3" data-field="credit-card-number">3129 0713 0072 6258</td>
+                <td class="align-middle py-3">26 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://yahoo.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3" data-field="device">Vivo V5s</td>
+                <td class="align-middle border-bottom py-3" data-field="credit-card-number">3469 7641 1441 1026</td>
+                <td class="align-middle border-bottom py-3">31 seconds ago</td>
+                <td class="align-middle border-bottom py-3" data-field="url">http://reddit.com</td>
+                <td class="align-middle border-bottom py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">iPhone 7 Plus</td>
+                <td class="align-middle py-3" data-field="credit-card-number">1317 2260 0853 9799</td>
+                <td class="align-middle py-3">1 second ago</td>
+                <td class="align-middle py-3" data-field="url">http://google.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Xiaomi Redmi 4</td>
+                <td class="align-middle py-3" data-field="credit-card-number">2232 3635 8399 3373</td>
+                <td class="align-middle py-3">15 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://facebook.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Samsung Galaxy C7 Pro</td>
+                <td class="align-middle py-3" data-field="credit-card-number">9252 9171 5511 3600</td>
+                <td class="align-middle py-3">19 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://wikipedia.org</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Honor 8 Lite</td>
+                <td class="align-middle py-3" data-field="credit-card-number">3129 0713 0072 6258</td>
+                <td class="align-middle py-3">26 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://yahoo.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3" data-field="device">Vivo V5s</td>
+                <td class="align-middle border-bottom py-3" data-field="credit-card-number">3469 7641 1441 1026</td>
+                <td class="align-middle border-bottom py-3">31 seconds ago</td>
+                <td class="align-middle border-bottom py-3" data-field="url">http://reddit.com</td>
+                <td class="align-middle border-bottom py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">iPhone 7 Plus</td>
+                <td class="align-middle py-3" data-field="credit-card-number">1317 2260 0853 9799</td>
+                <td class="align-middle py-3">1 second ago</td>
+                <td class="align-middle py-3" data-field="url">http://google.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Xiaomi Redmi 4</td>
+                <td class="align-middle py-3" data-field="credit-card-number">2232 3635 8399 3373</td>
+                <td class="align-middle py-3">15 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://facebook.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Samsung Galaxy C7 Pro</td>
+                <td class="align-middle py-3" data-field="credit-card-number">9252 9171 5511 3600</td>
+                <td class="align-middle py-3">19 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://wikipedia.org</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Honor 8 Lite</td>
+                <td class="align-middle py-3" data-field="credit-card-number">3129 0713 0072 6258</td>
+                <td class="align-middle py-3">26 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://yahoo.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3" data-field="device">Vivo V5s</td>
+                <td class="align-middle border-bottom py-3" data-field="credit-card-number">3469 7641 1441 1026</td>
+                <td class="align-middle border-bottom py-3">31 seconds ago</td>
+                <td class="align-middle border-bottom py-3" data-field="url">http://reddit.com</td>
+                <td class="align-middle border-bottom py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">iPhone 7 Plus</td>
+                <td class="align-middle py-3" data-field="credit-card-number">1317 2260 0853 9799</td>
+                <td class="align-middle py-3">1 second ago</td>
+                <td class="align-middle py-3" data-field="url">http://google.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Xiaomi Redmi 4</td>
+                <td class="align-middle py-3" data-field="credit-card-number">2232 3635 8399 3373</td>
+                <td class="align-middle py-3">15 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://facebook.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Samsung Galaxy C7 Pro</td>
+                <td class="align-middle py-3" data-field="credit-card-number">9252 9171 5511 3600</td>
+                <td class="align-middle py-3">19 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://wikipedia.org</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle py-3" data-field="device">Honor 8 Lite</td>
+                <td class="align-middle py-3" data-field="credit-card-number">3129 0713 0072 6258</td>
+                <td class="align-middle py-3">26 seconds ago</td>
+                <td class="align-middle py-3" data-field="url">http://yahoo.com</td>
+                <td class="align-middle py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle border-bottom py-3" data-field="device">Vivo V5s</td>
+                <td class="align-middle border-bottom py-3" data-field="credit-card-number">3469 7641 1441 1026</td>
+                <td class="align-middle border-bottom py-3">31 seconds ago</td>
+                <td class="align-middle border-bottom py-3" data-field="url">http://reddit.com</td>
+                <td class="align-middle border-bottom py-3 text-center">
+                  <a class="js-edit link-dark" href="#!">
+                    <i class="nova-pencil icon-text"></i>
+                  </a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card-footer d-block d-md-flex align-items-center">
+          <div class="d-flex align-items-center mb-2 mb-md-0 ml-md-3">
+            <span class="text-muted mr-2">Show:</span>
+
+            <select id="datatable2Entries" class="js-custom-select"
+                    data-classes="custom-select-without-bordered">
+              <option value="5" selected>5 entries</option>
+              <option value="10">10 entries</option>
+              <option value="15">15 entries</option>
+              <option value="20">20 entries</option>
+            </select>
+          </div>
+
+          <div id="datatable2Info" class="d-flex mb-2 mb-md-0"></div>
+
+          <nav id="datatable2Pagination" class="d-flex ml-md-auto d-print-none" aria-label="Pagination"></nav>
+        </div>
+      </div>
+      <!-- End Table Editable -->
+
+      <!-- Export File -->
+      <div class="card mb-3 mb-md-4">
+        <div class="card-header">
+          <h5 class="font-weight-semi-bold mb-0">Export File</h5>
+        </div>
+        <div class="card-body pt-0">
+          <div class="table-responsive-md datatable">
+            <table class="js-datatable-export table bg-white mb-5"
+                   data-dt-info="#datatableWithExport"
+                   data-dt-page-length="4"
+                   data-dt-is-show-paging="true"
+
+                   data-dt-pagination="datatableExport"
+                   data-dt-pagination-classes="pagination mb-0"
+                   data-dt-pagination-items-classes="page-item"
+                   data-dt-pagination-links-classes="page-link"
+
+                   data-dt-pagination-next-classes="page-item"
+                   data-dt-pagination-next-link-classes="page-link"
+                   data-dt-pagination-next-link-markup='<span aria-hidden="true">»</span>'
+
+                   data-dt-pagination-prev-classes="page-item"
+                   data-dt-pagination-prev-link-classes="page-link"
+                   data-dt-pagination-prev-link-markup='<span aria-hidden="true">«</span>'>
+              <thead>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+              </tr>
+              <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+              </tr>
+              <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+              </tr>
+              <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+              </tr>
+              <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+              </tr>
+              <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012/12/02</td>
+                <td>$372,000</td>
+              </tr>
+              <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012/08/06</td>
+                <td>$137,500</td>
+              </tr>
+              <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010/10/14</td>
+                <td>$327,900</td>
+              </tr>
+              <tr>
+                <td>Colleen Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>39</td>
+                <td>2009/09/15</td>
+                <td>$205,500</td>
+              </tr>
+              <tr>
+                <td>Sonya Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>23</td>
+                <td>2008/12/13</td>
+                <td>$103,600</td>
+              </tr>
+              <tr>
+                <td>Jena Gaines</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>30</td>
+                <td>2008/12/19</td>
+                <td>$90,560</td>
+              </tr>
+              <tr>
+                <td>Quinn Flynn</td>
+                <td>Support Lead</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2013/03/03</td>
+                <td>$342,000</td>
+              </tr>
+              <tr>
+                <td>Charde Marshall</td>
+                <td>Regional Director</td>
+                <td>San Francisco</td>
+                <td>36</td>
+                <td>2008/10/16</td>
+                <td>$470,600</td>
+              </tr>
+              <tr>
+                <td>Haley Kennedy</td>
+                <td>Senior Marketing Designer</td>
+                <td>London</td>
+                <td>43</td>
+                <td>2012/12/18</td>
+                <td>$313,500</td>
+              </tr>
+              <tr>
+                <td>Tatyana Fitzpatrick</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>19</td>
+                <td>2010/03/17</td>
+                <td>$385,750</td>
+              </tr>
+              <tr>
+                <td>Michael Silva</td>
+                <td>Marketing Designer</td>
+                <td>London</td>
+                <td>66</td>
+                <td>2012/11/27</td>
+                <td>$198,500</td>
+              </tr>
+              <tr>
+                <td>Paul Byrd</td>
+                <td>Chief Financial Officer (CFO)</td>
+                <td>New York</td>
+                <td>64</td>
+                <td>2010/06/09</td>
+                <td>$725,000</td>
+              </tr>
+              <tr>
+                <td>Gloria Little</td>
+                <td>Systems Administrator</td>
+                <td>New York</td>
+                <td>59</td>
+                <td>2009/04/10</td>
+                <td>$237,500</td>
+              </tr>
+              <tr>
+                <td>Bradley Greer</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>41</td>
+                <td>2012/10/13</td>
+                <td>$132,000</td>
+              </tr>
+              <tr>
+                <td>Dai Rios</td>
+                <td>Personnel Lead</td>
+                <td>Edinburgh</td>
+                <td>35</td>
+                <td>2012/09/26</td>
+                <td>$217,500</td>
+              </tr>
+              <tr>
+                <td>Jenette Caldwell</td>
+                <td>Development Lead</td>
+                <td>New York</td>
+                <td>30</td>
+                <td>2011/09/03</td>
+                <td>$345,000</td>
+              </tr>
+              <tr>
+                <td>Yuri Berry</td>
+                <td>Chief Marketing Officer (CMO)</td>
+                <td>New York</td>
+                <td>40</td>
+                <td>2009/06/25</td>
+                <td>$675,000</td>
+              </tr>
+              <tr>
+                <td>Caesar Vance</td>
+                <td>Pre-Sales Support</td>
+                <td>New York</td>
+                <td>21</td>
+                <td>2011/12/12</td>
+                <td>$106,450</td>
+              </tr>
+              <tr>
+                <td>Doris Wilder</td>
+                <td>Sales Assistant</td>
+                <td>Sidney</td>
+                <td>23</td>
+                <td>2010/09/20</td>
+                <td>$85,600</td>
+              </tr>
+              <tr>
+                <td>Angelica Ramos</td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+              <tr>
+                <td>Gavin Joyce</td>
+                <td>Developer</td>
+                <td>Edinburgh</td>
+                <td>42</td>
+                <td>2010/12/22</td>
+                <td>$92,575</td>
+              </tr>
+              <tr>
+                <td>Jennifer Chang</td>
+                <td>Regional Director</td>
+                <td>Singapore</td>
+                <td>28</td>
+                <td>2010/11/14</td>
+                <td>$357,650</td>
+              </tr>
+              <tr>
+                <td>Brenden Wagner</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>28</td>
+                <td>2011/06/07</td>
+                <td>$206,850</td>
+              </tr>
+              <tr>
+                <td>Fiona Green</td>
+                <td>Chief Operating Officer (COO)</td>
+                <td>San Francisco</td>
+                <td>48</td>
+                <td>2010/03/11</td>
+                <td>$850,000</td>
+              </tr>
+              <tr>
+                <td>Shou Itou</td>
+                <td>Regional Marketing</td>
+                <td>Tokyo</td>
+                <td>20</td>
+                <td>2011/08/14</td>
+                <td>$163,000</td>
+              </tr>
+              <tr>
+                <td>Michelle House</td>
+                <td>Integration Specialist</td>
+                <td>Sidney</td>
+                <td>37</td>
+                <td>2011/06/02</td>
+                <td>$95,400</td>
+              </tr>
+              <tr>
+                <td>Suki Burks</td>
+                <td>Developer</td>
+                <td>London</td>
+                <td>53</td>
+                <td>2009/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>Prescott Bartlett</td>
+                <td>Technical Author</td>
+                <td>London</td>
+                <td>27</td>
+                <td>2011/05/07</td>
+                <td>$145,000</td>
+              </tr>
+              <tr>
+                <td>Gavin Cortez</td>
+                <td>Team Leader</td>
+                <td>San Francisco</td>
+                <td>22</td>
+                <td>2008/10/26</td>
+                <td>$235,500</td>
+              </tr>
+              <tr>
+                <td>Martena Mccray</td>
+                <td>Post-Sales support</td>
+                <td>Edinburgh</td>
+                <td>46</td>
+                <td>2011/03/09</td>
+                <td>$324,050</td>
+              </tr>
+              <tr>
+                <td>Unity Butler</td>
+                <td>Marketing Designer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009/12/09</td>
+                <td>$85,675</td>
+              </tr>
+              <tr>
+                <td>Howard Hatfield</td>
+                <td>Office Manager</td>
+                <td>San Francisco</td>
+                <td>51</td>
+                <td>2008/12/16</td>
+                <td>$164,500</td>
+              </tr>
+              <tr>
+                <td>Hope Fuentes</td>
+                <td>Secretary</td>
+                <td>San Francisco</td>
+                <td>41</td>
+                <td>2010/02/12</td>
+                <td>$109,850</td>
+              </tr>
+              <tr>
+                <td>Vivian Harrell</td>
+                <td>Financial Controller</td>
+                <td>San Francisco</td>
+                <td>62</td>
+                <td>2009/02/14</td>
+                <td>$452,500</td>
+              </tr>
+              <tr>
+                <td>Timothy Mooney</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>37</td>
+                <td>2008/12/11</td>
+                <td>$136,200</td>
+              </tr>
+              <tr>
+                <td>Jackson Bradshaw</td>
+                <td>Director</td>
+                <td>New York</td>
+                <td>65</td>
+                <td>2008/09/26</td>
+                <td>$645,750</td>
+              </tr>
+              <tr>
+                <td>Olivia Liang</td>
+                <td>Support Engineer</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2011/02/03</td>
+                <td>$234,500</td>
+              </tr>
+              <tr>
+                <td>Bruno Nash</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>38</td>
+                <td>2011/05/03</td>
+                <td>$163,500</td>
+              </tr>
+              <tr>
+                <td>Sakura Yamamoto</td>
+                <td>Support Engineer</td>
+                <td>Tokyo</td>
+                <td>37</td>
+                <td>2009/08/19</td>
+                <td>$139,575</td>
+              </tr>
+              <tr>
+                <td>Thor Walton</td>
+                <td>Developer</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2013/08/11</td>
+                <td>$98,540</td>
+              </tr>
+              <tr>
+                <td>Finn Camacho</td>
+                <td>Support Engineer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009/07/07</td>
+                <td>$87,500</td>
+              </tr>
+              <tr>
+                <td>Serge Baldwin</td>
+                <td>Data Coordinator</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2012/04/09</td>
+                <td>$138,575</td>
+              </tr>
+              <tr>
+                <td>Zenaida Frank</td>
+                <td>Software Engineer</td>
+                <td>New York</td>
+                <td>63</td>
+                <td>2010/01/04</td>
+                <td>$125,250</td>
+              </tr>
+              <tr>
+                <td>Zorita Serrano</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>56</td>
+                <td>2012/06/01</td>
+                <td>$115,000</td>
+              </tr>
+              <tr>
+                <td>Jennifer Acosta</td>
+                <td>Junior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>43</td>
+                <td>2013/02/01</td>
+                <td>$75,650</td>
+              </tr>
+              <tr>
+                <td>Cara Stevens</td>
+                <td>Sales Assistant</td>
+                <td>New York</td>
+                <td>46</td>
+                <td>2011/12/06</td>
+                <td>$145,600</td>
+              </tr>
+              <tr>
+                <td>Hermione Butler</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2011/03/21</td>
+                <td>$356,250</td>
+              </tr>
+              <tr>
+                <td>Lael Greer</td>
+                <td>Systems Administrator</td>
+                <td>London</td>
+                <td>21</td>
+                <td>2009/02/27</td>
+                <td>$103,500</td>
+              </tr>
+              <tr>
+                <td>Jonas Alexander</td>
+                <td>Developer</td>
+                <td>San Francisco</td>
+                <td>30</td>
+                <td>2010/07/14</td>
+                <td>$86,500</td>
+              </tr>
+              <tr>
+                <td>Shad Decker</td>
+                <td>Regional Director</td>
+                <td>Edinburgh</td>
+                <td>51</td>
+                <td>2008/11/13</td>
+                <td>$183,000</td>
+              </tr>
+              <tr>
+                <td>Michael Bruce</td>
+                <td>Javascript Developer</td>
+                <td>Singapore</td>
+                <td>29</td>
+                <td>2011/06/27</td>
+                <td>$183,000</td>
+              </tr>
+              <tr>
+                <td>Donna Snider</td>
+                <td>Customer Support</td>
+                <td>New York</td>
+                <td>27</td>
+                <td>2011/01/25</td>
+                <td>$112,000</td>
+              </tr>
+              </tbody>
+              <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+              </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <!-- Pagination -->
+          <div class="d-flex justify-content-between align-items-center">
+            <nav id="datatableExport" aria-label="Activity pagination"></nav>
+
+            <small id="datatableExportInfo"></small>
+          </div>
+          <!-- End Pagination -->
+        </div>
+      </div>
+      <!-- End Export File -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="small bg-white p-3 px-md-4 mt-auto">
+      <div class="row justify-content-between">
+        <div class="col-lg text-center text-lg-left mb-3 mb-lg-0">
+          <ul class="list-dot list-inline mb-0">
+            <li class="list-dot-item list-dot-item-not list-inline-item mr-lg-2"><a class="link-dark" href="#!">FAQ</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#!">Support</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#!">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center mb-3 mb-lg-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#!"><i class="nova-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#!"><i class="nova-vimeo-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#!"><i class="nova-github"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center text-lg-right">
+          &copy; 2019 Htmlstream. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+</main>
+
+<!-- JS Global Compulsory -->
+<script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Libraries -->
+<script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../assets/vendor/select2/dist/js/select2.full.min.js"></script>
+<script src="../../assets/vendor/table-edits/build/table-edits.min.js"></script>
+<script src="../../assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="../../assets/vendor/datatables.net-select/js/dataTables.select.js"></script>
+<script src="../../assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+<script src="../../assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../assets/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../../assets/vendor/jszip/dist/jszip.min.js"></script>
+<script src="../../assets/vendor/pdfmake/build/pdfmake.min.js"></script>
+<script src="../../assets/vendor/pdfmake/build/vfs_fonts.js"></script>
+<script src="../../assets/vendor/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../../assets/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../../assets/vendor/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+<!-- JS Nova -->
+<script src="../../assets/js/hs.core.js"></script>
+<script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="../../assets/js/components/hs.side-nav.js"></script>
+<script src="../../assets/js/components/hs.unfold.js"></script>
+<script src="../../assets/js/components/hs.select2.js"></script>
+<script src="../../assets/js/components/hs.chartist-bar.js"></script>
+<script src="../../assets/js/components/hs.autocomplete.js"></script>
+<script src="../../assets/js/components/hs.datatables.js"></script>
+
+<!-- JS Libraries Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scroll
+    $.HSCore.components.HSMalihuScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of dropdown component
+    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+    // initialization of show on type module
+    $.HSCore.components.HSSelect2.init('.js-custom-select');
+
+    // initialization of autocomplete
+    $.HSCore.components.HSAutocomplete.init('.js-autocomplete');
+
+    // initialization of editable table
+    $('.js-editable-table tbody tr').editable({
+      keyboard: true,
+      dblclick: true,
+      button: true,
+      buttonSelector: '.js-edit',
+      maintainWidth: true,
+      edit: function (values) {
+        $('.js-edit i', this).removeClass('nova-pencil').addClass('nova-check');
+        $(this).find('td[data-field] input').addClass('form-control form-control-sm');
+      },
+      save: function (values) {
+        $('.js-edit i', this).removeClass('nova-check').addClass('nova-pencil');
+      },
+      cancel: function (values) {
+        $('.js-edit i', this).removeClass('nova-check').addClass('nova-pencil');
+      }
+    });
+
+    // initialization of datatables
+    $.HSCore.components.HSDatatables.init('.js-datatable');
+
+    $.HSCore.components.HSDatatables.init('.js-search-sorting-col-disable', {
+      "columnDefs": [
+        { "orderable": false, "targets": 4 }
+      ]
+    });
+
+    $.HSCore.components.HSDatatables.init('.js-sorting-col-disable', {
+      "columnDefs": [
+        { "orderable": false, "targets": 4 }
+      ]
+    });
+
+    $.HSCore.components.HSDatatables.init('.js-datatable-export', {
+      dom: 'Bfrtip',
+      buttons: [
+        {
+          extend: 'copy',
+          className: 'btn btn-sm btn-outline-primary mb-4 mr-1',
+          init: function (api, node, config) {
+            $(node).removeClass('btn-secondary')
+          }
+        },
+        {
+          extend: 'excel',
+          className: 'btn btn-sm btn-outline-primary mb-4 mr-1',
+          init: function (api, node, config) {
+            $(node).removeClass('btn-secondary')
+          }
+        },
+        {
+          extend: 'csv',
+          className: 'btn btn-sm btn-outline-primary mb-4 mr-1',
+          init: function (api, node, config) {
+            $(node).removeClass('btn-secondary')
+          }
+        },
+        {
+          extend: 'pdf',
+          className: 'btn btn-sm btn-outline-primary mb-4 mr-1',
+          init: function (api, node, config) {
+            $(node).removeClass('btn-secondary')
+          }
+        },
+        {
+          extend: 'print',
+          className: 'btn btn-sm btn-outline-primary mb-4 mr-1',
+          init: function (api, node, config) {
+            $(node).removeClass('btn-secondary')
+          }
+        },
+      ]
+    });
+  });
+</script>
+</body>
+</html>

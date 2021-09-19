@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Forms | Nova - Responsive WebApp UI Kit</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="../../assets/vendor/nova-icons/nova-icons.css" rel="stylesheet">
+
+  <!-- CSS Implementing Libraries -->
+  <link rel="stylesheet" href="../../assets/vendor/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+  <!-- CSS Nova Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header header-light bg-white">
+  <nav class="navbar flex-nowrap p-0">
+    <div class="navbar-brand-wrapper bg-dark-v1 d-flex align-items-center col-auto">
+      <!-- Logo For Mobile View -->
+      <a class="navbar-brand navbar-brand-mobile" href="../widgets.html">
+        <img class="img-fluid w-100" src="../../assets/img/logo-mini.png" alt="Nova">
+      </a>
+      <!-- End Logo For Mobile View -->
+
+      <!-- Logo For Desktop View -->
+      <a class="navbar-brand navbar-brand-desktop" href="../widgets.html">
+      <img class="side-nav-show-on-closed" src="../../assets/img/logo-mini.png" alt="Nova" style="width: 41px; height: 33px;">
+      <img class="side-nav-hide-on-closed" src="../../assets/img/logo.png" alt="Nova" style="width: 130px; height: 33px;">
+      </a>
+      <!-- End Logo For Desktop View -->
+    </div>
+
+    <div class="header-content col px-md-3">
+      <div class="d-flex align-items-center">
+        <!-- Side Nav Toggle -->
+        <a class="js-side-nav header-invoker d-flex mr-md-2" href="#" data-close-invoker="#sidebarClose" data-target="#sidebar" data-target-wrapper="body">
+          <i class="nova-align-left"></i>
+        </a>
+        <!-- End Side Nav Toggle -->
+
+        <!-- Header Search -->
+        <div class="js-header-search position-relative"
+             data-search-mobile-invoker="#headerSearchMobileInvoker"
+             data-search-form="#headerSearchForm"
+             data-search-field="#headerSearchField">
+          <a id="headerSearchMobileInvoker" class="header-search-invoker header-invoker" href="#">
+            <i class="nova-search"></i>
+          </a>
+
+           <form id="headerSearchForm" class="header-search input-group input-group-merge w-xl-31_25rem mr-2" action="#">
+           <input type="text" class="js-autocomplete header-search-input form-control form-control-append-icon" placeholder="Search..."
+                  data-url="../../assets/include/ajax/autocomplete-data.json">
+            <div class="input-group-append-merge">
+              <i class="nova-search icon-text"></i>
+            </div>
+          </form>
+        </div>
+        <!-- End Header Search -->
+
+        <a class="link-dark ml-auto mr-3 mr-sm-0" href="../../demo-crypto/dashboards/index.html">
+          Crypto Demo
+        </a>
+        <a class="link-dark position-relative mx-3 pr-3 d-none d-sm-block" href="../../documentation/getting-started/changelog.html">
+          Changelog (v1.2.2) <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-secondary rounded-circle"></span>
+        </a>
+        <a class="btn btn-primary mr-2" href="../../documentation/">Documentation</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+  <!-- Sidebar Nav -->
+  <aside id="sidebar" class="js-custom-scroll side-nav">
+    <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+      <!-- Title -->
+      <li class="sidebar-heading h6">Widgets & Layouts</li>
+      <!-- End Title -->
+
+      <!-- Widgets -->
+      <li class="side-nav-menu-item">
+        <a class="side-nav-menu-link media align-items-center" href="../widgets.html">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pulse"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Widgets</span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+      </li>
+      <!-- End Widgets -->
+
+      <!-- Layouts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subLayouts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Layouts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subLayouts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static.html">Static</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/fixed-header-sidebar.html">Fixed Header & Sidebar</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static-mini-nav-mobi.html">Mini Nav</a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Layouts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Forms & Tables</li>
+      <!-- End Title -->
+
+      <!-- Form Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pencil-alt"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Forms</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/form-layouts.html">
+              Form Layouts
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/basic-inputs.html">
+              Basic
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/input-groups.html">
+              Input Groups
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/checkboxes.html">
+              Checkboxes & Switches
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Elements -->
+
+      <!-- Form Extentions -->
+      <li class="side-nav-menu-item side-nav-has-menu side-nav-opened active">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormExtentions">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-ruler-pencil"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Form Extentions</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormExtentions" class="side-nav-menu side-nav-menu-second-level mb-0" style="display: block">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/validation.html">
+              Validation
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/flatpickr.html">
+              Datepicker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/date-range-picker.html">
+              Date Range Picker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link active" href="../advanced-forms/select2.html">
+              Select 2
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/tagsinput.html">
+              Input Tags
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/clipboard.html">
+              Clipboard
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/summernote.html">
+              Form Editor
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/masked-inputs.html">
+              Input Masks
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/dropzone.html">
+              Dropzone
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/range-sliders.html">
+              Range Slider
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/google-recaptcha.html">
+              Google reCAPTCHA
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Extentions -->
+
+      <!-- Tables -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subTables">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-grid-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Tables</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Tables: subTables -->
+        <ul id="subTables" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/basic-tables.html">Basic Tables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/datatables.html">Datatables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/editable-rows.html">Editable Rows</a>
+          </li>
+        </ul>
+        <!-- End Tables: subTables -->
+      </li>
+      <!-- End Tables -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">UI Kit Components</li>
+      <!-- End Title -->
+
+      <!-- UI Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subUiElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-package"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">UI Elements</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Elements: subUiElements -->
+        <ul id="subUiElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/accordions.html">Accordions</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/alerts.html">Alerts</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/buttons.html">Buttons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/badges-indicators.html">Badges & Indicators</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/progress.html">Progress</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/dropdowns.html">Dropdowns</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/icons.html">Icons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/typography.html">Typography</a>
+          </li>
+        </ul>
+        <!-- End UI Elements: subUiElements -->
+      </li>
+      <!-- End UI Elements -->
+
+      <!-- Cards -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCards">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-media-overlay-alt-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Cards</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Cards: subCards -->
+        <ul id="subCards" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-variations.html">Card Variations</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-options.html">Card Options</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-designs.html">Card Designs</a>
+          </li>
+        </ul>
+        <!-- End Cards: subCards -->
+      </li>
+      <!-- End Cards -->
+
+      <!-- Charts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCharts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pie-chart"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Charts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Charts: subCharts -->
+        <ul id="subCharts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/chartist.html">Chartist</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/google-geo-chart.html">Google Geo Chart</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/timeline-chart.html">Timeline Chart</a>
+          </li>
+        </ul>
+        <!-- End Charts: subCharts -->
+      </li>
+      <!-- End Charts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Pages</li>
+      <!-- End Title -->
+
+      <!-- Authentication -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subAuthentication">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-user"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Authentication</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Authentication: subMenu -->
+        <ul id="subAuthentication" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/login.html">Login</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/registration.html">Registration</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/forgot-password.html">Passowrd Recovery</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/lock-screen.html">Lock Screen</a>
+          </li>
+        </ul>
+        <!-- End Authentication: subMenu -->
+      </li>
+      <!-- End Authentication -->
+    </ul>
+  </aside>
+  <!-- End Sidebar Nav -->
+
+  <div class="content">
+    <div class="py-4 px-3 px-md-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h4 mb-3">Select 2</h1>
+
+        <!-- Breadcrumb -->
+        <nav class="d-none d-md-block" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">UI Kit Components</a>
+            </li>
+            <li class="breadcrumb-item">
+              Form Extentions
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Select 2</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-light alert-left-bordered border-primary d-flex align-items-basline mb-4" role="alert">
+            <i class="nova-info-alt icon-text text-primary mt-1 mr-2"></i>
+            <p class="mb-0">You may find more detailed information about how to use Select2 library on the <a class="alert-link" href="../../documentation/libraries/select2.html">documentation page here</a>. In addition, you may find more details on official <a class="alert-link" href="https://select2.org/" target="_blank">Select2 page <i class="nova-arrow-top-right" style="font-size: 70%;"></i></a></p>
+          </div>
+
+          <!-- Basic Examples -->
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header border-bottom p-3">
+          <h5 class="font-weight-semi-bold mb-0">Basic Examples</h5>
+            </div>
+
+            <div class="card-body px-md-0">
+              <form>
+                <!-- Simple -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">Simple</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true"
+                            data-default-classes-off>
+                      <option value="1">Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End Simple -->
+
+                <!-- With Append -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">With append</label>
+                  <div class="col-md-6">
+                    <div class="input-group flex-nowrap">
+                      <div class="input-group-prepend">
+                        <select class="js-custom-select" style="width: 100%"
+                                data-is-hide-search="true">
+                          <option value="1" selected>All</option>
+                          <option value="2">HTML</option>
+                          <option value="3">CSS</option>
+                          <option value="4">JS</option>
+                          <option value="5">PHP</option>
+                          <option value="6">Vue.js</option>
+                          <option value="7">React</option>
+                          <option value="8">Angular</option>
+                          <option value="9">Ruby</option>
+                          <option value="10">Python</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Search">
+                      <div class="input-group-append">
+                        <a href="#" class="btn btn-primary d-flex align-items-center">
+                          Search
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End With Append -->
+
+                <!-- With Paceholder -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">Paceholder</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true"
+                            data-placeholder="Select member">
+                      <option></option>
+                      <option value="1">Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End With Paceholder -->
+
+                <!-- Paceholder With Icon/Image -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">Paceholder with icon/image</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true"
+                            data-placeholder='<span><i class="nova-user mr-2"></i> Select member</span>'>
+                      <option></option>
+                      <option value="1">Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End Paceholder With Icon/Image -->
+
+                <!-- With Optgroup -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">With optgroup</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true">
+                      <optgroup class="font-weight-light" label="Optgroup 1">
+                        <option value="item-1-1">Item 1</option>
+                        <option value="item-1-2">Item 2</option>
+                      </optgroup>
+                      <optgroup label="Optgroup 2">
+                        <option value="item-2-1">Item 1</option>
+                        <option value="item-2-2">Item 2</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+                <!-- End With Optgroup -->
+
+                <!-- Multiple -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">Multiple</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select" multiple style="width: 100%;"
+                            data-is-hide-search="true">
+                      <option value="1" selected>Life</option>
+                      <option value="2">Custom</option>
+                      <option value="3">New</option>
+                      <option value="4">Best Saller</option>
+                      <option value="5">Language</option>
+                      <option value="6">Stream</option>
+                      <option value="7">HTML</option>
+                      <option value="8">PHP</option>
+                      <option value="9">JavaScript</option>
+                      <option value="10">Vue.js</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End Multiple -->
+
+                <!-- Custom Tags -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">Custom tags</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select" multiple style="width: 100%;"
+                            data-is-hide-search="true"
+                            data-tags="true"
+                            data-placeholder="Type tags here...">
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End Custom Tags -->
+
+                <!-- Dynamic Option Creation -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">Dynamic option creation</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select form-control" style="width: 100%;"
+                            data-tags="true">
+                      <option value="january" selected>Apple</option>
+                      <option value="february">Orange</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End Dynamic Option Creation -->
+
+                <!-- Search -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">Search</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select"
+                            data-placeholder="Select month">
+                      <option value="1" selected>Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End Search -->
+
+                <!-- With Images -->
+                <div class="row mb-3">
+                  <label class="col-md-3 col-form-label text-md-right">With images</label>
+                  <div class="col-md-6">
+                    <select class="js-custom-select mb-3 mb-md-4" style="width: 100%;"
+                            data-placeholder="Select wallet">
+                      <option value="1" selected data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img9.jpg" alt="Image description" width="24" /><span>John Doe</span></span>'>
+                        John Doe
+                      </option>
+                      <option value="2" data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img4.jpg" alt="Image description" width="24" /><span>Alex Kim</span></span>'>
+                        Alex Kim
+                      </option>
+                      <option value="3" data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img12.jpg" alt="Image description" width="24" /><span>David Food</span></span>'>
+                      </option>
+                      <option value="4" data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img8.jpg" alt="Image description" width="24" /><span>Karl Marks</span></span>'>
+                        Adison Lee
+                      </option>
+                      <option value="5" data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img5.jpg" alt="Image description" width="24" /><span>Adison Lee</span></span>'>
+                      </option>
+                      <option value="6" data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img7.jpg" alt="Image description" width="24" /><span>Adam Brown</span></span>'>
+                        Adam Brown
+                      </option>
+                      <option value="7" data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img11.jpg" alt="Image description" width="24" /><span>Sara Pak</span></span>'>
+                        Sara Pak
+                      </option>
+                      <option value="8" data-option-template='<span class="d-flex align-items-center"><img class="mr-2 rounded-circle" src="../../assets/img/100x100/img10.jpg" alt="Image description" width="24" /><span>Victoria Drizz</span></span>'>
+                        Victoria Drizz
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6 offset-md-3">
+                    <select class="js-custom-select mb-3 mb-md-4" style="width: 100%;"
+                            data-placeholder="Select wallet">
+                      <option value="1" selected data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-ca flag-icon-squared rounded-circle mr-2"></span><span>CAD</span></div>'>
+                        CAD
+                      </option>
+                      <option value="2" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-us flag-icon-squared rounded-circle mr-2"></span><span>USD</span></div>'>
+                        USD
+                      </option>
+                      <option value="3" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-eu flag-icon-squared rounded-circle mr-2"></span><span>EUR</span></div>'>
+                        EUR
+                      </option>
+                      <option value="4" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-br flag-icon-squared rounded-circle mr-2"></span><span>BRL</span></div>'>
+                        BRL
+                      </option>
+                      <option value="5" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-cz flag-icon-squared rounded-circle mr-2"></span><span>CZK</span></div>'>
+                        CZK
+                      </option>
+                      <option value="6" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-ru flag-icon-squared rounded-circle mr-2"></span><span>RUB</span></div>'>
+                        RUB
+                      </option>
+                      <option value="7" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-jp flag-icon-squared rounded-circle mr-2"></span><span>JPY</span></div>'>
+                        JPY
+                      </option>
+                      <option value="8" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-za flag-icon-squared rounded-circle mr-2"></span><span>ZAR</span></div>'>
+                        ZAR
+                      </option>
+                      <option value="9" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-nz flag-icon-squared rounded-circle mr-2"></span><span>NZD</span></div>'>
+                        NZD
+                      </option>
+                      <option value="10" data-option-template='<div class="d-flex align-items-center"><span style="width: 24px; height: 24px;" class="flag-icon flag-icon-in flag-icon-squared rounded-circle mr-2"></span><span>INR</span></div>'>
+                        INR
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End With Images -->
+              </form>
+            </div>
+          </div>
+          <!-- End Basic Examples -->
+
+          <!-- Disabled -->
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header border-bottom p-3">
+              <h5 class="font-weight-semi-bold mb-0">Disabled</h5>
+            </div>
+
+            <div class="card-body px-md-0">
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label text-md-right">Disabled</label>
+                <div class="col-md-6">
+                  <select disabled class="js-custom-select"
+                          data-is-hide-search="true">
+                    <option value="1" selected>Bruce Maynard</option>
+                    <option value="2">Hollis Clark</option>
+                    <option value="3">Lester Howard</option>
+                    <option value="4">George Marino</option>
+                    <option value="5">Tyler Johnson</option>
+                    <option value="6">Jennifer Craig</option>
+                    <option value="7">Martha Barnwell</option>
+                    <option value="8">Florencia Todd</option>
+                    <option value="9">Henry Sloan</option>
+                    <option value="10">Abigail Watson</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Disabled -->
+
+          <!-- Size -->
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header border-bottom p-3">
+              <h5 class="font-weight-semi-bold mb-0">Size</h5>
+            </div>
+
+            <div class="card-body px-md-0">
+              <!-- Small -->
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label-sm text-md-right">Small</label>
+                <div class="col-md-6">
+                  <div>
+                    <select class="js-custom-select"
+                            data-is-hide-search="true"
+                            data-size="sm">
+                      <option value="1" selected>Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- End Small -->
+
+              <!-- Default -->
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label text-md-right">Default</label>
+                <div class="col-md-6">
+                  <div>
+                    <select class="js-custom-select"
+                            data-is-hide-search="true">
+                      <option value="1" selected>Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- End Default -->
+
+              <!-- Large -->
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label text-md-right">Large</label>
+                <div class="col-md-6">
+                  <div>
+                    <select class="js-custom-select"
+                            data-is-hide-search="true"
+                            data-size="lg">
+                      <option value="1" selected>Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- End Large -->
+            </div>
+          </div>
+          <!-- End Size -->
+
+          <!-- Selelct in Modal -->
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header border-bottom p-3">
+          <h5 class="font-weight-semi-bold mb-0">Modal</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <label class="col-md-3 col-form-label text-md-right">Select in modal</label>
+                <div class="col-md-6">
+                  <!-- Button Trigger Modal -->
+                  <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                    Open modal
+                  </button>
+                  <!-- End Button Trigger Modal -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Select in Modal -->
+
+          <!-- Validation States -->
+          <div class="card mb-3 mb-md-4">
+            <div class="card-header border-bottom p-3">
+              <h5 class="font-weight-semi-bold mb-0">Validation States</h5>
+            </div>
+
+            <div class="card-body px-md-0">
+              <!-- Valid State -->
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label text-md-right">Valid state</label>
+                <div class="col-md-6">
+                  <div class="u-has-success">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true">
+                      <option value="1" selected>Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- End Valid State -->
+
+              <!-- Valid Feedback -->
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label text-md-right">Valid feedback</label>
+                <div class="col-md-6">
+                  <div class="u-has-success">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true">
+                      <option value="1" selected>Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                    <small class="text-success">Select members</small>
+                  </div>
+                </div>
+              </div>
+              <!-- End Valid Feedback -->
+
+              <hr class="my-5">
+
+              <!-- Invalid State -->
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label text-md-right">Invalid state</label>
+                <div class="col-md-6">
+                  <div class="u-has-error">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true"
+                            data-placeholder="Select members">
+                      <option></option>
+                      <option value="1">Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- End Invalid State -->
+
+              <!-- Invalid Feedback -->
+              <div class="row">
+                <label class="col-md-3 col-form-label text-md-right">Invalid feedback</label>
+                <div class="col-md-6">
+                  <div class="u-has-error">
+                    <select class="js-custom-select"
+                            data-is-hide-search="true"
+                            data-placeholder="Select members">
+                      <option></option>
+                      <option value="1">Bruce Maynard</option>
+                      <option value="2">Hollis Clark</option>
+                      <option value="3">Lester Howard</option>
+                      <option value="4">George Marino</option>
+                      <option value="5">Tyler Johnson</option>
+                      <option value="6">Jennifer Craig</option>
+                      <option value="7">Martha Barnwell</option>
+                      <option value="8">Florencia Todd</option>
+                      <option value="9">Henry Sloan</option>
+                      <option value="10">Abigail Watson</option>
+                    </select>
+                    <small class="text-danger">Select members</small>
+                  </div>
+                </div>
+              </div>
+              <!-- End Invalid Feedback -->
+            </div>
+          </div>
+          <!-- End Validation States -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="small bg-white p-3 px-md-4 mt-auto">
+      <div class="row justify-content-between">
+        <div class="col-lg text-center text-lg-left mb-3 mb-lg-0">
+          <ul class="list-dot list-inline mb-0">
+            <li class="list-dot-item list-dot-item-not list-inline-item mr-lg-2"><a class="link-dark" href="#">FAQ</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Support</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center mb-3 mb-lg-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-vimeo-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-github"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center text-lg-right">
+          &copy; 2019 Htmlstream. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Example Title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <label>Select friends</label>
+          <select class="js-custom-select" multiple style="width: 100%;"
+                  data-is-hide-search="true"
+                  data-placeholder="John Doe, Mike ...">
+            <option value="1" selected>Bruce Maynard</option>
+            <option value="2">Hollis Clark</option>
+            <option value="3">Lester Howard</option>
+            <option value="4">George Marino</option>
+            <option value="5">Tyler Johnson</option>
+            <option value="6">Jennifer Craig</option>
+            <option value="7">Martha Barnwell</option>
+            <option value="8">Florencia Todd</option>
+            <option value="9">Henry Sloan</option>
+            <option value="10">Abigail Watson</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS Global Compulsory -->
+<script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Libraries -->
+<script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../assets/vendor/select2/dist/js/select2.full.min.js"></script>
+<script src="../../assets/vendor/resize-sensor/dist/resizeSensor.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+<!-- JS Nova -->
+<script src="../../assets/js/hs.core.js"></script>
+<script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="../../assets/js/components/hs.side-nav.js"></script>
+<script src="../../assets/js/components/hs.unfold.js"></script>
+<script src="../../assets/js/components/hs.header-search.js"></script>
+<script src="../../assets/js/components/hs.select2.js"></script>
+<script src="../../assets/js/components/hs.autocomplete.js"></script>
+
+<!-- JS Libraries Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of custom scroll
+    $.HSCore.components.HSMalihuScrollBar.init($('.js-custom-scroll'));
+
+    // initialization of sidebar navigation component
+    $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+    // initialization of dropdown component
+    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+    // initialization of show on type module
+    $.HSCore.components.HSHeaderSearch.init('.js-header-search');
+
+    // initialization of show on type module
+    $.HSCore.components.HSSelect2.init('.js-custom-select');
+
+    // initialization of autocomplete
+    $.HSCore.components.HSAutocomplete.init('.js-autocomplete');
+  });
+</script>
+</body>
+</html>

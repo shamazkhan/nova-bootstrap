@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Chartist | Nova - Responsive WebApp UI Kit</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="../../assets/vendor/nova-icons/nova-icons.css" rel="stylesheet">
+
+  <!-- CSS Implementing Libraries -->
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/chartist/dist/chartist.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+  <link rel="stylesheet" href="../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+
+  <!-- CSS Nova Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+
+<body class="has-sidebar has-fixed-sidebar-and-header">
+<!-- Header -->
+<header class="header header-light bg-white">
+  <nav class="navbar flex-nowrap p-0">
+    <div class="navbar-brand-wrapper bg-dark-v1 d-flex align-items-center col-auto">
+      <!-- Logo For Mobile View -->
+      <a class="navbar-brand navbar-brand-mobile" href="../widgets.html">
+        <img class="img-fluid w-100" src="../../assets/img/logo-mini.png" alt="Nova">
+      </a>
+      <!-- End Logo For Mobile View -->
+
+      <!-- Logo For Desktop View -->
+      <a class="navbar-brand navbar-brand-desktop" href="../widgets.html">
+      <img class="side-nav-show-on-closed" src="../../assets/img/logo-mini.png" alt="Nova" style="width: 41px; height: 33px;">
+      <img class="side-nav-hide-on-closed" src="../../assets/img/logo.png" alt="Nova" style="width: 130px; height: 33px;">
+      </a>
+      <!-- End Logo For Desktop View -->
+    </div>
+
+    <div class="header-content col px-md-3">
+      <div class="d-flex align-items-center">
+        <!-- Side Nav Toggle -->
+        <a class="js-side-nav header-invoker d-flex mr-md-2" href="#"
+           data-close-invoker="#sidebarClose" data-target="#sidebar" data-target-wrapper="body">
+          <i class="nova-align-left"></i>
+        </a>
+        <!-- End Side Nav Toggle -->
+
+        <!-- Header Search -->
+        <div class="js-header-search position-relative"
+             data-search-mobile-invoker="#headerSearchMobileInvoker"
+             data-search-form="#headerSearchForm"
+             data-search-field="#headerSearchField">
+          <a id="headerSearchMobileInvoker" class="header-search-invoker header-invoker" href="#">
+            <i class="nova-search"></i>
+          </a>
+
+           <form id="headerSearchForm" class="header-search input-group input-group-merge w-xl-31_25rem mr-2" action="#">
+           <input type="text" class="js-autocomplete header-search-input form-control form-control-append-icon" placeholder="Search..."
+                  data-url="../../assets/include/ajax/autocomplete-data.json">
+            <div class="input-group-append-merge">
+              <i class="nova-search icon-text"></i>
+            </div>
+          </form>
+        </div>
+        <!-- End Header Search -->
+
+        <a class="link-dark ml-auto mr-3 mr-sm-0" href="../../demo-crypto/dashboards/index.html">
+          Crypto Demo
+        </a>
+        <a class="link-dark position-relative mx-3 pr-3 d-none d-sm-block" href="../../documentation/getting-started/changelog.html">
+          Changelog (v1.2.2) <span class="indicator indicator-lg indicator-bordered-reverse indicator-top-right indicator-secondary rounded-circle"></span>
+        </a>
+        <a class="btn btn-primary mr-2" href="../../documentation/">Documentation</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- End Header -->
+
+<main class="main">
+  <!-- Sidebar Nav -->
+  <aside id="sidebar" class="js-custom-scroll side-nav">
+    <ul id="sideNav" class="side-nav-menu side-nav-menu-top-level mb-0">
+      <!-- Title -->
+      <li class="sidebar-heading h6">Widgets & Layouts</li>
+      <!-- End Title -->
+
+      <!-- Widgets -->
+      <li class="side-nav-menu-item">
+        <a class="side-nav-menu-link media align-items-center" href="../widgets.html">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pulse"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Widgets</span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+      </li>
+      <!-- End Widgets -->
+
+      <!-- Layouts -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subLayouts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Layouts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subLayouts" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static.html">Static</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/fixed-header-sidebar.html">Fixed Header & Sidebar</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../layouts/static-mini-nav-mobi.html">Mini Nav</a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Layouts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Forms & Tables</li>
+      <!-- End Title -->
+
+      <!-- Form Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pencil-alt"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Forms</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/form-layouts.html">
+              Form Layouts
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/basic-inputs.html">
+              Basic
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/input-groups.html">
+              Input Groups
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../forms/checkboxes.html">
+              Checkboxes & Switches
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Elements -->
+
+      <!-- Form Extentions -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subFormExtentions">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-ruler-pencil"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Form Extentions</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Layouts: subLayouts -->
+        <ul id="subFormExtentions" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/validation.html">
+              Validation
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/flatpickr.html">
+              Datepicker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/date-range-picker.html">
+              Date Range Picker
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/select2.html">
+              Select 2
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/tagsinput.html">
+              Input Tags
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/clipboard.html">
+              Clipboard
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/summernote.html">
+              Form Editor
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/masked-inputs.html">
+              Input Masks
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/dropzone.html">
+              Dropzone
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/range-sliders.html">
+              Range Slider
+            </a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../advanced-forms/google-recaptcha.html">
+              Google reCAPTCHA
+            </a>
+          </li>
+        </ul>
+        <!-- End Layouts: subLayouts -->
+      </li>
+      <!-- End Form Extentions -->
+
+      <!-- Tables -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subTables">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-grid-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Tables</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Tables: subTables -->
+        <ul id="subTables" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/basic-tables.html">Basic Tables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/datatables.html">Datatables</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../tables/editable-rows.html">Editable Rows</a>
+          </li>
+        </ul>
+        <!-- End Tables: subTables -->
+      </li>
+      <!-- End Tables -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">UI Kit Components</li>
+      <!-- End Title -->
+
+      <!-- UI Elements -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subUiElements">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-package"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">UI Elements</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Elements: subUiElements -->
+        <ul id="subUiElements" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/accordions.html">Accordions</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/alerts.html">Alerts</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/buttons.html">Buttons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/badges-indicators.html">Badges & Indicators</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/progress.html">Progress</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/dropdowns.html">Dropdowns</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/icons.html">Icons</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../ui-elements/typography.html">Typography</a>
+          </li>
+        </ul>
+        <!-- End UI Elements: subUiElements -->
+      </li>
+      <!-- End UI Elements -->
+
+      <!-- Cards -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCards">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-layout-media-overlay-alt-2"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Cards</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Cards: subCards -->
+        <ul id="subCards" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-variations.html">Card Variations</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-options.html">Card Options</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../cards/card-designs.html">Card Designs</a>
+          </li>
+        </ul>
+        <!-- End Cards: subCards -->
+      </li>
+      <!-- End Cards -->
+
+      <!-- Charts -->
+      <li class="side-nav-menu-item side-nav-has-menu side-nav-opened active">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subCharts">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-pie-chart"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Charts</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- Charts: subCharts -->
+        <ul id="subCharts" class="side-nav-menu side-nav-menu-second-level mb-0" style="display: block;">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link active" href="../charts/chartist.html">Chartist</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/google-geo-chart.html">Google Geo Chart</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../charts/timeline-chart.html">Timeline Chart</a>
+          </li>
+        </ul>
+        <!-- End Charts: subCharts -->
+      </li>
+      <!-- End Charts -->
+
+      <!-- Title -->
+      <li class="sidebar-heading h6">Pages</li>
+      <!-- End Title -->
+
+      <!-- Authentication -->
+      <li class="side-nav-menu-item side-nav-has-menu">
+        <a class="side-nav-menu-link media align-items-center" href="#" data-target="#subAuthentication">
+          <span class="side-nav-menu-icon d-flex mr-3">
+            <i class="nova-user"></i>
+          </span>
+          <span class="side-nav-fadeout-on-closed media-body">Authentication</span>
+          <span class="side-nav-control-icon d-flex">
+            <i class="nova-angle-right side-nav-fadeout-on-closed"></i>
+          </span>
+          <span class="side-nav__indicator side-nav-fadeout-on-closed"></span>
+        </a>
+
+        <!-- UI Authentication: subMenu -->
+        <ul id="subAuthentication" class="side-nav-menu side-nav-menu-second-level mb-0">
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/login.html">Login</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/registration.html">Registration</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/forgot-password.html">Passowrd Recovery</a>
+          </li>
+          <li class="side-nav-menu-item">
+            <a class="side-nav-menu-link" href="../authentication/lock-screen.html">Lock Screen</a>
+          </li>
+        </ul>
+        <!-- End Authentication: subMenu -->
+      </li>
+      <!-- End Authentication -->
+    </ul>
+  </aside>
+  <!-- End Sidebar Nav -->
+
+  <div class="content">
+    <div class="py-4 px-3 px-md-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h4 mb-2">Chartist</h1>
+
+        <!-- Breadcrumb -->
+        <nav class="d-none d-md-block" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">UI Kit Components</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Charts</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Chartist</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+      </div>
+
+      <div class="alert alert-light alert-left-bordered border-primary d-flex align-items-basline mb-4" role="alert">
+        <i class="nova-info-alt icon-text text-primary mt-1 mr-2"></i>
+        <p class="mb-0">You may find more detailed information about how to use Chartist library on the <a class="alert-link" href="../../documentation/libraries/chartist.html">documentation page here</a>. In addition, you may find more details on official <a class="alert-link" href="https://gionkunz.github.io/chartist-js/api-documentation.html" target="_blank">Chartist page<i class="nova-arrow-top-right" style="font-size: 70%;"></i></a></p>
+      </div>
+
+      <h3 class="h4 mb-3 mb-md-4">Area Charts</h3>
+
+      <!-- Area Chart #1 -->
+      <div class="card mb-3 mb-md-4">
+        <div class="card-header">
+          <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Area Chart #1</h5>
+        </div>
+
+        <div class="card-body">
+          <div class="js-area-chart chart chart--axis-x--nowrap chart--points-invisible position-relative safari-overflow-hidden py-2"
+            data-series='[
+                           [
+                             {"meta":"4/24/2018 6:00 PM","value":"25548"},
+                             {"meta":"4/24/2018 6:00 PM","value":"25548"},
+                             {"meta":"4/24/2018 6:01 PM","value":"25552"},
+                             {"meta":"4/24/2018 6:01 PM","value":"25552"},
+                             {"meta":"4/24/2018 6:02 PM","value":"25608"},
+                             {"meta":"4/24/2018 6:02 PM","value":"25588"},
+                             {"meta":"4/24/2018 6:03 PM","value":"25588"},
+                             {"meta":"4/24/2018 6:03 PM","value":"25588"},
+                             {"meta":"4/24/2018 6:04 PM","value":"25552"},
+                             {"meta":"4/24/2018 6:04 PM","value":"25528"},
+                             {"meta":"4/24/2018 6:05 PM","value":"25528"},
+                             {"meta":"4/24/2018 6:05 PM","value":"25548"},
+                             {"meta":"4/24/2018 6:06 PM","value":"25618"},
+                             {"meta":"4/24/2018 6:06 PM","value":"25618"},
+                             {"meta":"4/24/2018 6:07 PM","value":"25632"},
+                             {"meta":"4/24/2018 6:07 PM","value":"25648"},
+                             {"meta":"4/24/2018 6:08 PM","value":"25548"},
+                             {"meta":"4/24/2018 6:08 PM","value":"25548"},
+                             {"meta":"4/24/2018 6:09 PM","value":"25588"},
+                             {"meta":"4/24/2018 6:09 PM","value":"25598"},
+                             {"meta":"4/24/2018 6:10 PM","value":"25598"},
+                             {"meta":"4/24/2018 6:10 PM","value":"25598"},
+                             {"meta":"4/24/2018 6:11 PM","value":"25608"},
+                             {"meta":"4/24/2018 6:11 PM","value":"25708"},
+                             {"meta":"4/24/2018 6:12 PM","value":"25708"},
+                             {"meta":"4/24/2018 6:12 PM","value":"25708"},
+                             {"meta":"4/24/2018 6:13 PM","value":"25688"},
+                             {"meta":"4/24/2018 6:13 PM","value":"25682"},
+                             {"meta":"4/24/2018 6:14 PM","value":"25628"},
+                             {"meta":"4/24/2018 6:14 PM","value":"25628"},
+                             {"meta":"4/24/2018 6:15 PM","value":"25628"},
+                             {"meta":"4/24/2018 6:15 PM","value":"25608"},
+                             {"meta":"4/24/2018 6:16 PM","value":"25520"},
+                             {"meta":"4/24/2018 6:16 PM","value":"25520"},
+                             {"meta":"4/24/2018 6:17 PM","value":"25520"},
+                             {"meta":"4/24/2018 6:17 PM","value":"25888"},
+                             {"meta":"4/24/2018 6:18 PM","value":"25880"},
+                             {"meta":"4/24/2018 6:18 PM","value":"25838"},
+                             {"meta":"4/24/2018 6:19 PM","value":"25838"},
+                             {"meta":"4/24/2018 6:19 PM","value":"25838"},
+                             {"meta":"4/24/2018 6:20 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:20 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:21 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:21 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:22 PM","value":"25640"},
+                             {"meta":"4/24/2018 6:22 PM","value":"25640"},
+                             {"meta":"4/24/2018 6:23 PM","value":"25640"},
+                             {"meta":"4/24/2018 6:23 PM","value":"25590"},
+                             {"meta":"4/24/2018 6:24 PM","value":"25560"},
+                             {"meta":"4/24/2018 6:24 PM","value":"25560"},
+                             {"meta":"4/24/2018 6:25 PM","value":"25560"},
+                             {"meta":"4/24/2018 6:25 PM","value":"25660"},
+                             {"meta":"4/24/2018 6:26 PM","value":"25660"},
+                             {"meta":"4/24/2018 6:26 PM","value":"25660"},
+                             {"meta":"4/24/2018 6:27 PM","value":"25668"},
+                             {"meta":"4/24/2018 6:27 PM","value":"25665"},
+                             {"meta":"4/24/2018 6:28 PM","value":"25600"},
+                             {"meta":"4/24/2018 6:28 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:29 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:29 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:30 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:30 PM","value":"25580"},
+                             {"meta":"4/24/2018 6:31 PM","value":"25585"},
+                             {"meta":"4/24/2018 6:31 PM","value":"25587"},
+                             {"meta":"4/24/2018 6:32 PM","value":"25583"},
+                             {"meta":"4/24/2018 6:32 PM","value":"25581"},
+                             {"meta":"4/24/2018 6:33 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:33 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:34 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:34 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:35 PM","value":"25850"},
+                             {"meta":"4/24/2018 6:35 PM","value":"25854"},
+                             {"meta":"4/24/2018 6:36 PM","value":"25855"},
+                             {"meta":"4/24/2018 6:36 PM","value":"25859"},
+                             {"meta":"4/24/2018 6:37 PM","value":"25780"},
+                             {"meta":"4/24/2018 6:37 PM","value":"25783"},
+                             {"meta":"4/24/2018 6:38 PM","value":"25730"},
+                             {"meta":"4/24/2018 6:38 PM","value":"25730"},
+                             {"meta":"4/24/2018 6:39 PM","value":"25730"},
+                             {"meta":"4/24/2018 6:39 PM","value":"25730"},
+                             {"meta":"4/24/2018 6:40 PM","value":"25888"},
+                             {"meta":"4/24/2018 6:40 PM","value":"25880"},
+                             {"meta":"4/24/2018 6:41 PM","value":"25838"},
+                             {"meta":"4/24/2018 6:41 PM","value":"25838"},
+                             {"meta":"4/24/2018 6:42 PM","value":"25838"},
+                             {"meta":"4/24/2018 6:42 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:43 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:43 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:44 PM","value":"25800"},
+                             {"meta":"4/24/2018 6:44 PM","value":"25640"},
+                             {"meta":"4/24/2018 6:45 PM","value":"25640"},
+                             {"meta":"4/24/2018 6:45 PM","value":"25640"},
+                             {"meta":"4/24/2018 6:46 PM","value":"25590"},
+                             {"meta":"4/24/2018 6:46 PM","value":"25560"},
+                             {"meta":"4/24/2018 6:47 PM","value":"25560"},
+                             {"meta":"4/24/2018 6:47 PM","value":"25560"},
+                             {"meta":"4/24/2018 6:48 PM","value":"25660"},
+                             {"meta":"4/24/2018 6:48 PM","value":"25660"},
+                             {"meta":"4/24/2018 6:49 PM","value":"25660"},
+                             {"meta":"4/24/2018 6:49 PM","value":"25668"},
+                             {"meta":"4/24/2018 6:50 PM","value":"25665"},
+                             {"meta":"4/24/2018 6:50 PM","value":"25600"},
+                             {"meta":"4/24/2018 6:51 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:51 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:52 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:52 PM","value":"25620"},
+                             {"meta":"4/24/2018 6:53 PM","value":"25580"},
+                             {"meta":"4/24/2018 6:53 PM","value":"25585"},
+                             {"meta":"4/24/2018 6:54 PM","value":"25587"},
+                             {"meta":"4/24/2018 6:54 PM","value":"25583"},
+                             {"meta":"4/24/2018 6:55 PM","value":"25581"},
+                             {"meta":"4/24/2018 6:55 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:56 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:56 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:57 PM","value":"25901"},
+                             {"meta":"4/24/2018 6:57 PM","value":"25850"},
+                             {"meta":"4/24/2018 6:58 PM","value":"25854"},
+                             {"meta":"4/24/2018 6:58 PM","value":"25855"},
+                             {"meta":"4/24/2018 6:59 PM","value":"25859"},
+                             {"meta":"4/24/2018 6:59 PM","value":"25984"}
+                           ]
+                         ]'
+            data-labels='["6:00 PM","6:00 PM","6:01 PM","6:01 PM","6:02 PM","6:02 PM","6:03 PM","6:03 PM","6:04 PM","6:04 PM","6:05 PM","6:05 PM","6:06 PM","6:06 PM","6:07 PM","6:07 PM","6:08 PM","6:08 PM","6:09 PM","6:09 PM","6:10 PM","6:10 PM","6:11 PM","6:11 PM","6:12 PM","6:12 PM","6:13 PM","6:13 PM","6:14 PM","6:14 PM","6:15 PM","6:15 PM","6:16 PM","6:16 PM","6:17 PM","6:17 PM","6:18 PM","6:18 PM","6:19 PM","6:19 PM","6:20 PM","6:20 PM","6:21 PM","6:21 PM","6:22 PM","6:22 PM","6:23 PM","6:23 PM","6:24 PM","6:24 PM","6:25 PM","6:25 PM","6:26 PM","6:26 PM","6:27 PM","6:27 PM","6:28 PM","6:28 PM","6:29 PM","6:29 PM","6:30 PM","6:30 PM","6:31 PM","6:31 PM","6:32 PM","6:32 PM","6:33 PM","6:33 PM","6:34 PM","6:34 PM","6:35 PM","6:35 PM","6:36 PM","6:36 PM","6:37 PM","6:37 PM","6:38 PM","6:38 PM","6:39 PM","6:39 PM","6:40 PM","6:40 PM","6:41 PM","6:41 PM","6:42 PM","6:42 PM","6:43 PM","6:43 PM","6:44 PM","6:44 PM","6:45 PM","6:45 PM","6:46 PM","6:46 PM","6:47 PM","6:47 PM","6:48 PM","6:48 PM","6:49 PM","6:49 PM","6:50 PM","6:50 PM","6:51 PM","6:51 PM","6:52 PM","6:52 PM","6:53 PM","6:53 PM","6:54 PM","6:54 PM","6:55 PM","6:55 PM","6:56 PM","6:56 PM","6:57 PM","6:57 PM","6:58 PM","6:58 PM","6:59 PM","6:59 PM"]'
+            data-labels-qty="6"
+            data-labels-start-from="8"
+            data-prefix="$"
+            data-height="250"
+            data-mobile-height="75"
+            data-high="26000"
+            data-low="25500"
+            data-offset-x="30"
+            data-offset-y="60"
+            data-is-line-smooth="[false]"
+            data-line-width='["1px"]'
+            data-line-colors='["#8069f2"]'
+            data-fill-opacity="1"
+            data-fill-colors='["#ecebfa"]'
+            data-text-size-x="14px"
+            data-text-color-x="#4a4e69"
+            data-text-offset-top-x="10"
+            data-text-align-axis-x="center"
+            data-text-size-y="14px"
+            data-text-color-y="#868e96"
+            data-is-show-tooltips="true"
+            data-is-tooltip-divided="true"
+            data-tooltip-custom-class="chart-tooltip--divided chart-tooltip__value--bg-black chart-tooltip__meta--bg-primary small text-white"
+            data-tooltip-currency="USD "
+            data-is-show-points="true"
+            data-point-custom-class="chart__point--donut chart__point--has-line-helper chart__point--border-xxs border-primary rounded-circle"
+            data-point-dimensions='{"width":8,"height":8}' style="min-height: 250px;"></div>
+        </div>
+      </div>
+      <!-- End Area Chart #1 -->
+
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-4">
+          <!-- Area Chart #2 -->
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Area Chart #2</h5>
+            </div>
+
+            <div class="card-body px-0">
+              <div class="js-area-chart chart--labels-hidden chart--points-invisible position-relative"
+                   data-series='[
+                             [
+                               {"meta":"Bitcoin","value":"40"},
+                               {"meta":"Bitcoin","value":"42"},
+                               {"meta":"Bitcoin","value":"45"},
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"70"},
+                               {"meta":"Bitcoin","value":"70"},
+                               {"meta":"Bitcoin","value":"40"},
+                               {"meta":"Bitcoin","value":"20"},
+                               {"meta":"Bitcoin","value":"20"},
+                               {"meta":"Bitcoin","value":"35"},
+                               {"meta":"Bitcoin","value":"35"},
+                               {"meta":"Bitcoin","value":"32"},
+                               {"meta":"Bitcoin","value":"32"},
+                               {"meta":"Bitcoin","value":"35"},
+                               {"meta":"Bitcoin","value":"40"},
+                               {"meta":"Bitcoin","value":"50"},
+                               {"meta":"Bitcoin","value":"50"},
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"90"},
+                               {"meta":"Bitcoin","value":"90"},
+                               {"meta":"Bitcoin","value":"100"},
+                               {"meta":"Bitcoin","value":"100"},
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"40"},
+                               {"meta":"Bitcoin","value":"42"},
+                               {"meta":"Bitcoin","value":"45"},
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"70"},
+                               {"meta":"Bitcoin","value":"70"},
+                               {"meta":"Bitcoin","value":"40"},
+                               {"meta":"Bitcoin","value":"20"},
+                               {"meta":"Bitcoin","value":"20"},
+                               {"meta":"Bitcoin","value":"35"},
+                               {"meta":"Bitcoin","value":"35"},
+                               {"meta":"Bitcoin","value":"32"},
+                               {"meta":"Bitcoin","value":"32"},
+                               {"meta":"Bitcoin","value":"35"},
+                               {"meta":"Bitcoin","value":"40"}
+                             ]
+                           ]'
+                   data-height="115"
+                   data-high="115"
+                   data-is-line-smooth="[false]"
+                   data-line-width='["1px"]'
+                   data-line-colors='["#8069f2"]'
+                   data-fill-opacity=".3"
+                   data-is-fill-colors-gradient="true"
+                   data-fill-colors='[
+                             ["rgba(128,105,242,.7)","rgba(255,255,255,.6)"]
+                           ]'
+                   data-is-show-tooltips="true"
+                   data-is-tooltips-append-to-body="true"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white p-2"
+                   data-tooltip-currency="USD "
+                   data-is-show-points="true"
+                   data-point-custom-class="chart__point--donut chart__point--border-xxs border-primary rounded-circle"
+                   data-point-dimensions='{"width":8,"height":8}'></div>
+            </div>
+          </div>
+          <!-- End Area Chart #2 -->
+        </div>
+
+        <div class="col-md-6 mb-3 mb-md-4">
+          <!-- Area Chart #3 -->
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Area Chart #3</h5>
+            </div>
+
+            <div class="card-body px-0">
+              <div class="js-area-chart chart--labels-hidden chart--points-invisible position-relative"
+                   data-series='[
+                             [
+                               {"meta":"Ethereum","value":"30"},
+                               {"meta":"Ethereum","value":"30"},
+                               {"meta":"Ethereum","value":"30"},
+                               {"meta":"Ethereum","value":"32"},
+                               {"meta":"Ethereum","value":"33"},
+                               {"meta":"Ethereum","value":"34"},
+                               {"meta":"Ethereum","value":"35"},
+                               {"meta":"Ethereum","value":"34"},
+                               {"meta":"Ethereum","value":"33"},
+                               {"meta":"Ethereum","value":"32"},
+                               {"meta":"Ethereum","value":"31"},
+                               {"meta":"Ethereum","value":"30"},
+                               {"meta":"Ethereum","value":"35"},
+                               {"meta":"Ethereum","value":"36"},
+                               {"meta":"Ethereum","value":"36"},
+                               {"meta":"Ethereum","value":"36"},
+                               {"meta":"Ethereum","value":"36"}
+                             ],
+                             [
+                               {"meta":"Ethereum","value":"70"},
+                               {"meta":"Ethereum","value":"52"},
+                               {"meta":"Ethereum","value":"47"},
+                               {"meta":"Ethereum","value":"58"},
+                               {"meta":"Ethereum","value":"38"},
+                               {"meta":"Ethereum","value":"60"},
+                               {"meta":"Ethereum","value":"77"},
+                               {"meta":"Ethereum","value":"40"},
+                               {"meta":"Ethereum","value":"31"},
+                               {"meta":"Ethereum","value":"53"},
+                               {"meta":"Ethereum","value":"60"},
+                               {"meta":"Ethereum","value":"43"},
+                               {"meta":"Ethereum","value":"55"},
+                               {"meta":"Ethereum","value":"40"},
+                               {"meta":"Ethereum","value":"30"},
+                               {"meta":"Ethereum","value":"70"},
+                               {"meta":"Ethereum","value":"63"}
+                             ]
+                           ]'
+                   data-height="115"
+                   data-high="115"
+                   data-chart-padding='{"top": 5}'
+                   data-is-hide-area="true"
+                   data-line-colors='["#eeeef1","#8069f2"]'
+                   data-line-dasharrays="[10,0]"
+                   data-line-width='["2px","2px"]'
+                   data-is-line-smooth="[true,false]"
+                   data-fill-opacity="1"
+                   data-fill-colors='["#eeeef1","#8069f2"]'
+                   data-stroke-dash-array-axis-y="4"
+                   data-is-show-tooltips="true"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                   data-tooltip-currency="USD "
+                   data-is-show-points="true"
+                   data-point-custom-class="chart__point--donut chart__point--border-xs border-primary rounded-circle"
+                   data-point-dimensions='{"width":15,"height":15}'></div>
+            </div>
+          </div>
+          <!-- End Area Chart #3 -->
+        </div>
+
+        <div class="col-md-6 mb-3 mb-md-4">
+          <!-- Area Chart #4 -->
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Area Chart #4</h5>
+            </div>
+
+            <div class="card-body px-0">
+              <div class="js-area-chart chart--points-invisible chart--labels-hidden position-relative"
+                   data-series='[
+                             [
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"50"},
+                               {"meta":"Bitcoin","value":"95"}
+                             ],
+                             [
+                               {"meta":"Bitcoin","value":"50"},
+                               {"meta":"Bitcoin","value":"80"},
+                               {"meta":"Bitcoin","value":"50"}
+                             ]
+                           ]'
+                   data-height="115"
+                   data-high="95"
+                   data-line-dasharrays="[0,10]"
+                   data-line-width='["1px","2px"]'
+                   data-line-colors='["#0cdcB9","#eeeef1"]'
+                   data-is-line-smooth='["simple","simple"]'
+                   data-fill-opacity=".3"
+                   data-is-fill-colors-gradient="true"
+                   data-fill-colors='[
+                             ["rgba(28,240,221,.6)","rgba(255,255,255,.6)"],
+                             ["rgba(238,238,241,.5)","rgba(238,238,241,.5)"]
+                           ]'
+                   data-is-show-tooltips="true"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-info chart-tooltip--shadow-gray small bg-white p-2"
+                   data-tooltip-currency="USD "
+                   data-is-show-points="true"
+                   data-point-custom-class="chart__point--donut chart__point--border-xs border-primary rounded-circle"
+                   data-point-dimensions='{"width":15,"height":15}'></div>
+            </div>
+          </div>
+          <!-- End Area Chart #4 -->
+        </div>
+
+        <div class="col-md-6 mb-3 mb-md-4">
+          <!-- Area Chart #5 -->
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Area Chart #5</h5>
+            </div>
+
+            <div class="card-body d-flex flex-column p-0">
+              <div class="js-area-chart chart--points-invisible chart--labels-hidden position-relative mt-auto" style="height: 95px;"
+                   data-series='[
+                             [
+                               {"meta":"Bitcoin: ","value":80},
+                               {"meta":"Bitcoin: ","value":50},
+                               {"meta":"Bitcoin: ","value":95}
+                             ],
+                             [
+                               {"meta":"Ripple: ","value":50},
+                               {"meta":"Ripple: ","value":80},
+                               {"meta":"Ripple: ","value":50}
+                             ]
+                           ]'
+                   data-labels='["09 Apr 2018","10 Apr 2018","11 Apr 2018"]'
+                   data-height="95"
+                   data-high="95"
+                   data-is-line-smooth='["simple","simple"]'
+                   data-line-width='["1px","1px"]'
+                   data-line-colors='["#0cdcB9","#8069f2"]'
+                   data-fill-opacity=".3"
+                   data-is-fill-colors-gradient="true"
+                   data-fill-colors='[
+                             ["rgba(28,240,221,.6)","rgba(255,255,255,.6)"],
+                             ["rgba(128,105,242,.7)","rgba(255,255,255,.6)"]
+                           ]'
+                   data-is-show-tooltips="true"
+                   data-is-line-tooltips="false"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--custom chart-tooltip--black small text-white text-left p-2"
+                   data-tooltip-currency="$ "
+                   data-is-show-points="true"
+                   data-point-custom-class="chart__point--donut chart__point--border-xs border-primary rounded-circle"
+                   data-point-dimensions='{"width":15,"height":15}'></div>
+            </div>
+          </div>
+          <!-- End Area Chart #5 -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xl-4 mb-3 mb-md-4">
+          <!-- Area Chart #6 -->
+          <div class="card flex-row align-items-center h-100 p-3 p-md-4">
+            <h5 class="mb-0 mr-3">Area Chart #6</h5>
+
+            <div class="js-area-chart chart--points-invisible chart--labels-hidden position-relative py-1 ml-auto"
+                 data-series='[
+                           [
+                            {"value":"25"},
+                            {"value":"35"},
+                            {"value":"10"},
+                            {"value":"40"},
+                            {"value":"20"}
+                           ]
+                         ]'
+                 data-width="100"
+                 data-height="40"
+                 data-high="40"
+                 data-is-line-smooth='["simple"]'
+                 data-line-width='["1px"]'
+                 data-line-colors='["#0cdcB9"]'
+                 data-fill-opacity=".3"
+                 data-is-fill-colors-gradient="true"
+                 data-fill-colors='[
+                           ["rgba(28,240,221,.6)","rgba(255,255,255,.6)"]
+                         ]'
+                 data-is-show-tooltips="true"
+                 data-is-tooltips-append-to-body="true"
+                 data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
+                 data-tooltip-badge-markup='<span class="indicator indicator-sm indicator-secondary rounded-circle mr-1"></span>'
+                 data-is-show-points="true"
+                 data-point-custom-class="chart__point--hidden"
+                 data-point-dimensions='{"width":8,"height":8}'></div>
+          </div>
+          <!-- End Area Chart #6 -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-md-4">
+          <!-- Area Chart #7 -->
+          <div class="card flex-row align-items-center h-100 p-3 p-md-4">
+            <h5 class="mb-0 mr-3">Area Chart #7</h5>
+
+            <div class="js-area-chart chart--points-invisible chart--labels-hidden py-2 ml-auto"
+                 data-series='[
+                           [
+                             {"value":"40"},
+                             {"value":"40"},
+                             {"value":"40"},
+                             {"value":"40"},
+                             {"value":"40"},
+                             {"value":"30"},
+                             {"value":"30"},
+                             {"value":"35"},
+                             {"value":"35"},
+                             {"value":"35"},
+                             {"value":"30"},
+                             {"value":"30"},
+                             {"value":"40"},
+                             {"value":"35"},
+                             {"value":"35"},
+                             {"value":"15"},
+                             {"value":"15"},
+                             {"value":"12"},
+                             {"value":"12"},
+                             {"value":"12"},
+                             {"value":"35"}
+                           ]
+                         ]'
+                 data-width="100"
+                 data-height="40"
+                 data-high="40"
+                 data-is-line-smooth="[false]"
+                 data-line-width='["1px"]'
+                 data-line-colors='["#8069f2"]'
+                 data-fill-opacity=".3"
+                 data-is-fill-colors-gradient="true"
+                 data-fill-colors='[
+                           ["rgba(128,105,242,.7)","rgba(255,255,255,.6)"]
+                         ]'
+                 data-is-show-tooltips="true"
+                 data-is-tooltips-append-to-body="true"
+                 data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
+                 data-tooltip-badge-markup='<span class="indicator indicator-sm indicator-primary rounded-circle mr-1"></span>'
+                 data-is-show-points="true"
+                 data-point-custom-class="chart__point--hidden"
+                 data-point-dimensions='{"width":8,"height":8}'></div>
+          </div>
+          <!-- End Area Chart #7 -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-md-4">
+          <!-- Area Chart #8 -->
+          <div class="card flex-row align-items-center h-100 p-3 p-md-4">
+            <h5 class="mb-0 mr-3">Area Chart #8</h5>
+
+            <div class="js-area-chart chart--points-invisible chart--labels-hidden py-2 ml-auto"
+                 data-series='[
+                           [
+                             {"value":"35"},
+                             {"value":"20"},
+                             {"value":"10"},
+                             {"value":"20"},
+                             {"value":"20"},
+                             {"value":"0"},
+                             {"value":"10"},
+                             {"value":"0"},
+                             {"value":"10"},
+                             {"value":"10"},
+                             {"value":"15"},
+                             {"value":"35"},
+                             {"value":"15"},
+                             {"value":"20"},
+                             {"value":"35"},
+                             {"value":"35"},
+                             {"value":"40"},
+                             {"value":"42"}
+                           ]
+                         ]'
+                 data-is-hide-area="true"
+                 data-width="123"
+                 data-height="42"
+                 data-high="42"
+                 data-is-line-smooth="[false]"
+                 data-line-width='["2px"]'
+                 data-line-colors='["#8069f2"]'
+                 data-is-show-tooltips="true"
+                 data-is-tooltips-append-to-body="true"
+                 data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle d-flex align-items-center small text-white p-2 mt-5 ml-5"
+                 data-tooltip-badge-markup='<span class="indicator indicator-sm indicator-primary rounded-circle mr-1"></span>'
+                 data-is-show-points="true"
+                 data-point-custom-class="chart__point--hidden"
+                 data-point-dimensions='{"width":8,"height":8}'></div>
+          </div>
+          <!-- End Area Chart #8 -->
+        </div>
+      </div>
+
+      <!-- Area Chart #9 -->
+      <div class="card mb-3 mb-md-4">
+        <div class="card-header d-xl-flex">
+          <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Area Chart #9</h5>
+        </div>
+
+        <div class="card-body pt-0">
+          <div class="position-relative mb-3 mb-md-4">
+            <div class="js-area-chart chart--points-invisible"
+                 data-series='[
+  	                           [
+  	                             {"meta":"Bitcoin","value":"30"},
+  	                             {"meta":"Bitcoin","value":"30"},
+  	                             {"meta":"Bitcoin","value":"30"},
+  	                             {"meta":"Bitcoin","value":"32"},
+  	                             {"meta":"Bitcoin","value":"33"},
+  	                             {"meta":"Bitcoin","value":"34"},
+  	                             {"meta":"Bitcoin","value":"35"},
+  	                             {"meta":"Bitcoin","value":"34"},
+  	                             {"meta":"Bitcoin","value":"33"},
+  	                             {"meta":"Bitcoin","value":"32"},
+  	                             {"meta":"Bitcoin","value":"31"},
+  	                             {"meta":"Bitcoin","value":"30"},
+  	                             {"meta":"Bitcoin","value":"30"},
+  	                             {"meta":"Bitcoin","value":"30"},
+  	                             {"meta":"Bitcoin","value":"30"},
+  	                             {"meta":"Bitcoin","value":"32"},
+  	                             {"meta":"Bitcoin","value":"33"},
+  	                             {"meta":"Bitcoin","value":"34"},
+  	                             {"meta":"Bitcoin","value":"35"},
+  	                             {"meta":"Bitcoin","value":"34"},
+  	                             {"meta":"Bitcoin","value":"33"},
+  	                             {"meta":"Bitcoin","value":"32"},
+  	                             {"meta":"Bitcoin","value":"31"},
+  	                             {"meta":"Bitcoin","value":"30"}
+  	                           ],
+  	                           [
+  	                             {"meta":"Bitcoin","value":"70"},
+  	                             {"meta":"Bitcoin","value":"52"},
+  	                             {"meta":"Bitcoin","value":"47"},
+  	                             {"meta":"Bitcoin","value":"58"},
+  	                             {"meta":"Bitcoin","value":"38"},
+  	                             {"meta":"Bitcoin","value":"40"},
+  	                             {"meta":"Bitcoin","value":"57"},
+  	                             {"meta":"Bitcoin","value":"40"},
+  	                             {"meta":"Bitcoin","value":"31"},
+  	                             {"meta":"Bitcoin","value":"53"},
+  	                             {"meta":"Bitcoin","value":"60"},
+  	                             {"meta":"Bitcoin","value":"43"},
+  	                             {"meta":"Bitcoin","value":"70"},
+  	                             {"meta":"Bitcoin","value":"52"},
+  	                             {"meta":"Bitcoin","value":"47"},
+  	                             {"meta":"Bitcoin","value":"58"},
+  	                             {"meta":"Bitcoin","value":"38"},
+  	                             {"meta":"Bitcoin","value":"40"},
+  	                             {"meta":"Bitcoin","value":"57"},
+  	                             {"meta":"Bitcoin","value":"40"},
+  	                             {"meta":"Bitcoin","value":"31"},
+  	                             {"meta":"Bitcoin","value":"53"},
+  	                             {"meta":"Bitcoin","value":"60"},
+  	                             {"meta":"Bitcoin","value":"43"}
+  	                           ]
+  	                         ]'
+                 data-labels='["1AM","2AM","3AM","4AM","5AM","6AM","7AM","8AM","9AM","10AM","11AM","12AM","1PM","2PM","3PM","4PM","5PM","6PM","7PM","8PM","9PM","10PM","11PM","12PM"]'
+                 data-labels-qty="12"
+                 data-labels-start-from="1"
+                 data-height="205"
+                 data-mobile-height="100"
+                 data-high="150"
+                 data-chart-padding='{"top": 5}'
+                 data-offset-x="30"
+                 data-offset-y="30"
+                 data-is-show-axis-x="false"
+                 data-is-show-axis-y="true"
+                 data-is-hide-area="true"
+                 data-line-colors='["#eeeef1","#8069f2"]'
+                 data-line-dasharrays="[10,0]"
+                 data-line-width='["2px","2px"]'
+                 data-is-line-smooth="[false,false]"
+                 data-fill-opacity="1"
+                 data-fill-colors='["#eeeef1","#8069f2"]'
+                 data-stroke-color-axis-x="#eeeef1"
+                 data-stroke-dasharray-axis-x="none"
+                 data-text-size-x="12px"
+                 data-text-color-x="#8b8e9f"
+                 data-text-offset-top-x="15"
+                 data-text-align-axis-x="center"
+                 data-text-size-y="12px"
+                 data-text-color-y="#868e96"
+                 data-is-show-tooltips="true"
+                 data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+                 data-tooltip-currency="USD "
+                 data-is-show-points="true"
+                 data-point-custom-class="chart__point--donut chart__point--border-xs border-primary rounded-circle"
+                 data-point-dimensions='{"width":15,"height":15}'></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Area Chart #9 -->
+
+      <!-- Area Chart #10 -->
+      <div class="card mb-3 mb-md-4">
+        <div class="card-header d-xl-flex">
+          <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Area Chart #10</h5>
+        </div>
+
+        <div class="card-body pt-0">
+          <div class="position-relative mb-3 mb-md-4">
+            <div class="js-area-chart chart--points-invisible chart--labels-hidden position-absolute w-100 pl-md-5 pb-md-5"
+              data-series='[
+                               [
+                                 {"meta":"Bitcoin","value": "83"},
+                                 {"meta":"Bitcoin","value": "109"},
+                                 {"meta":"Bitcoin","value": "83"},
+                                 {"meta":"Bitcoin","value": "104"},
+                                 {"meta":"Bitcoin","value": "109"},
+                                 {"meta":"Bitcoin","value": "75"},
+                                 {"meta":"Bitcoin","value": "92"},
+                                 {"meta":"Bitcoin","value": "104"},
+                                 {"meta":"Bitcoin","value": "64"},
+                                 {"meta":"Bitcoin","value": "104"},
+                                 {"meta":"Bitcoin","value": "140"},
+                                 {"meta":"Bitcoin","value": "98"},
+                                 {"meta":"Bitcoin","value": "109"},
+                                 {"meta":"Bitcoin","value": "92"},
+                                 {"meta":"Bitcoin","value": "109"},
+                                 {"meta":"Bitcoin","value": "104"},
+                                 {"meta":"Bitcoin","value": "98"},
+                                 {"meta":"Bitcoin","value": "109"},
+                                 {"meta":"Bitcoin","value": "104"},
+                                 {"meta":"Bitcoin","value": "119"},
+                                 {"meta":"Bitcoin","value": "104"},
+                                 {"meta":"Bitcoin","value": "109"},
+                                 {"meta":"Bitcoin","value": "104"},
+                                 {"meta":"Bitcoin","value": "119"}
+                               ]
+                             ]'
+              data-is-hide-area="true"
+              data-height="225"
+              data-mobile-height="115"
+              data-high="185"
+              data-is-line-smooth="[false]"
+              data-line-width='["2px"]'
+              data-line-colors='["#8069f2"]'
+              data-is-show-tooltips="true"
+              data-tooltip-custom-class="chart-tooltip chart-tooltip--sections-blocked chart-tooltip__meta--text-muted small text-white text-nowrap p-2"
+              data-tooltip-currency="USD "
+              data-is-show-points="true"
+              data-point-custom-class="chart__point--donut chart__point--border-xs border-primary rounded-circle"
+              data-point-dimensions='{"width":15,"height":15}' style="z-index: 2;"></div>
+
+            <div class="js-bar-chart"
+                 data-series="[
+                               [83,109,83,104,109,75,92,104,64,104,140,98,109,92,109,104,98,109,104,119,104,109,104,119]
+                             ]"
+                 data-labels='["1AM","2AM","3AM","4AM","5AM","6AM","7AM","8AM","9AM","10AM","11AM","12AM","1PM","2PM","3PM","4PM","5PM","6PM","7PM","8PM","9PM","10PM","11PM","12PM"]'
+                 data-labels-qty="12"
+                 data-labels-start-from="2"
+                 data-is-show-axis-x="false"
+                 data-is-show-axis-y="true"
+                 data-is-show-label-axis-x="true"
+                 data-is-show-label-axis-y="true"
+                 data-height="225"
+                 data-mobile-height="115"
+                 data-high="185"
+                 data-offset-axis-x="30"
+                 data-offset-axis-y="30"
+                 data-low="0"
+                 data-distance="20"
+                 data-stroke-width="8"
+                 data-mobile-stroke-width="5"
+                 data-stroke-color='["#07d7f7"]'
+                 data-is-grid-solid-line="true"
+                 data-grid-line-color="#eeeef1"
+                 data-label-color-axis-x="#868e96"
+                 data-label-font-size-axis-x="12px"
+                 data-label-color-axis-y="#868e96"
+                 data-label-font-size-axis-y="12px"
+                 data-text-offset-top-x="5"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Area Chart #10 -->
+
+      <h3 class="h4 pt-3 mb-3 mb-md-4">Bar Charts</h3>
+
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-4">
+          <!-- Bar Chart #1 -->
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Bar Chart #1</h5>
+            </div>
+
+            <div class="card-body d-flex flex-column">
+              <div class="js-bar-chart position-relative mt-auto" style="height: 160px;"
+                   data-series="[
+                               [160,160,160,160,160,160,160,160,160,160,160,160],
+                               [92,97,124,137,97,124,46,97,90,97,111,90],
+                               [69,47,69,53,45,94,34,31,68,73,83,68]
+                             ]"
+                   data-height="160"
+                   data-high="160"
+                   data-low="0"
+                   data-distance="20"
+                   data-stroke-width="5"
+                   data-stroke-color='["#e0f6fc","#a0eee7","#8069f2"]'
+                   data-is-stack-bars="true"
+                   data-is-show-axis-x="false"
+                   data-is-show-axis-y="false"
+                   data-is-show-label-axis-x="false"
+                   data-is-show-label-axis-y="false"
+                   data-is-stroke-rounded="true"
+                   data-is-show-tooltips="true"
+                   data-postfix="%"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--black small text-white px-2 py-1"></div>
+            </div>
+          </div>
+          <!-- End Bar Chart #1 -->
+        </div>
+
+        <div class="col-md-6 mb-3 mb-md-4">
+          <!-- Bar Chart #2 -->
+          <div class="card">
+            <div class="card-header">
+              <h5 class="h6 text-uppercase font-weight-semi-bold mb-0">Bar Chart #2</h5>
+            </div>
+            <div class="card-body">
+              <div class="js-bar-chart position-relative"
+                   data-series="[
+                         [150,112,100,75,70,65,60,55,53],
+                         [50,37,50,50,50,50,50,50,50]
+                       ]"
+                   data-labels='["Wave 1","Wave 2","Wave 3","Wave 4","Wave 5","Wave 6","Wave 7","Wave 8","Wave 9"]'
+                   data-is-stack-bars="true"
+                   data-is-show-axis-x="false"
+                   data-is-show-axis-y="true"
+                   data-is-show-label-axis-x="true"
+                   data-is-show-label-axis-y="true"
+                   data-height="280"
+                   data-mobile-height="200"
+                   data-high="200"
+                   data-offset-axis-x="23"
+                   data-offset-axis-y="30"
+                   data-low="0"
+                   data-distance="70"
+                   data-stroke-width="40"
+                   data-mobile-stroke-width="20"
+                   data-stroke-color='["#07d7f7","#8069f2"]'
+                   data-is-grid-solid-line="true"
+                   data-grid-line-color="#eeeef1"
+                   data-label-color-axis-x="#4a4e69"
+                   data-label-font-size-axis-x="14px"
+                   data-label-color-axis-y="#868e96"
+                   data-label-font-size-axis-y="14px"
+                   data-is-show-tooltips="true"
+                   data-postfix="%"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--black small text-white px-2 py-1"></div>
+            </div>
+          </div>
+          <!-- End Bar Chart #2 -->
+        </div>
+      </div>
+
+      <h3 class="h4 pt-3 mb-3 mb-md-4">Donut Charts</h3>
+
+      <div class="row">
+        <div class="col-md-6 col-xl-4 mb-3 mb-md-4">
+          <!-- Donut Chart #1 -->
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Donut Chart #1</h5>
+            </div>
+
+            <div class="card-body d-flex flex-column">
+              <div class="text-center">
+                <div class="js-donut-chart position-relative d-flex mx-auto mb-3 mb-md-4" style="width: 240px; height: 240px;"
+                     data-series="[65,35]"
+                     data-border-width="12"
+                     data-slice-margin="2"
+                     data-start-angle="0"
+                     data-fill-colors='["#8069f2","#0cdcB9"]'
+                     data-is-show-tooltips="true"
+                     data-tooltip-currency="%"
+                     data-is-tooltip-currency-reverse="true"
+                     data-tooltip-custom-class="chart-tooltip chart-tooltip--triangle-right chart-tooltip--black small text-white px-2 py-1 mt-5 ml-n5"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Donut Chart #1 -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-md-4">
+          <!-- Donut Chart #2 -->
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Donut Chart #2</h5>
+            </div>
+
+            <div class="card-body d-flex flex-column">
+              <div class="js-donut-chart position-relative d-flex mx-auto" style="width: 240px; height: 240px;"
+                   data-series='[
+                               {"meta":"Available - ","value":65},
+                               {"meta":"Spent - ","value":35}
+                             ]'
+                   data-border-width="8"
+                   data-start-angle="0"
+                   data-fill-colors='["#8069f2","#eeeef1"]'
+                   data-is-show-tooltips="true"
+                   data-tooltip-currency="%"
+                   data-is-tooltip-currency-reverse="true"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--none-triangle chart-tooltip--centered chart-tooltip--black small text-white text-nowrap px-2 py-1"></div>
+            </div>
+          </div>
+          <!-- End Donut Chart #2 -->
+        </div>
+
+        <div class="col-md-6 col-xl-4 mb-3 mb-md-4">
+          <!-- Donut Chart #3 -->
+          <div class="card h-100">
+            <div class="card-header d-xl-flex">
+              <h5 class="h6 font-weight-semi-bold text-uppercase mb-0">Donut Chart #3</h5>
+            </div>
+
+            <div class="card-body d-flex flex-column">
+              <div class="js-donut-chart d-flex position-relative my-auto mx-auto" style="width: 240px; height: 240px;"
+                   data-series="[15,10,15,10,35,15]"
+                   data-border-width="23"
+                   data-start-angle="0"
+                   data-fill-colors='["#474dee","#07d7f7","#fcd53b","#e1305e","#8069f2","#0cdcb9"]'
+                   data-is-show-tooltips="true"
+                   data-tooltip-currency="%"
+                   data-is-tooltip-currency-reverse="true"
+                   data-tooltip-custom-class="chart-tooltip chart-tooltip--triangle-right chart-tooltip--black small text-white px-2 py-1 mt-5 ml-n5">
+                <div class="position-centered position-absolute text-center text-nowrap">
+                  <div class="h4 text-uppercase mb-1">27,000,000 NVA</div>
+                  <div class="small text-muted text-uppercase mb-0">NOVA (NVA)
+                    <span class="text-danger">-4.53%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Donut Chart #3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="small bg-white p-3 px-md-4 mt-auto">
+      <div class="row justify-content-between">
+        <div class="col-lg text-center text-lg-left mb-3 mb-lg-0">
+          <ul class="list-dot list-inline mb-0">
+            <li class="list-dot-item list-dot-item-not list-inline-item mr-lg-2"><a class="link-dark" href="#">FAQ</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Support</a></li>
+            <li class="list-dot-item list-inline-item mr-lg-2"><a class="link-dark" href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center mb-3 mb-lg-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-vimeo-alt"></i></a></li>
+            <li class="list-inline-item mx-2"><a class="link-muted" href="#"><i class="nova-github"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg text-center text-lg-right">
+          &copy; 2019 Htmlstream. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+</main>
+
+<!-- JS Global Compulsory -->
+<script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Libraries -->
+<script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../assets/vendor/chartist/dist/chartist.min.js"></script>
+<script src="../../assets/vendor/chartist-bar-labels/src/scripts/chartist-bar-labels.js"></script>
+<script src="../../assets/vendor/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<script src="../../assets/vendor/resize-sensor/dist/resizeSensor.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+<script src="../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+<!-- JS Nova -->
+<script src="../../assets/js/hs.core.js"></script>
+<script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="../../assets/js/components/hs.side-nav.js"></script>
+<script src="../../assets/js/components/hs.unfold.js"></script>
+<script src="../../assets/js/components/hs.chartist-area.js"></script>
+<script src="../../assets/js/components/hs.chartist-bar.js"></script>
+<script src="../../assets/js/components/hs.chartist-pie.js"></script>
+<script src="../../assets/js/components/hs.chartist-donut.js"></script>
+<script src="../../assets/js/components/hs.autocomplete.js"></script>
+
+<!-- JS Libraries Init. -->
+<script>
+    $(document).on('ready', function () {
+        // initialization of custom scroll
+        $.HSCore.components.HSMalihuScrollBar.init($('.js-custom-scroll'));
+
+        // initialization of sidebar navigation component
+        $.HSCore.components.HSSideNav.init('.js-side-nav');
+
+        // initialization of dropdown component
+        $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+        // initialization of charts
+        $.HSCore.components.HSChartistArea.init('.js-area-chart');
+        $.HSCore.components.HSChartistBar.init('.js-bar-chart');
+        $.HSCore.components.HSChartistDonut.init('.js-donut-chart');
+
+        // initialization of autocomplete
+        $.HSCore.components.HSAutocomplete.init('.js-autocomplete');
+    });
+</script>
+</body>
+</html>
